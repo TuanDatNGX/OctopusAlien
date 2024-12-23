@@ -9,6 +9,7 @@ public class UiController : MonoBehaviour
     public static UiController Instance;
     public Transform expTransform;
     public TextMeshProUGUI[] expObj;
+    public GameObject dragToMove;
     int expId = 0;
 
     private void Awake()
