@@ -17,6 +17,7 @@ public class Alien : MonoBehaviour
     public AlienState currentState = AlienState.Idle;
     public OctopusTail target;
     public SphereCollider collider;
+    public GameObject growingRoot;
     public GameObject hpObj;
     public Image hpFill;
     public float currentHp = 100;
@@ -53,10 +54,12 @@ public class Alien : MonoBehaviour
         switch (state)
         {
             case AlienState.Idle:
+                growingRoot.SetActive(false);
                 target.ChangeState(TailState.Idle);
                 target = null;
                 break;
             case AlienState.Catched:
+                growingRoot.SetActive(true);
                 break;
             case AlienState.Collect:
                 target.player.listAlienInRange.Remove(this);

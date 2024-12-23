@@ -12,11 +12,15 @@ public class PlayerController : MonoBehaviour
     Vector3 inputDirection;
     public OctopusTail[] tails;
     public List<Alien> listAlienInRange;
+    public Transform rangeObj;
+    public GameObject rangeZone;
     Alien neareastAlien;
+    Coroutine rangeActive;
 
     private void Update()
     {
         neareastAlien = null;
+        rangeObj.transform.position = new Vector3(rangeObj.transform.position.x, 0, rangeObj.transform.position.z);
         foreach (var alien in listAlienInRange)
         {
             float minDistance = 1000;
@@ -41,6 +45,27 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+        if (listAlienInRange.Count > 0)
+        {
+            rangeZone.SetActive(true);
+            if (rangeActive != null)
+            {
+                StopCoroutine(rangeActive);
+                rangeActive = null;
+            }
+        }
+        else
+        {
+             if(rangeActive == null)
+             rangeActive = StartCoroutine(DeActiveRangeZone());
+        }
+    }
+
+    IEnumerator DeActiveRangeZone()
+    {
+        yield return new WaitForSeconds(1f);
+        rangeZone.SetActive(false);
+        rangeActive = null;
     }
 
     protected virtual void FixedUpdate()
