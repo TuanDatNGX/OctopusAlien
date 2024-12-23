@@ -41,7 +41,8 @@ public class Alien : MonoBehaviour
     public void Move()
     {
         des = new Vector3(Random.Range(-circle.radius, circle.radius), 0, Random.Range(-circle.radius, circle.radius));
-        moving = transform.DOLocalMove(des, Vector3.Distance(transform.position, des) / Speed).SetEase(Ease.Linear).OnComplete(() =>
+        animator.transform.LookAt(circle.transform.position + des);
+        moving = transform.DOLocalMove(des, Vector3.Distance(transform.localPosition, des) / Speed).SetEase(Ease.Linear).OnComplete(() =>
         {
             if(gameObject.activeSelf)
             Move();
@@ -50,8 +51,11 @@ public class Alien : MonoBehaviour
 
     private void Update()
     {
-        if(moving != null && Vector3.Distance(transform.position, des) > 0.1f)
-        animator.transform.LookAt(circle.transform.position + des);
+        if(moving != null && Vector3.Distance(transform.localPosition, des) > 0.1f)
+        {
+
+        }
+
         switch (currentState)
         {
             case AlienState.Idle:
@@ -71,6 +75,8 @@ public class Alien : MonoBehaviour
                 }
                 break;
             case AlienState.Collect:
+                animator.SetFloat("Speed", 0);
+                moving.Kill();
                 break;
         }
     }
