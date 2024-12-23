@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         neareastAlien = null;
-        rangeObj.transform.position = new Vector3(rangeObj.transform.position.x, 0, rangeObj.transform.position.z);
+        rangeObj.transform.position = new Vector3(rangeObj.transform.position.x, transform.position.y - 0.65f, rangeObj.transform.position.z);
         foreach (var alien in listAlienInRange)
         {
             float minDistance = 1000;

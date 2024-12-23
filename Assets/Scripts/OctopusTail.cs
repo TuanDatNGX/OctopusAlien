@@ -43,11 +43,13 @@ public class OctopusTail : MonoBehaviour
                 tailAnimator.UseIK = false;
                 tailAnimator.IKTarget = null;
                 tailAnimator.TailAnimatorAmount = 1f;
+                tailAnimator.Slithery = 0.67f;
                 transform.DOLocalRotate(defaultRotation, 0.25f);
                 break;
             case TailState.Catch:
                 tailAnimator.UseIK = true;
-                tailAnimator.TailAnimatorAmount = 0.05f;
+                tailAnimator.TailAnimatorAmount = 0.25f;
+                tailAnimator.Slithery = 1f;
                 break;
             case TailState.Collect:break;
         }
