@@ -1,3 +1,4 @@
+using UnityEngine;
 
 [ExecuteInEditMode]
 public class TentacleInteract : MonoBehaviour {

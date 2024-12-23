@@ -45,7 +45,7 @@ Material:
     - _QueueOffset: 0
     - _Radius: 0.5
     m_Colors:
-    - _InteractPos: {r: 0, g: 0, b: 29, a: 0}
+    - _InteractPos: {r: 0, g: 0, b: 46.9, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &2149123383391356883
 MonoBehaviour:
