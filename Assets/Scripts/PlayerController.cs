@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public LevelDataAssetsSO levelUpData;
     public CharacterController characterController;
     public FloatingJoystick joystick;
     public float moveSpeed;
@@ -16,6 +17,8 @@ public class PlayerController : MonoBehaviour
     public GameObject rangeZone;
     Alien neareastAlien;
     Coroutine rangeActive;
+    int currentExp = 0;
+    int currentLevel = 1;
 
     private void Update()
     {
