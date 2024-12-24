@@ -16,6 +16,7 @@ public class Alien : MonoBehaviour
 {
     public AlienSpawnCircle circle;
     public Animator animator;
+    public Transform hit;
     public AlienState currentState = AlienState.Idle;
     public OctopusTail target;
     public SphereCollider collider;
