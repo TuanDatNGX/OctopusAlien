@@ -104,6 +104,8 @@ public class Alien : MonoBehaviour
                 {
                     target.ChangeState(TailState.Idle);
                     UiController.Instance.ShowExp(transform.position);
+                    EffectController.Instance.SpawnBloodFx(transform.position);
+                    EffectController.Instance.SpawnBloodFx2(new Vector3(transform.position.x, 0, transform.position.z));
                     gameObject.SetActive(false);
                 });
                 break;

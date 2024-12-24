@@ -788,7 +788,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162920787}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.258819, w: 0.9659258}
+  m_LocalRotation: {x: -0.07193606, y: 0.01927535, z: -0.25810012, w: 0.9632434}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8333333, y: 0.83333325, z: 0.83333325}
   m_ConstrainProportionsScale: 0
@@ -796,7 +796,7 @@ Transform:
   - {fileID: 4408486852729217}
   - {fileID: 1683704238}
   m_Father: {fileID: 4500688091760147}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30}
+  m_LocalEulerAnglesHint: {x: -7.391, y: 4.295, z: -30.278}
 --- !u!114 &162920789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1008,7 +1008,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208101882}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0.07447385, y: -0, z: -0, w: 0.997223}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.83333325, y: 0.83333325, z: 0.83333325}
   m_ConstrainProportionsScale: 0
@@ -1016,7 +1016,7 @@ Transform:
   - {fileID: 4373050008456325}
   - {fileID: 1475723698}
   m_Father: {fileID: 4500688091760147}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -8.542, y: 0, z: 0}
 --- !u!114 &208101884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1971,7 +1971,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405410653}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0.07447385, y: -0, z: -0, w: 0.997223}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.83333325, y: 0.83333325, z: 0.83333325}
   m_ConstrainProportionsScale: 0
@@ -1979,7 +1979,7 @@ Transform:
   - {fileID: 4489378598069127}
   - {fileID: 1277125661}
   m_Father: {fileID: 4500688091760147}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -8.542, y: 0, z: 0}
 --- !u!114 &405410655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2858,8 +2858,8 @@ MonoBehaviour:
   UseWaving: 1
   CosinusAdd: 0
   FixedCycle: 0
-  WavingSpeed: 3
-  WavingRange: 0.8
+  WavingSpeed: 1
+  WavingRange: 0.4
   WavingAxis: {x: 1, y: 1, z: 1}
   WavingType: 1
   AlternateWave: 1
@@ -5207,7 +5207,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047148501}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0.07447385, y: -0, z: -0, w: 0.997223}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.83333325, y: 0.83333325, z: 0.83333325}
   m_ConstrainProportionsScale: 0
@@ -5215,7 +5215,7 @@ Transform:
   - {fileID: 4808373632565515}
   - {fileID: 500888552}
   m_Father: {fileID: 4500688091760147}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -8.542, y: 0, z: 0}
 --- !u!114 &1047148503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5763,8 +5763,8 @@ MonoBehaviour:
   UseWaving: 1
   CosinusAdd: 0
   FixedCycle: 0
-  WavingSpeed: 3
-  WavingRange: 0.8
+  WavingSpeed: 1
+  WavingRange: 0.4
   WavingAxis: {x: 1, y: 1, z: 1}
   WavingType: 1
   AlternateWave: 1
@@ -6041,7 +6041,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103999939}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0.07447385, y: -0, z: -0, w: 0.997223}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.83333325, y: 0.83333325, z: 0.83333325}
   m_ConstrainProportionsScale: 0
@@ -6049,7 +6049,7 @@ Transform:
   - {fileID: 4265441402569977}
   - {fileID: 1406402239}
   m_Father: {fileID: 4500688091760147}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -8.542, y: 0, z: 0}
 --- !u!114 &1103999941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6894,8 +6894,8 @@ MonoBehaviour:
   UseWaving: 1
   CosinusAdd: 0
   FixedCycle: 0
-  WavingSpeed: 3
-  WavingRange: 0.8
+  WavingSpeed: 1
+  WavingRange: 0.4
   WavingAxis: {x: 1, y: 1, z: 1}
   WavingType: 1
   AlternateWave: 1
@@ -7332,7 +7332,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377391453}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0.07447385, y: -0, z: -0, w: 0.997223}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.83333325, y: 0.83333325, z: 0.83333325}
   m_ConstrainProportionsScale: 0
@@ -7340,7 +7340,7 @@ Transform:
   - {fileID: 1084007596}
   - {fileID: 4316103728207771}
   m_Father: {fileID: 4500688091760147}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -8.542, y: 0, z: 0}
 --- !u!114 &1377391455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7912,8 +7912,8 @@ MonoBehaviour:
   UseWaving: 1
   CosinusAdd: 0
   FixedCycle: 0
-  WavingSpeed: 3
-  WavingRange: 0.8
+  WavingSpeed: 1
+  WavingRange: 0.4
   WavingAxis: {x: 1, y: 1, z: 1}
   WavingType: 1
   AlternateWave: 1
@@ -8034,7 +8034,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   DeflectOnlyCollisions: 1
-  _Editor_Category: 0
+  _Editor_Category: 2
   _Editor_FeaturesCategory: 0
   DrawGizmos: 1
   StartBone: {fileID: 1388144309}
@@ -8810,8 +8810,8 @@ MonoBehaviour:
   UseWaving: 1
   CosinusAdd: 0
   FixedCycle: 0
-  WavingSpeed: 3
-  WavingRange: 0.8
+  WavingSpeed: 1
+  WavingRange: 0.4
   WavingAxis: {x: 1, y: 1, z: 1}
   WavingType: 1
   AlternateWave: 1
@@ -9052,7 +9052,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434415367}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.2588191, w: 0.9659258}
+  m_LocalRotation: {x: -0.07193627, y: -0.01927535, z: 0.25810048, w: 0.96324337}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8333332, y: 0.83333325, z: 0.83333325}
   m_ConstrainProportionsScale: 0
@@ -9060,7 +9060,7 @@ Transform:
   - {fileID: 4827491763112379}
   - {fileID: 1388144294}
   m_Father: {fileID: 4500688091760147}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
+  m_LocalEulerAnglesHint: {x: -7.391, y: -4.295, z: 30.278}
 --- !u!114 &1434415369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9632,8 +9632,8 @@ MonoBehaviour:
   UseWaving: 1
   CosinusAdd: 0
   FixedCycle: 0
-  WavingSpeed: 3
-  WavingRange: 0.8
+  WavingSpeed: 1
+  WavingRange: 0.4
   WavingAxis: {x: 1, y: 1, z: 1}
   WavingType: 1
   AlternateWave: 1
@@ -9754,7 +9754,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   DeflectOnlyCollisions: 1
-  _Editor_Category: 0
+  _Editor_Category: 2
   _Editor_FeaturesCategory: 0
   DrawGizmos: 1
   StartBone: {fileID: 1475723712}
@@ -10389,6 +10389,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1679106242
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1679106243}
+  - component: {fileID: 1679106244}
+  m_Layer: 0
+  m_Name: EffectController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1679106243
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679106242}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.00000017881393, y: 0.46663922, z: -1.1422815}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1679106244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1679106242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40366450181d6be4db5540b5d030215a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bloodFx: {fileID: 195360, guid: a3c24a5ae068ed44d950af671f99cc21, type: 3}
+  bloodFx2: {fileID: 168956, guid: ae17d4a182a7e02448b4e420f9da16ea, type: 3}
 --- !u!1001 &1683704237
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10944,8 +10990,8 @@ MonoBehaviour:
   UseWaving: 1
   CosinusAdd: 0
   FixedCycle: 0
-  WavingSpeed: 3
-  WavingRange: 0.8
+  WavingSpeed: 1
+  WavingRange: 0.4
   WavingAxis: {x: 1, y: 1, z: 1}
   WavingType: 1
   AlternateWave: 1
@@ -12045,8 +12091,8 @@ MonoBehaviour:
   UseWaving: 1
   CosinusAdd: 0
   FixedCycle: 0
-  WavingSpeed: 3
-  WavingRange: 0.8
+  WavingSpeed: 1
+  WavingRange: 0.4
   WavingAxis: {x: 1, y: 1, z: 1}
   WavingType: 1
   AlternateWave: 1
@@ -12474,7 +12520,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871975860}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0.07447385, y: -0, z: -0, w: 0.997223}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.83333325, y: 0.83333325, z: 0.83333325}
   m_ConstrainProportionsScale: 0
@@ -12482,7 +12528,7 @@ Transform:
   - {fileID: 4814155863533423}
   - {fileID: 1793204784}
   m_Father: {fileID: 4500688091760147}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -8.542, y: 0, z: 0}
 --- !u!114 &1871975862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19572,6 +19618,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 963194228}
   - {fileID: 705507995}
+  - {fileID: 1679106243}
   - {fileID: 102430676}
   - {fileID: 1627633499}
   - {fileID: 1671685710}
