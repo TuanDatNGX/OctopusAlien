@@ -2759,8 +2759,8 @@ MonoBehaviour:
   CosinusAdd: 0
   FixedCycle: 0
   WavingSpeed: 1
-  WavingRange: 0.4
-  WavingAxis: {x: 1, y: 1, z: 1}
+  WavingRange: 0.6
+  WavingAxis: {x: 0, y: 1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -4056,6 +4056,7 @@ MonoBehaviour:
   listAlienInRange: []
   rangeObj: {fileID: 713125139}
   rangeZone: {fileID: 1789040266}
+  levelUpFx: {fileID: 1784918770}
 --- !u!114 &849552278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5734,8 +5735,8 @@ MonoBehaviour:
   CosinusAdd: 0
   FixedCycle: 0
   WavingSpeed: 1
-  WavingRange: 0.4
-  WavingAxis: {x: 1, y: 1, z: 1}
+  WavingRange: 0.6
+  WavingAxis: {x: 0, y: 1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -6862,7 +6863,7 @@ GameObject:
   - component: {fileID: 1181163396}
   - component: {fileID: 1181163395}
   m_Layer: 5
-  m_Name: LvlTxt
+  m_Name: Stage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7953,8 +7954,8 @@ MonoBehaviour:
   CosinusAdd: 0
   FixedCycle: 0
   WavingSpeed: 1
-  WavingRange: 0.4
-  WavingAxis: {x: 1, y: 1, z: 1}
+  WavingRange: 0.6
+  WavingAxis: {x: 0, y: 1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -8851,8 +8852,8 @@ MonoBehaviour:
   CosinusAdd: 0
   FixedCycle: 0
   WavingSpeed: 1
-  WavingRange: 0.4
-  WavingAxis: {x: 1, y: 1, z: 1}
+  WavingRange: 0.6
+  WavingAxis: {x: 0, y: 1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -9240,6 +9241,7 @@ MonoBehaviour:
   - {fileID: 2095805481}
   - {fileID: 349173320}
   - {fileID: 374803595}
+  levelTxt: {fileID: 1872982890}
   dragToMove: {fileID: 1828045601}
   ExpSlider: {fileID: 1327051355}
   ExpTxt: {fileID: 1114649243}
@@ -10412,8 +10414,8 @@ MonoBehaviour:
   CosinusAdd: 0
   FixedCycle: 0
   WavingSpeed: 1
-  WavingRange: 0.4
-  WavingAxis: {x: 1, y: 1, z: 1}
+  WavingRange: 0.6
+  WavingAxis: {x: 0, y: 1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -11027,6 +11029,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7642344674536302905, guid: a587111b6e520064f9e9067bb63f67bc, type: 3}
   m_PrefabInstance: {fileID: 1767901200}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1784918770 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198116015357046868, guid: a4f63907440efa84492e58543e302e12, type: 3}
+  m_PrefabInstance: {fileID: 1744456993}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1789040265
 PrefabInstance:
@@ -11675,8 +11682,8 @@ MonoBehaviour:
   CosinusAdd: 0
   FixedCycle: 0
   WavingSpeed: 1
-  WavingRange: 0.4
-  WavingAxis: {x: 1, y: 1, z: 1}
+  WavingRange: 0.6
+  WavingAxis: {x: 0, y: 1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -12818,8 +12825,8 @@ MonoBehaviour:
   CosinusAdd: 0
   FixedCycle: 0
   WavingSpeed: 1
-  WavingRange: 0.4
-  WavingAxis: {x: 1, y: 1, z: 1}
+  WavingRange: 0.6
+  WavingAxis: {x: 0, y: 1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -12939,8 +12946,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   DeflectOnlyCollisions: 1
-  _Editor_Category: 1
-  _Editor_FeaturesCategory: 2
+  _Editor_Category: 2
+  _Editor_FeaturesCategory: 0
   DrawGizmos: 1
   StartBone: {fileID: 1893853330}
   EndBone: {fileID: 0}
