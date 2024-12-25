@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
 {
     public LevelDataAssetsSO levelUpData;
     public CharacterController characterController;
+    public CharacterStat characterStat;
     public FloatingJoystick joystick;
     public float moveSpeed;
     public float rotateSpeed;
@@ -18,12 +19,17 @@ public class PlayerController : MonoBehaviour
     public Transform rangeObj;
     public GameObject rangeZone;
     public ParticleSystem levelUpFx;
+    public Material mat2;
+    public Material mat3;
+    public Material matFace2;
+    public Material matFace3;
     Alien neareastAlien;
     Coroutine rangeActive;
     float currentExp = 0;
     int currentLevel = 1;
     float defaultScale;
     float defaultCam;
+    float currentEvol = 0;
 
     private void Start()
     {
@@ -94,9 +100,40 @@ public class PlayerController : MonoBehaviour
             levelUpFx.Play();
             if (levelUpData.enemyAssets[currentLevel.ToString()].size != 0)
             {
-                model.transform.DOScale(transform.localScale.x + defaultScale * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
+                model.transform.DOScale(model.localScale.x + defaultScale * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
                 Camera.main.DOFieldOfView(Camera.main.fieldOfView + defaultCam * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
             }
+            if (levelUpData.enemyAssets[currentLevel.ToString()].tentacles > 0)
+            {
+                for (int i = 0; i< tails.Length; i++)
+                {
+                    if (!tails[i].gameObject.activeSelf)
+                    {
+                        tails[i].gameObject.SetActive(true);
+                        return;
+                    }
+                }
+            }
+            if (levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius != 0)
+            {
+                rangeObj.transform.DOScale(rangeObj.localScale.x + 0.2f * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
+            }
+            if (levelUpData.enemyAssets[currentLevel.ToString()].evol != 0)
+            {
+                if(levelUpData.enemyAssets[currentLevel.ToString()].evol == 1)
+                {
+
+                }
+                else if (levelUpData.enemyAssets[currentLevel.ToString()].evol == 2)
+                {
+
+                }
+            }
+            characterStat.ATK += levelUpData.enemyAssets[currentLevel.ToString()].Atk;
+            characterStat.HP += levelUpData.enemyAssets[currentLevel.ToString()].Hp;
+            characterStat.Heal += levelUpData.enemyAssets[currentLevel.ToString()].Heal;
+            characterStat.MoveSpeed += levelUpData.enemyAssets[currentLevel.ToString()].speed;
+            characterStat.Radius += levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius;
         }
         UiController.Instance.UpdateExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp, currentLevel);
     }

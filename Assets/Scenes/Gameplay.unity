@@ -779,7 +779,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &162920788
 Transform:
   m_ObjectHideFlags: 0
@@ -4042,6 +4042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelUpData: {fileID: 11400000, guid: d3517f2339e77aa4ea418dc1491c3e4d, type: 2}
   characterController: {fileID: 849552276}
+  characterStat: {fileID: 849552278}
   joystick: {fileID: 2029584093}
   moveSpeed: 2
   rotateSpeed: 500
@@ -4054,9 +4055,12 @@ MonoBehaviour:
   - {fileID: 1047148503}
   - {fileID: 767652369}
   listAlienInRange: []
+  model: {fileID: 4500688091760147}
   rangeObj: {fileID: 713125139}
   rangeZone: {fileID: 1789040266}
   levelUpFx: {fileID: 1784918770}
+  mat2: {fileID: 0}
+  mat3: {fileID: 0}
 --- !u!114 &849552278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9085,7 +9089,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1434415368
 Transform:
   m_ObjectHideFlags: 0
