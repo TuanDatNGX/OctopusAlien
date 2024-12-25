@@ -122,11 +122,19 @@ public class PlayerController : MonoBehaviour
             {
                 if(levelUpData.enemyAssets[currentLevel.ToString()].evol == 1)
                 {
-
+                    model.GetComponent<MeshRenderer>().material = matFace2;
+                    foreach (var item in tails)
+                    {
+                        item.tailAnimator.transform.GetChild(1).GetComponent<SkinnedMeshRenderer>().material = mat2;
+                    }
                 }
                 else if (levelUpData.enemyAssets[currentLevel.ToString()].evol == 2)
                 {
-
+                    model.GetComponent<MeshRenderer>().material = matFace3;
+                    foreach (var item in tails)
+                    {
+                        item.tailAnimator.transform.GetChild(1).GetComponent<SkinnedMeshRenderer>().material = mat3;
+                    }
                 }
             }
             characterStat.ATK += levelUpData.enemyAssets[currentLevel.ToString()].Atk;

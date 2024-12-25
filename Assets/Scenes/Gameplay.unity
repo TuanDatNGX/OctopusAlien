@@ -4059,8 +4059,10 @@ MonoBehaviour:
   rangeObj: {fileID: 713125139}
   rangeZone: {fileID: 1789040266}
   levelUpFx: {fileID: 1784918770}
-  mat2: {fileID: 0}
-  mat3: {fileID: 0}
+  mat2: {fileID: 2100000, guid: 9c91cbbbf47894841b3d9922d7823edd, type: 2}
+  mat3: {fileID: 2100000, guid: a1c01655968408c469bd105098d5ee75, type: 2}
+  matFace2: {fileID: 2100000, guid: 26a8f1fd743800643bf343a849f8a939, type: 2}
+  matFace3: {fileID: 2100000, guid: c5a349719ce15ba418435cba414356a8, type: 2}
 --- !u!114 &849552278
 MonoBehaviour:
   m_ObjectHideFlags: 0
