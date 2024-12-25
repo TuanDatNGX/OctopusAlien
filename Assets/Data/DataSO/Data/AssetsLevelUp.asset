@@ -46,13 +46,13 @@ MonoBehaviour:
       Data: 2|LevelData, Assembly-CSharp
     - Name: exp
       Entry: 4
-      Data: 0
+      Data: 10
     - Name: evol
       Entry: 4
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.05
     - Name: Atk
       Entry: 4
       Data: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 0.2
     - Name: tentacles
       Entry: 4
       Data: 0
@@ -94,7 +94,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.15
     - Name: Atk
       Entry: 4
       Data: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 1
     - Name: tentacles
       Entry: 4
       Data: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.05
     - Name: Atk
       Entry: 4
       Data: 0
@@ -151,10 +151,10 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 0.2
     - Name: tentacles
       Entry: 4
-      Data: 0
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
@@ -178,7 +178,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.05
     - Name: Atk
       Entry: 4
       Data: 0
@@ -193,7 +193,7 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 0.2
     - Name: tentacles
       Entry: 4
       Data: 0
@@ -217,10 +217,10 @@ MonoBehaviour:
       Data: 100
     - Name: evol
       Entry: 4
-      Data: 0
+      Data: 1
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.15
     - Name: Atk
       Entry: 4
       Data: 0
@@ -235,7 +235,7 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 1
     - Name: tentacles
       Entry: 4
       Data: 0
@@ -262,7 +262,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.05
     - Name: Atk
       Entry: 4
       Data: 0
@@ -277,10 +277,10 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 0.2
     - Name: tentacles
       Entry: 4
-      Data: 0
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
@@ -304,7 +304,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.05
     - Name: Atk
       Entry: 4
       Data: 0
@@ -319,7 +319,7 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 0.2
     - Name: tentacles
       Entry: 4
       Data: 0
@@ -346,7 +346,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.15
     - Name: Atk
       Entry: 4
       Data: 0
@@ -361,7 +361,7 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 1
     - Name: tentacles
       Entry: 4
       Data: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.05
     - Name: Atk
       Entry: 4
       Data: 0
@@ -403,10 +403,10 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 0.2
     - Name: tentacles
       Entry: 4
-      Data: 0
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
@@ -427,10 +427,10 @@ MonoBehaviour:
       Data: 1000
     - Name: evol
       Entry: 4
-      Data: 0
+      Data: 2
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.05
     - Name: Atk
       Entry: 4
       Data: 0
@@ -445,7 +445,7 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 0.2
     - Name: tentacles
       Entry: 4
       Data: 0
@@ -472,7 +472,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.05
     - Name: Atk
       Entry: 4
       Data: 0
@@ -487,10 +487,10 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 0.2
     - Name: tentacles
       Entry: 4
-      Data: 0
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
@@ -514,7 +514,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.15
     - Name: Atk
       Entry: 4
       Data: 0
@@ -529,7 +529,7 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 1
     - Name: tentacles
       Entry: 4
       Data: 0
@@ -556,7 +556,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.05
     - Name: Atk
       Entry: 4
       Data: 0
@@ -571,10 +571,10 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 0.2
     - Name: tentacles
       Entry: 4
-      Data: 0
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
@@ -598,7 +598,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.05
     - Name: Atk
       Entry: 4
       Data: 0
@@ -613,7 +613,7 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 0.2
     - Name: tentacles
       Entry: 4
       Data: 0
@@ -640,7 +640,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.15
     - Name: Atk
       Entry: 4
       Data: 0
@@ -655,7 +655,7 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 1
     - Name: tentacles
       Entry: 4
       Data: 0
@@ -682,7 +682,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.05
     - Name: Atk
       Entry: 4
       Data: 0
@@ -697,10 +697,10 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 0.2
     - Name: tentacles
       Entry: 4
-      Data: 0
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
@@ -724,7 +724,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.05
     - Name: Atk
       Entry: 4
       Data: 0
@@ -739,7 +739,7 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 0.2
     - Name: tentacles
       Entry: 4
       Data: 0
@@ -766,7 +766,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.15
     - Name: Atk
       Entry: 4
       Data: 0
@@ -781,7 +781,7 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 1
     - Name: tentacles
       Entry: 4
       Data: 0
@@ -808,7 +808,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0
+      Data: 0.05
     - Name: Atk
       Entry: 4
       Data: 0
@@ -823,10 +823,10 @@ MonoBehaviour:
       Data: 0
     - Name: CatchingRadius
       Entry: 4
-      Data: 0
+      Data: 0.2
     - Name: tentacles
       Entry: 4
-      Data: 0
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
