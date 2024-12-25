@@ -25,6 +25,7 @@ public class Alien : MonoBehaviour
     public Image hpFill;
     public float currentHp = 100;
     public float Speed;
+    public int rewardExp;
     Tween moving;
     Vector3 des;
 
@@ -107,7 +108,8 @@ public class Alien : MonoBehaviour
                     transform.DOMove(target.transform.position, 0.25f).SetEase(Ease.Linear).OnComplete(() =>
                     {
                         target.ChangeState(TailState.Idle);
-                        UiController.Instance.ShowExp(transform.position);
+                        target.player.GetExp(rewardExp);
+                        UiController.Instance.ShowExp(transform.position, rewardExp);
                         EffectController.Instance.SpawnBloodFx(transform.position);
                         EffectController.Instance.SpawnBloodFx2(new Vector3(transform.position.x, 0, transform.position.z));
                         gameObject.SetActive(false);

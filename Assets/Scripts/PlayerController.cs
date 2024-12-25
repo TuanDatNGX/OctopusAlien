@@ -1,3 +1,4 @@
+using DG.Tweening;
 using FIMSpace.FTail;
 using System.Collections;
 using System.Collections.Generic;
@@ -13,12 +14,23 @@ public class PlayerController : MonoBehaviour
     Vector3 inputDirection;
     public OctopusTail[] tails;
     public List<Alien> listAlienInRange;
+    public Transform model;
     public Transform rangeObj;
     public GameObject rangeZone;
+    public ParticleSystem levelUpFx;
     Alien neareastAlien;
     Coroutine rangeActive;
-    int currentExp = 0;
+    float currentExp = 0;
     int currentLevel = 1;
+    float defaultScale;
+    float defaultCam;
+
+    private void Start()
+    {
+        UiController.Instance.UpdateExp(0, levelUpData.enemyAssets[currentLevel.ToString()].exp, currentLevel);
+        defaultScale = model.transform.localScale.x;
+        defaultCam = Camera.main.fieldOfView;
+    }
 
     private void Update()
     {
@@ -69,6 +81,24 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(1f);
         rangeZone.SetActive(false);
         rangeActive = null;
+    }
+
+    public void GetExp(float exp)
+    {
+        if (currentLevel >= 20) return;
+        currentExp += exp;
+        while(currentExp >= levelUpData.enemyAssets[currentLevel.ToString()].exp)
+        {
+            currentExp -= levelUpData.enemyAssets[currentLevel.ToString()].exp;
+            currentLevel += 1;
+            levelUpFx.Play();
+            if (levelUpData.enemyAssets[currentLevel.ToString()].size != 0)
+            {
+                model.transform.DOScale(transform.localScale.x + defaultScale * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
+                Camera.main.DOFieldOfView(Camera.main.fieldOfView + defaultCam * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
+            }
+        }
+        UiController.Instance.UpdateExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp, currentLevel);
     }
 
     protected virtual void FixedUpdate()
