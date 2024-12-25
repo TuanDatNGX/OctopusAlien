@@ -18,6 +18,7 @@ public class OctopusTail : MonoBehaviour
     public TailState currentState = TailState.Idle;
     public Alien target;
     Vector3 defaultRotation;
+    float currentBlend = 0;
 
     private void Awake()
     {
@@ -29,6 +30,18 @@ public class OctopusTail : MonoBehaviour
         if (currentState == TailState.Catch)
         {
             transform.LookAt(target.transform);
+        }
+        switch (currentState)
+        {
+            case TailState.Idle:
+                break;
+            case TailState.Catch:
+                currentBlend += 4 * Time.deltaTime;
+                if (currentBlend >= 1) currentBlend = 1;
+                tailAnimator.IKBlend = currentBlend;
+                break;
+            case TailState.Collect: 
+                break;
         }
     }
 
@@ -49,6 +62,8 @@ public class OctopusTail : MonoBehaviour
             case TailState.Catch:
                 tailAnimator.UseIK = true;
                 tailAnimator.TailAnimatorAmount = 0.25f;
+                currentBlend = 0;
+                tailAnimator.IKBlend = 0;
                 tailAnimator.Slithery = 1f;
                 break;
             case TailState.Collect:break;
@@ -59,7 +74,7 @@ public class OctopusTail : MonoBehaviour
     {
         target = alien;
         alien.target = this;
-        tailAnimator.IKTarget = alien.transform;
+        tailAnimator.IKTarget = alien.hit;
         alien.ChangeState(AlienState.Catched);
         ChangeState(TailState.Catch);
     }

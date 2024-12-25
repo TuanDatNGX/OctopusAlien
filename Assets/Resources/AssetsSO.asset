@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: AssetsSO
   m_EditorClassIdentifier: 
   enemyAssetsSO: {fileID: 11400000, guid: 0c1484f509f774e40b7172f6f842b054, type: 2}
+  levelUpDataAssetSO: {fileID: 11400000, guid: d3517f2339e77aa4ea418dc1491c3e4d, type: 2}

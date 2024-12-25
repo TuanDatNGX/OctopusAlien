@@ -42,7 +42,7 @@ public class Alien : MonoBehaviour
     public void Move()
     {
         des = new Vector3(Random.Range(-circle.radius, circle.radius), 0, Random.Range(-circle.radius, circle.radius));
-        animator.transform.LookAt(circle.transform.position + des);
+        transform.LookAt(circle.transform.position + des);
         moving = transform.DOLocalMove(des, Vector3.Distance(transform.localPosition, des) / Speed).SetEase(Ease.Linear).OnComplete(() =>
         {
             if(gameObject.activeSelf)
@@ -97,16 +97,21 @@ public class Alien : MonoBehaviour
                 growingRoot.SetActive(true);
                 break;
             case AlienState.Collect:
+                //animator.Play("Floating");
                 target.player.listAlienInRange.Remove(this);
                 collider.enabled = false;
                 target.ChangeState(TailState.Collect);
-                transform.DOMove(target.transform.position, 0.25f).SetEase(Ease.Linear).OnComplete(() =>
+
+                transform.DOMove(transform.position + new Vector3(0, 0.5f, 0), 0.1f).SetEase(Ease.Linear).OnComplete(() =>
                 {
-                    target.ChangeState(TailState.Idle);
-                    UiController.Instance.ShowExp(transform.position);
-                    EffectController.Instance.SpawnBloodFx(transform.position);
-                    EffectController.Instance.SpawnBloodFx2(new Vector3(transform.position.x, 0, transform.position.z));
-                    gameObject.SetActive(false);
+                    transform.DOMove(target.transform.position, 0.25f).SetEase(Ease.Linear).OnComplete(() =>
+                    {
+                        target.ChangeState(TailState.Idle);
+                        UiController.Instance.ShowExp(transform.position);
+                        EffectController.Instance.SpawnBloodFx(transform.position);
+                        EffectController.Instance.SpawnBloodFx2(new Vector3(transform.position.x, 0, transform.position.z));
+                        gameObject.SetActive(false);
+                    });
                 });
                 break;
         }

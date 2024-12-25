@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using DG.Tweening;
+using UnityEngine.UI;
 
 public class UiController : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class UiController : MonoBehaviour
     public Transform expTransform;
     public TextMeshProUGUI[] expObj;
     public GameObject dragToMove;
+    public Slider ExpSlider;
     int expId = 0;
 
     private void Awake()
