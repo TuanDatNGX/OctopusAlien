@@ -30,12 +30,14 @@ public class PlayerController : MonoBehaviour
     float defaultScale;
     float defaultCam;
     float currentEvol = 0;
+    float defaultMovespeed = 0;
 
     private void Start()
     {
         UiController.Instance.UpdateExp(0, levelUpData.enemyAssets[currentLevel.ToString()].exp, currentLevel);
         defaultScale = model.transform.localScale.x;
         defaultCam = Camera.main.fieldOfView;
+        defaultMovespeed = moveSpeed;
     }
 
     private void Update()
@@ -116,7 +118,7 @@ public class PlayerController : MonoBehaviour
             }
             if (levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius != 0)
             {
-                rangeObj.transform.DOScale(rangeObj.localScale.x + 0.2f * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
+                rangeObj.transform.DOScale(rangeObj.localScale.x + 0.2f * levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius, 0.35f);
             }
             if (levelUpData.enemyAssets[currentLevel.ToString()].evol != 0)
             {
@@ -142,6 +144,8 @@ public class PlayerController : MonoBehaviour
             characterStat.Heal += levelUpData.enemyAssets[currentLevel.ToString()].Heal;
             characterStat.MoveSpeed += levelUpData.enemyAssets[currentLevel.ToString()].speed;
             characterStat.Radius += levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius;
+
+            moveSpeed = defaultMovespeed * characterStat.MoveSpeed / 10;
         }
         UiController.Instance.UpdateExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp, currentLevel);
     }
