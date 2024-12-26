@@ -174,9 +174,9 @@ MonoBehaviour:
   growingRoot: {fileID: 6958471125523061089}
   hpObj: {fileID: 5598107500007609091}
   hpFill: {fileID: 5162327667146622670}
-  currentHp: 100
+  currentHp: 20
   maxHp: 20
-  Speed: 1
+  Speed: 0.5
   heal: 20
   rewardExp: 2
 --- !u!1 &2198552209111570293

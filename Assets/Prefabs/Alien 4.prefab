@@ -174,11 +174,11 @@ MonoBehaviour:
   growingRoot: {fileID: 6958471125523061089}
   hpObj: {fileID: 5598107500007609091}
   hpFill: {fileID: 5162327667146622670}
-  currentHp: 40
-  maxHp: 40
+  currentHp: 200
+  maxHp: 200
   Speed: 3
-  heal: 40
-  rewardExp: 40
+  heal: 200
+  rewardExp: 35
 --- !u!1 &2198552209111570293
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,7 +497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6465368043542025063
 RectTransform:
   m_ObjectHideFlags: 0
