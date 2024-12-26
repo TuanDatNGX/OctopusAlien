@@ -123,11 +123,11 @@ public class PlayerController : MonoBehaviour
             }
             if (levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius != 0)
             {
-                rangeObj.transform.DOScale(rangeObj.localScale.x + 0.2f * levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius, 0.35f);
-                foreach (OctopusTail t in tails)
-                {
-                    t.tailAnimator.LengthMultiplier = t.tailAnimator.LengthMultiplier + 0.05f * levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius;
-                }
+                //rangeObj.transform.DOScale(rangeObj.localScale.x + 0.2f * levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius, 0.35f);
+                //foreach (OctopusTail t in tails)
+                //{
+                //    t.tailAnimator.LengthMultiplier = t.tailAnimator.LengthMultiplier + 0.05f * levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius;
+                //}
             }
             if (levelUpData.enemyAssets[currentLevel.ToString()].evol != 0)
             {

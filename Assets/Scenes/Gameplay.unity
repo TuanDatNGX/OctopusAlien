@@ -2586,10 +2586,10 @@ MonoBehaviour:
   IKLimitSettings:
   - AngleLimit: 45
     TwistAngleLimit: 5
-    UseInChain: 1
+    UseInChain: 0
   - AngleLimit: 45
     TwistAngleLimit: 5
-    UseInChain: 1
+    UseInChain: 0
   - AngleLimit: 45
     TwistAngleLimit: 5
     UseInChain: 1
@@ -2714,7 +2714,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0.5, y: 0, z: 0.5}
+  WavingAxis: {x: 0, y: 0.1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -3628,13 +3628,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713125138}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.7, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 1.1666666}
+  m_LocalScale: {x: 1.6666665, y: 1.6666662, z: 1.6666662}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1789040267}
-  m_Father: {fileID: 849552275}
+  m_Father: {fileID: 4500688091760147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &713125140
 SphereCollider:
@@ -4191,7 +4191,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4500688091760147}
-  - {fileID: 713125139}
   - {fileID: 1744456994}
   - {fileID: 1166355961}
   m_Father: {fileID: 0}
@@ -6160,7 +6159,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0.5, y: 0, z: 0.5}
+  WavingAxis: {x: 0, y: 0.1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -8072,7 +8071,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0.5, y: 0, z: 0.5}
+  WavingAxis: {x: 0, y: 0.1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -9015,7 +9014,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0.5, y: 0, z: 0.5}
+  WavingAxis: {x: 0, y: 0.1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -10812,7 +10811,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0.5, y: 0, z: 0.5}
+  WavingAxis: {x: 0, y: 0.1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -11673,15 +11672,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.2
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.2
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11689,7 +11688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12340,7 +12339,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0.5, y: 0, z: 0.5}
+  WavingAxis: {x: 0, y: 0.1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -13527,7 +13526,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0.5, y: 0, z: 0.5}
+  WavingAxis: {x: 0, y: 0.1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -15637,6 +15636,7 @@ Transform:
   - {fileID: 1103999940}
   - {fileID: 1047148502}
   - {fileID: 767652370}
+  - {fileID: 713125139}
   m_Father: {fileID: 849552275}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!23 &23125268313812443
