@@ -174,10 +174,10 @@ MonoBehaviour:
   growingRoot: {fileID: 6958471125523061089}
   hpObj: {fileID: 5598107500007609091}
   hpFill: {fileID: 5162327667146622670}
-  currentHp: 200
-  maxHp: 200
+  currentHp: 1000
+  maxHp: 1000
   Speed: 3
-  heal: 200
+  heal: 1000
   rewardExp: 200
 --- !u!1 &2198552209111570293
 GameObject:
@@ -497,7 +497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6465368043542025063
 RectTransform:
   m_ObjectHideFlags: 0
@@ -912,7 +912,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a20ea7771cebbda4696ef82ef45481a0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.514
+      value: 0.547
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a20ea7771cebbda4696ef82ef45481a0, type: 3}
       propertyPath: m_LocalPosition.y
