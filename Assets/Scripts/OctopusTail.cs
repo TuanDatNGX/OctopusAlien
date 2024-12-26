@@ -20,6 +20,7 @@ public class OctopusTail : MonoBehaviour
     Vector3 defaultRotation;
     float currentBlend = 0;
     float speedCollect = 5;
+    public bool canCatch = false;
 
     private void Awake()
     {
