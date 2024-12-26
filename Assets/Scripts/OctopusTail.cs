@@ -16,9 +16,10 @@ public class OctopusTail : MonoBehaviour
     public PlayerController player;
     public TailAnimator2 tailAnimator;
     public TailState currentState = TailState.Idle;
-    public Alien target;
+    public EnemyBase target;
     Vector3 defaultRotation;
     float currentBlend = 0;
+    float speedCollect = 5;
 
     private void Awake()
     {
@@ -36,11 +37,29 @@ public class OctopusTail : MonoBehaviour
             case TailState.Idle:
                 break;
             case TailState.Catch:
-                currentBlend += 4 * Time.deltaTime;
-                if (currentBlend >= 1) currentBlend = 1;
-                tailAnimator.IKBlend = currentBlend;
+                CheckTargetOutRange();
+                if (target != null)
+                {
+                    if (target.TakeDamage(this))
+                    {
+                        if (!tailAnimator.IKTarget)
+                        {
+                            transform.DORewind(true);
+                            tailAnimator.IKTarget = target.transform;
+                            tailAnimator.UseIK = true;
+                            tailAnimator.TailAnimatorAmount = 0.25f;
+                            currentBlend = 0;
+                            tailAnimator.IKBlend = 0;
+                            tailAnimator.IKContinousSolve = true;
+                            tailAnimator.Slithery = 1f;
+                        }
+                        currentBlend += 4 * Time.deltaTime;
+                        if (currentBlend >= 1) currentBlend = 1;
+                        tailAnimator.IKBlend = currentBlend;
+                    }
+                }
                 break;
-            case TailState.Collect: 
+            case TailState.Collect:
                 break;
         }
     }
@@ -49,7 +68,7 @@ public class OctopusTail : MonoBehaviour
     {
         if (currentState == state) return;
         currentState = state;
-        switch(state)
+        switch (state)
         {
             case TailState.Idle:
                 target = null;
@@ -57,26 +76,53 @@ public class OctopusTail : MonoBehaviour
                 tailAnimator.IKTarget = null;
                 tailAnimator.TailAnimatorAmount = 1f;
                 tailAnimator.Slithery = 0.67f;
-                transform.DOLocalRotate(defaultRotation, 0.25f);
+                transform.DOLocalRotate(defaultRotation, 2);
                 break;
             case TailState.Catch:
-                tailAnimator.UseIK = true;
-                tailAnimator.TailAnimatorAmount = 0.25f;
-                currentBlend = 0;
-                tailAnimator.IKBlend = 0;
-                tailAnimator.IKContinousSolve = true;
-                tailAnimator.Slithery = 1f;
+          
                 break;
-            case TailState.Collect:break;
+            case TailState.Collect: break;
         }
     }
 
-    public void CatchAlien(Alien alien)
+    public void CatchAlien(EnemyBase alien)
     {
         target = alien;
-        alien.target = this;
-        tailAnimator.IKTarget = alien.hit;
-        alien.ChangeState(AlienState.Catched);
+        //alien.target = this;
+        //alien.ChangeState(AlienState.Catched);
         ChangeState(TailState.Catch);
+    }
+
+    void CheckTargetOutRange()
+    {
+        if (!player.listAlienInRange.Contains(target))
+        {
+            target = null;
+            ChangeState(TailState.Idle);
+        }
+    }
+
+    public void CollectTarget()
+    {
+        player.listAlienInRange.Remove(target);
+        ChangeState(TailState.Collect);
+        StartCoroutine(CollectingTarget());
+    }
+
+    IEnumerator CollectingTarget()
+    {
+        while (true)
+        {
+            target.transform.position = Vector3.MoveTowards(target.transform.position, player.transform.position, speedCollect * Time.deltaTime);
+            if(Vector3.Distance(target.transform.position, player.transform.position) < .1f)
+            {
+                target.AffterDie();
+                target = null;
+                ChangeState(TailState.Idle);
+                break;
+            }
+
+            yield return null;
+        }
     }
 }

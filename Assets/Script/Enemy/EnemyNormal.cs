@@ -15,6 +15,7 @@ public class EnemyNormal : EnemyBase
             if (countTimeDelayNextTarget <= 0)
             {
                 countTimeDelayNextTarget = statsAIEnemy.timeDelayNextTarget;
+                aniEnemy.SetFloat("Speed", 0f);
             }
             else
             {
@@ -22,7 +23,8 @@ public class EnemyNormal : EnemyBase
                 if (countTimeDelayNextTarget <= 0)
                 {
                     randomTarget = Random.insideUnitCircle * myArea.range;
-                    targetMove = new Vector3(randomTarget.x, 0, randomTarget.y);
+                    targetMove = new Vector3(myArea.transform.position.x+randomTarget.x, 0, myArea.transform.position.z+randomTarget.y);
+                    aniEnemy.SetFloat("Speed", 1f);
                 }
             }
         }
@@ -39,9 +41,9 @@ public class EnemyNormal : EnemyBase
 
         // Tính toán hướng ngược lại tất cả các player
         Vector3 totalOppositeDirection = Vector3.zero;
-        foreach (Transform player in listAttacker)
+        foreach (GameObject player in listAttacker)
         {
-            Vector3 toPlayer = player.position - transform.position;
+            Vector3 toPlayer = player.transform.position - transform.position;
             if (toPlayer.magnitude <= statsAIEnemy.detectionRange)
             {
                 totalOppositeDirection += -toPlayer.normalized; // Cộng hướng ngược lại
@@ -90,9 +92,9 @@ public class EnemyNormal : EnemyBase
         score += alignmentWithPrimary * 2f; // Tăng điểm cho hướng phù hợp
 
         // Kiểm tra khoảng cách tới các player
-        foreach (Transform player in listAttacker)
+        foreach (GameObject player in listAttacker)
         {
-            Vector3 toPlayer = player.position - transform.position;
+            Vector3 toPlayer = player.transform.position - transform.position;
             float distance = toPlayer.magnitude;
 
             if (distance <= statsAIEnemy.detectionRange)

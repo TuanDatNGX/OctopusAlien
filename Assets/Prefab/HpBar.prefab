@@ -129,15 +129,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 123
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 899424b074d98dd498844c423b89ef04, type: 2}
+  m_sharedMaterial: {fileID: 7374927986402738804, guid: 899424b074d98dd498844c423b89ef04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -154,8 +154,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 31.5
+  m_fontSizeBase: 31.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -213,8 +213,16 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4705063477930844555, guid: c30e35e5eb17dff42860f2858a3934db, type: 3}
+      propertyPath: animTime
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705063477930844555, guid: c30e35e5eb17dff42860f2858a3934db, type: 3}
+      propertyPath: animationType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4705063477930844555, guid: c30e35e5eb17dff42860f2858a3934db, type: 3}
       propertyPath: views.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4705063477930844555, guid: c30e35e5eb17dff42860f2858a3934db, type: 3}
       propertyPath: views.Array.data[0]
@@ -254,11 +262,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4882981628577164365, guid: c30e35e5eb17dff42860f2858a3934db, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 300
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 4882981628577164365, guid: c30e35e5eb17dff42860f2858a3934db, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 60
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4882981628577164365, guid: c30e35e5eb17dff42860f2858a3934db, type: 3}
       propertyPath: m_LocalPosition.x

@@ -27,7 +27,7 @@ public abstract class CharacterBase : MonoBehaviour
     public CharacterStatsBase characterStatsBase;
     public StateCharacter stateNow;
     public OctopusTail[] tails;
-    public List<Alien> listAlienInRange;
+    public List<EnemyBase> listAlienInRange;
 
     public abstract void Move();
     public abstract void Attack();

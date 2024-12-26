@@ -9,7 +9,7 @@ public class PlayerDetection : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            controller.listAlienInRange.Add(other.transform.parent.GetComponent<Alien>());
+            controller.listAlienInRange.Add(other.transform.parent.GetComponent<EnemyBase>());
         }
     }
 
@@ -17,8 +17,9 @@ public class PlayerDetection : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            other.transform.parent.GetComponent<Alien>().ChangeState(AlienState.Idle);
-            controller.listAlienInRange.Remove(other.transform.parent.GetComponent<Alien>());
+            //other.transform.parent.GetComponent<Alien>().ChangeState(AlienState.Idle);
+            controller.listAlienInRange.Remove(other.transform.parent.GetComponent<EnemyBase>());
+            other.transform.parent.GetComponent<EnemyBase>().Escaped(controller);
         }
     }
 }

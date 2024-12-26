@@ -29,32 +29,43 @@ public struct StatsAIEnemy
     public float detectionRange;
     public int numDirections;
     public float timeDelayNextTarget;
+    public float timeDelayCatch;
 }
 
 public abstract class EnemyBase : MonoBehaviour
 {
     public Animator aniEnemy;
+    public Collider colliderEnemy;
+    public Transform posHpBar;
     public StatsBase statsBase;
     public StatsAIEnemy statsAIEnemy;
+    public float rotateMultiplier;
     public State stateNow;
     public float hpNow;
     public AreaEnemy myArea;
     public Vector3 targetMove;
     public Vector2 randomTarget;
-    public float rotateMultiplier;
     public float countTimeDelayNextTarget;
-    public List<Transform> listAttacker;
+    public List<GameObject> listAttacker;
     public Vector3 directionTarget;
     public HpBarController hpBar;
     Vector2 randomPosition2D;
+    bool canCatch=true;
+    GameObject blood;
+
 
     public void InitEnemy(AreaEnemy _areaEnemy)
     {
         myArea = _areaEnemy;
+        colliderEnemy.enabled = true;
+        aniEnemy.gameObject.SetActive(true);
         randomPosition2D = UnityEngine.Random.insideUnitCircle * myArea.range;
-        transform.position = new Vector3(randomPosition2D.x, 0, randomPosition2D.y);
+        transform.position = new Vector3(myArea.transform.position.x+randomPosition2D.x, 0, myArea.transform.position.z+randomPosition2D.y);
         randomTarget = UnityEngine.Random.insideUnitCircle * myArea.range;
-        targetMove = new Vector3(randomTarget.x, 0, randomTarget.y);
+        targetMove = new Vector3(myArea.transform.position.x + randomTarget.x, 0, myArea.transform.position.z + randomTarget.y);
+        hpNow = statsBase.hp;
+        aniEnemy.SetFloat("Speed", 1f);
+        listAttacker.Clear();
         ChangeState(State.Idle);
     }
 
@@ -64,8 +75,43 @@ public abstract class EnemyBase : MonoBehaviour
 
     public virtual void Die()
     {
+        colliderEnemy.enabled = false;
+        LeanPool.Despawn(hpBar);
+        hpBar = null;
         aniEnemy.SetFloat("Speed", 0f);
+    }
+
+    public void AffterDie()
+    {
+        blood = LeanPool.Spawn(GameManager.Instance.bloodAlien);
+        blood.SetActive(false);
+        blood.transform.position = new Vector3(transform.position.x,0, transform.position.z);
+        blood.SetActive(true);
+        aniEnemy.gameObject.SetActive(false);
         StartCoroutine(CountDownRevive());
+    }
+
+    public bool TakeDamage(OctopusTail _octopusTail)
+    {
+        if (canCatch && stateNow != State.Die)
+        {
+            ChangeState(State.RunAway);
+            if (!listAttacker.Contains(_octopusTail.player.gameObject))
+            {
+                listAttacker.Add(_octopusTail.player.gameObject);
+            }
+            UpdateHp(-_octopusTail.player.GetComponent<CharacterStat>().ATK, _octopusTail);
+            return true;
+        }
+        return false;
+    }
+
+    public void Escaped(PlayerController _playerController)
+    {
+        if (listAttacker.Contains(_playerController.gameObject))
+        {
+            listAttacker.Remove(_playerController.gameObject);
+        }
     }
 
     private void Update()
@@ -73,18 +119,20 @@ public abstract class EnemyBase : MonoBehaviour
         UpdateState();
     }
 
-    void UpdateHp(float _value)
+    void UpdateHp(float _value, OctopusTail _octopusTail=null)
     {
-        hpNow += _value;
+        hpNow += (_value*Time.deltaTime);
         hpBar.SetValue(hpNow / statsBase.hp);
-        hpBar.transform.position = GameManager.Instance.mainCamera.WorldToScreenPoint(transform.position);
+        hpBar.transform.position = GameManager.Instance.mainCamera.WorldToScreenPoint(posHpBar.position);
 
         switch (stateNow)
         {
             case State.Idle:
                 if (hpNow >= statsBase.hp)
                 {
+                    hpNow = statsBase.hp;
                     LeanPool.Despawn(hpBar);
+                    hpBar = null;
                 }
                 break;
             case State.RunAway:
@@ -92,6 +140,8 @@ public abstract class EnemyBase : MonoBehaviour
                 if (hpNow <= 0)
                 {
                     ChangeState(State.Die);
+                    _octopusTail.CollectTarget();
+                    //ham cong kinh nghiem _octopusTail
                 }
                 break;
             case State.Attack:
@@ -101,11 +151,7 @@ public abstract class EnemyBase : MonoBehaviour
 
     void UpdateState()
     {
-        if (listAttacker.Count > 0)
-        {
-            ChangeState(State.RunAway);
-        }
-        else
+        if (listAttacker.Count <= 0)
         {
             ChangeState(State.Idle);
         }
@@ -117,13 +163,12 @@ public abstract class EnemyBase : MonoBehaviour
                 MoveToDirection();
                 if (hpNow < statsBase.hp)
                 {
-                    //UpdateHp();
+                    UpdateHp(50);
                 }
                 break;
             case State.RunAway:
                 RunAway();
                 MoveToDirection();
-                //UpdateHp();
                 break;
             case State.Attack:
                 break;
@@ -154,10 +199,14 @@ public abstract class EnemyBase : MonoBehaviour
         switch (_stateChange)
         {
             case State.Idle:
-                aniEnemy.SetFloat("Speed", .5f);
+                StartCoroutine(CountTimeDelayCatch());
+                aniEnemy.SetFloat("Speed", 1f);
                 break;
             case State.RunAway:
-                hpBar = LeanPool.Spawn(GameManager.Instance.hpBar, UIManager.Instance.parentHP);
+                if (!hpBar)
+                {
+                    hpBar = LeanPool.Spawn(GameManager.Instance.hpBar, UIManager.Instance.parentHP);
+                }
                 aniEnemy.SetFloat("Speed", 1f);
                 break;
             case State.Attack:
@@ -172,5 +221,12 @@ public abstract class EnemyBase : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         InitEnemy(myArea);
+    }
+
+    IEnumerator CountTimeDelayCatch()
+    {
+        canCatch = false;
+        yield return new WaitForSeconds(statsAIEnemy.timeDelayCatch);
+        canCatch = true;
     }
 }
