@@ -401,9 +401,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc5796b4ab9ac34786dce9ca0290659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4064099748128705664, guid: a428e2b358cffde408c612b01ffc863a, type: 3}
-  radius: 10
-  number: 2
 --- !u!1 &52167557
 GameObject:
   m_ObjectHideFlags: 0
@@ -2986,9 +2983,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc5796b4ab9ac34786dce9ca0290659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4064099748128705664, guid: b6c92102aff31bf4b91226af4b79197f, type: 3}
-  radius: 10
-  number: 5
 --- !u!1 &555731267
 GameObject:
   m_ObjectHideFlags: 0
@@ -3033,9 +3027,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc5796b4ab9ac34786dce9ca0290659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4064099748128705664, guid: dde71eb99efc19d4090f402c6f4defc3, type: 3}
-  radius: 4
-  number: 10
 --- !u!1 &571820339
 GameObject:
   m_ObjectHideFlags: 0
@@ -3080,9 +3071,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc5796b4ab9ac34786dce9ca0290659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4064099748128705664, guid: a587111b6e520064f9e9067bb63f67bc, type: 3}
-  radius: 10
-  number: 20
 --- !u!43 &604763109
 Mesh:
   m_ObjectHideFlags: 8
@@ -3457,9 +3445,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc5796b4ab9ac34786dce9ca0290659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4064099748128705664, guid: dde71eb99efc19d4090f402c6f4defc3, type: 3}
-  radius: 10
-  number: 10
 --- !u!1001 &688617534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3702,7 +3687,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 2.63
+  m_Radius: 1.98
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &713125141
 MonoBehaviour:
@@ -4130,9 +4115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc5796b4ab9ac34786dce9ca0290659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4064099748128705664, guid: 01abc71f010746b4b85e4e960539efcd, type: 3}
-  radius: 4
-  number: 10
 --- !u!1001 &841737215
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4259,7 +4241,7 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 1.25
+  m_Height: 0.75
   m_Radius: 0.25
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -5374,9 +5356,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc5796b4ab9ac34786dce9ca0290659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4064099748128705664, guid: 01abc71f010746b4b85e4e960539efcd, type: 3}
-  radius: 4
-  number: 10
 --- !u!1 &1015392492
 GameObject:
   m_ObjectHideFlags: 0
@@ -5421,9 +5400,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc5796b4ab9ac34786dce9ca0290659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4064099748128705664, guid: a587111b6e520064f9e9067bb63f67bc, type: 3}
-  radius: 4
-  number: 10
 --- !u!4 &1016008771 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -1154015213566449308, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
@@ -5751,9 +5727,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc5796b4ab9ac34786dce9ca0290659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4064099748128705664, guid: a587111b6e520064f9e9067bb63f67bc, type: 3}
-  radius: 4
-  number: 10
 --- !u!1 &1084007594 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
@@ -6682,9 +6655,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc5796b4ab9ac34786dce9ca0290659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4064099748128705664, guid: a587111b6e520064f9e9067bb63f67bc, type: 3}
-  radius: 4
-  number: 10
 --- !u!1 &1137078074
 GameObject:
   m_ObjectHideFlags: 0
@@ -7332,9 +7302,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc5796b4ab9ac34786dce9ca0290659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4064099748128705664, guid: a587111b6e520064f9e9067bb63f67bc, type: 3}
-  radius: 4
-  number: 10
 --- !u!43 &1329492861
 Mesh:
   m_ObjectHideFlags: 8
@@ -9917,9 +9884,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc5796b4ab9ac34786dce9ca0290659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4064099748128705664, guid: a587111b6e520064f9e9067bb63f67bc, type: 3}
-  radius: 5
-  number: 10
 --- !u!1 &1607036240
 GameObject:
   m_ObjectHideFlags: 0
@@ -11865,15 +11829,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.25
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.25
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.25
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11881,7 +11845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.09
+      value: 0.21
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11914,6 +11878,10 @@ PrefabInstance:
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14104,9 +14072,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc5796b4ab9ac34786dce9ca0290659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4064099748128705664, guid: 01abc71f010746b4b85e4e960539efcd, type: 3}
-  radius: 10
-  number: 15
 --- !u!1001 &1905030310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14221,9 +14186,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc5796b4ab9ac34786dce9ca0290659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4064099748128705664, guid: a587111b6e520064f9e9067bb63f67bc, type: 3}
-  radius: 4
-  number: 10
 --- !u!43 &1956305545
 Mesh:
   m_ObjectHideFlags: 8
@@ -15167,9 +15129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc5796b4ab9ac34786dce9ca0290659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4064099748128705664, guid: a587111b6e520064f9e9067bb63f67bc, type: 3}
-  radius: 4
-  number: 10
 --- !u!1 &2056023103
 GameObject:
   m_ObjectHideFlags: 0
@@ -15214,9 +15173,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dc5796b4ab9ac34786dce9ca0290659, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 4064099748128705664, guid: b2669d2fe19fa0b4794d0409bcd17651, type: 3}
-  radius: 10
-  number: 10
 --- !u!43 &2057433188
 Mesh:
   m_ObjectHideFlags: 8

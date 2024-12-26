@@ -50,6 +50,8 @@ public abstract class EnemyBase : MonoBehaviour
     public List<GameObject> listAttacker;
     public Vector3 directionTarget;
     public HpBarController hpBar;
+    public GameObject growingRoot;
+    public Transform hit;
     Vector2 randomPosition2D;
     bool canCatch=true;
     GameObject blood;
@@ -86,6 +88,7 @@ public abstract class EnemyBase : MonoBehaviour
         blood.transform.position = new Vector3(transform.position.x,0, transform.position.z);
         blood.SetActive(true);
         aniEnemy.gameObject.SetActive(false);
+        growingRoot.SetActive(false);
         StartCoroutine(CountDownRevive());
     }
 
@@ -98,6 +101,7 @@ public abstract class EnemyBase : MonoBehaviour
 
         if (canCatch && stateNow != State.Die)
         {
+            growingRoot.gameObject.SetActive(true);
             ChangeState(State.RunAway);
             UpdateHp(-_octopusTail.player.GetComponent<CharacterStat>().ATK, _octopusTail);
             return true;
@@ -110,6 +114,10 @@ public abstract class EnemyBase : MonoBehaviour
         if (listAttacker.Contains(_playerController.gameObject))
         {
             listAttacker.Remove(_playerController.gameObject);
+        }
+        if(listAttacker.Count <= 0)
+        {
+            growingRoot.SetActive(false);
         }
     }
 

@@ -55,7 +55,7 @@ public class OctopusTail : MonoBehaviour
                         if (!tailAnimator.IKTarget)
                         {
                             transform.DORewind(true);
-                            tailAnimator.IKTarget = target.transform;
+                            tailAnimator.IKTarget = target.hit;
                             tailAnimator.UseIK = true;
                             tailAnimator.TailAnimatorAmount = 0.85f;
                             currentBlend = 0;
@@ -137,12 +137,15 @@ public class OctopusTail : MonoBehaviour
 
     IEnumerator CollectingTarget()
     {
+        player.ActionEat();
+
         while (true)
         {
-            target.transform.position = Vector3.MoveTowards(target.transform.position, player.transform.position, speedCollect * Time.deltaTime);
-            if(Vector3.Distance(target.transform.position, player.transform.position) < .1f)
+            target.transform.position = Vector3.MoveTowards(target.transform.position, player.mouth.position, speedCollect * Time.deltaTime);
+            if(Vector3.Distance(target.transform.position, player.mouth.position) < .1f)
             {
                 target.AffterDie();
+                EffectController.Instance.SpawnBloodFx(target.transform.position);
                 target = null;
                 ChangeState(TailState.Idle);
                 break;
