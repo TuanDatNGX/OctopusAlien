@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public CharacterController characterController;
     public CharacterStat characterStat;
     public FloatingJoystick joystick;
+    public Animator faceAnim;
     public float moveSpeed;
     public float rotateSpeed;
     Vector3 inputDirection;
@@ -17,6 +18,7 @@ public class PlayerController : MonoBehaviour
     public List<Alien> listAlienInRange;
     public Transform model;
     public Transform rangeObj;
+    public Transform mouth;
     public GameObject rangeZone;
     public ParticleSystem levelUpFx;
     public ParticleSystem levelUpFx2;
@@ -104,7 +106,7 @@ public class PlayerController : MonoBehaviour
             if (levelUpData.enemyAssets[currentLevel.ToString()].size != 0)
             {
                 model.transform.DOScale(model.localScale.x + defaultScale * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
-                Camera.main.DOFieldOfView(Camera.main.fieldOfView + 0.5f * defaultCam * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
+                Camera.main.DOFieldOfView(Camera.main.fieldOfView + 0.4f * defaultCam * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
             }
             if (levelUpData.enemyAssets[currentLevel.ToString()].tentacles > 0)
             {
@@ -172,5 +174,17 @@ public class PlayerController : MonoBehaviour
         {
             characterController.Move(Vector3.zero * Time.deltaTime);
         }
+    }
+
+    public void ActionEat()
+    {
+        Eat = StartCoroutine(CoEat());
+    }
+
+    Coroutine Eat;
+    IEnumerator CoEat()
+    {
+        yield return new WaitForSeconds(0.1f);
+        faceAnim.Play("Eat");
     }
 }

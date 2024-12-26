@@ -101,14 +101,15 @@ public class Alien : MonoBehaviour
                 growingRoot.SetActive(true);
                 break;
             case AlienState.Collect:
-                //animator.Play("Floating");
+                animator.Play("Floating");
                 target.player.listAlienInRange.Remove(this);
                 collider.enabled = false;
                 target.ChangeState(TailState.Collect);
 
                 transform.DOMove(transform.position + new Vector3(0, 0.5f, 0), 0.1f).SetEase(Ease.Linear).OnComplete(() =>
                 {
-                    transform.DOMove(target.player.transform.position + new Vector3(0, -0.25f, 0), 0.35f).SetEase(Ease.Linear).OnComplete(() =>
+                    target.player.ActionEat();
+                    transform.DOMove(target.player.mouth.position + new Vector3(0, -0.25f, 0), 0.35f).SetEase(Ease.Linear).OnComplete(() =>
                     {
                         target.ChangeState(TailState.Idle);
                         target.player.GetExp(rewardExp);

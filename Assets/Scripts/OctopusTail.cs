@@ -71,7 +71,7 @@ public class OctopusTail : MonoBehaviour
                 break;
             case TailState.Catch:
                 tailAnimator.UseIK = true;
-                tailAnimator.TailAnimatorAmount = 0.25f;
+                //tailAnimator.TailAnimatorAmount = 0.25f;
                 currentBlend = 0;
                 tailAnimator.IKBlend = 0;
                 tailAnimator.IKContinousSolve = true;
