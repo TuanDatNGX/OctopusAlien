@@ -103,7 +103,7 @@ public class PlayerController : MonoBehaviour
             if (levelUpData.enemyAssets[currentLevel.ToString()].size != 0)
             {
                 model.transform.DOScale(model.localScale.x + defaultScale * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
-                Camera.main.DOFieldOfView(Camera.main.fieldOfView + defaultCam * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
+                Camera.main.DOFieldOfView(Camera.main.fieldOfView + 0.5f * defaultCam * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
             }
             if (levelUpData.enemyAssets[currentLevel.ToString()].tentacles > 0)
             {
