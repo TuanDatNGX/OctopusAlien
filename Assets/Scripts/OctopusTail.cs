@@ -77,7 +77,9 @@ public class OctopusTail : MonoBehaviour
                 tailAnimator.IKContinousSolve = true;
                 tailAnimator.Slithery = 1f;
                 break;
-            case TailState.Collect:break;
+            case TailState.Collect:
+                tailAnimator.TailAnimatorAmount = 0.15f;
+                break;
         }
     }
 
