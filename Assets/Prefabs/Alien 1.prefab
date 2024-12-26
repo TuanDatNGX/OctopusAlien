@@ -177,7 +177,7 @@ MonoBehaviour:
   currentHp: 100
   maxHp: 20
   Speed: 1
-  heal: 2
+  heal: 20
   rewardExp: 2
 --- !u!1 &2198552209111570293
 GameObject:
