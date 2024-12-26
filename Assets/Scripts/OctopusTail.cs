@@ -37,10 +37,10 @@ public class OctopusTail : MonoBehaviour
 
     private void Update()
     {
-        if (currentState == TailState.Catch)
-        {
-            transform.LookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z));
-        }
+        //if (currentState == TailState.Catch)
+        //{
+        //    transform.LookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z));
+        //}
         switch (currentState)
         {
             case TailState.Idle:
@@ -52,6 +52,14 @@ public class OctopusTail : MonoBehaviour
                 break;
             case TailState.Collect: 
                 break;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        if (currentState == TailState.Catch)
+        {
+            transform.LookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z));
         }
     }
 
@@ -71,7 +79,7 @@ public class OctopusTail : MonoBehaviour
                 break;
             case TailState.Catch:
                 tailAnimator.UseIK = true;
-                //tailAnimator.TailAnimatorAmount = 0.25f;
+                tailAnimator.TailAnimatorAmount = 0.8f;
                 currentBlend = 0;
                 tailAnimator.IKBlend = 0;
                 tailAnimator.IKContinousSolve = true;

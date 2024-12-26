@@ -85,6 +85,7 @@ public class PlayerController : MonoBehaviour
              if(rangeActive == null)
              rangeActive = StartCoroutine(DeActiveRangeZone());
         }
+        Move();
     }
 
     IEnumerator DeActiveRangeZone()
@@ -160,7 +161,7 @@ public class PlayerController : MonoBehaviour
         UiController.Instance.UpdateExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp, currentLevel);
     }
 
-    protected virtual void FixedUpdate()
+    protected void Move()
     {
         inputDirection = new Vector3(joystick.Direction.x, 0, joystick.Direction.y);
         if (inputDirection.magnitude > 0.1f)

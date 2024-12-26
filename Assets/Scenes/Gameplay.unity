@@ -1183,6 +1183,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!137 &246958535 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -674402253053192165, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
+  m_PrefabInstance: {fileID: 1793204783}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &250529661
 Mesh:
   m_ObjectHideFlags: 8
@@ -1352,6 +1357,11 @@ Mesh:
 Transform:
   m_CorrespondingSourceObject: {fileID: 524298419690557804, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
   m_PrefabInstance: {fileID: 408085460}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &338719214 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -674402253053192165, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
+  m_PrefabInstance: {fileID: 500888551}
   m_PrefabAsset: {fileID: 0}
 --- !u!43 &342721893
 Mesh:
@@ -2158,6 +2168,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: -674402253053192165, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_Name
       value: tentacle
@@ -2542,8 +2556,8 @@ MonoBehaviour:
   IkInvertOrder: 0
   IKBlend: 1
   IKAnimatorBlend: 0.5
-  IKReactionQuality: 3
-  IKSmoothing: 1
+  IKReactionQuality: 1
+  IKSmoothing: 0.506
   IKStretchToTarget: 2
   IKStretchCurve:
     serializedVersion: 2
@@ -2700,7 +2714,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0, y: 1, z: 1}
+  WavingAxis: {x: 0.5, y: 0, z: 0.5}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -2820,8 +2834,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   DeflectOnlyCollisions: 1
-  _Editor_Category: 3
-  _Editor_FeaturesCategory: 2
+  _Editor_Category: 2
+  _Editor_FeaturesCategory: 0
   DrawGizmos: 1
   StartBone: {fileID: 500888567}
   EndBone: {fileID: 0}
@@ -2843,10 +2857,10 @@ MonoBehaviour:
   - {fileID: 500888554}
   - {fileID: 500888553}
   _GhostChainInitCount: 15
-  UpdateRate: 0
+  UpdateRate: 60
   AnimatePhysics: 0
-  InterpolateRate: 0
-  Prewarm: 0
+  InterpolateRate: 1
+  Prewarm: 1
   Slithery: 1
   Curling: 0.5
   Springiness: 0
@@ -2868,7 +2882,7 @@ MonoBehaviour:
   UpdateAsLast: 1
   DetectZeroKeyframes: 1
   StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
+  OptimizeWithMesh: {fileID: 338719214}
   OptimizeWithMeshes: []
   TailAnimatorAmount: 1
   DetachChildren: 0
@@ -2876,6 +2890,11 @@ MonoBehaviour:
   Tangle: 0
   AnimateRoll: 0
   OverrideKeyframeAnimation: 0
+--- !u!137 &510972227 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -674402253053192165, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
+  m_PrefabInstance: {fileID: 1388144293}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &550404078
 GameObject:
   m_ObjectHideFlags: 0
@@ -5058,6 +5077,11 @@ MonoBehaviour:
   smoothTime: 0.25
   velocity: {x: 0, y: 0, z: 0}
   target: {fileID: 849552275}
+--- !u!137 &963434457 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -674402253053192165, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
+  m_PrefabInstance: {fileID: 1683704237}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &969933721
 GameObject:
   m_ObjectHideFlags: 0
@@ -5978,8 +6002,8 @@ MonoBehaviour:
   IkInvertOrder: 0
   IKBlend: 1
   IKAnimatorBlend: 0.5
-  IKReactionQuality: 3
-  IKSmoothing: 1
+  IKReactionQuality: 1
+  IKSmoothing: 0.506
   IKStretchToTarget: 2
   IKStretchCurve:
     serializedVersion: 2
@@ -6136,7 +6160,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0, y: 1, z: 1}
+  WavingAxis: {x: 0.5, y: 0, z: 0.5}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -6256,7 +6280,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   DeflectOnlyCollisions: 1
-  _Editor_Category: 2
+  _Editor_Category: 0
   _Editor_FeaturesCategory: 2
   DrawGizmos: 1
   StartBone: {fileID: 2127820374}
@@ -6279,10 +6303,10 @@ MonoBehaviour:
   - {fileID: 1016008771}
   - {fileID: 1055253674}
   _GhostChainInitCount: 15
-  UpdateRate: 0
+  UpdateRate: 60
   AnimatePhysics: 0
-  InterpolateRate: 0
-  Prewarm: 0
+  InterpolateRate: 1
+  Prewarm: 1
   Slithery: 1
   Curling: 0.5
   Springiness: 0
@@ -6304,7 +6328,7 @@ MonoBehaviour:
   UpdateAsLast: 1
   DetectZeroKeyframes: 1
   StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
+  OptimizeWithMesh: {fileID: 2142390529}
   OptimizeWithMeshes: []
   TailAnimatorAmount: 1
   DetachChildren: 0
@@ -7890,8 +7914,8 @@ MonoBehaviour:
   IkInvertOrder: 0
   IKBlend: 1
   IKAnimatorBlend: 0.5
-  IKReactionQuality: 3
-  IKSmoothing: 1
+  IKReactionQuality: 1
+  IKSmoothing: 0.506
   IKStretchToTarget: 2
   IKStretchCurve:
     serializedVersion: 2
@@ -8048,7 +8072,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0, y: 1, z: 1}
+  WavingAxis: {x: 0.5, y: 0, z: 0.5}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -8168,7 +8192,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   DeflectOnlyCollisions: 1
-  _Editor_Category: 2
+  _Editor_Category: 0
   _Editor_FeaturesCategory: 2
   DrawGizmos: 1
   StartBone: {fileID: 1388144309}
@@ -8191,10 +8215,10 @@ MonoBehaviour:
   - {fileID: 1388144296}
   - {fileID: 1388144295}
   _GhostChainInitCount: 15
-  UpdateRate: 0
+  UpdateRate: 60
   AnimatePhysics: 0
-  InterpolateRate: 0
-  Prewarm: 0
+  InterpolateRate: 1
+  Prewarm: 1
   Slithery: 1
   Curling: 0.5
   Springiness: 0
@@ -8216,7 +8240,7 @@ MonoBehaviour:
   UpdateAsLast: 1
   DetectZeroKeyframes: 1
   StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
+  OptimizeWithMesh: {fileID: 510972227}
   OptimizeWithMeshes: []
   TailAnimatorAmount: 1
   DetachChildren: 0
@@ -8833,8 +8857,8 @@ MonoBehaviour:
   IkInvertOrder: 0
   IKBlend: 1
   IKAnimatorBlend: 0.5
-  IKReactionQuality: 3
-  IKSmoothing: 1
+  IKReactionQuality: 1
+  IKSmoothing: 0.506
   IKStretchToTarget: 2
   IKStretchCurve:
     serializedVersion: 2
@@ -8991,7 +9015,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0, y: 1, z: 1}
+  WavingAxis: {x: 0.5, y: 0, z: 0.5}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -9111,7 +9135,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   DeflectOnlyCollisions: 1
-  _Editor_Category: 2
+  _Editor_Category: 0
   _Editor_FeaturesCategory: 2
   DrawGizmos: 1
   StartBone: {fileID: 1406402254}
@@ -9134,10 +9158,10 @@ MonoBehaviour:
   - {fileID: 1406402241}
   - {fileID: 1406402240}
   _GhostChainInitCount: 15
-  UpdateRate: 0
+  UpdateRate: 60
   AnimatePhysics: 0
-  InterpolateRate: 0
-  Prewarm: 0
+  InterpolateRate: 1
+  Prewarm: 1
   Slithery: 1
   Curling: 0.5
   Springiness: 0
@@ -9159,7 +9183,7 @@ MonoBehaviour:
   UpdateAsLast: 1
   DetectZeroKeyframes: 1
   StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
+  OptimizeWithMesh: {fileID: 1991381566}
   OptimizeWithMeshes: []
   TailAnimatorAmount: 1
   DetachChildren: 0
@@ -10630,8 +10654,8 @@ MonoBehaviour:
   IkInvertOrder: 0
   IKBlend: 1
   IKAnimatorBlend: 0.5
-  IKReactionQuality: 3
-  IKSmoothing: 1
+  IKReactionQuality: 1
+  IKSmoothing: 0.506
   IKStretchToTarget: 2
   IKStretchCurve:
     serializedVersion: 2
@@ -10788,7 +10812,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0, y: 1, z: 1}
+  WavingAxis: {x: 0.5, y: 0, z: 0.5}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -10908,7 +10932,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   DeflectOnlyCollisions: 1
-  _Editor_Category: 2
+  _Editor_Category: 0
   _Editor_FeaturesCategory: 2
   DrawGizmos: 1
   StartBone: {fileID: 1683704253}
@@ -10931,10 +10955,10 @@ MonoBehaviour:
   - {fileID: 1683704240}
   - {fileID: 1683704239}
   _GhostChainInitCount: 15
-  UpdateRate: 0
+  UpdateRate: 60
   AnimatePhysics: 0
-  InterpolateRate: 0
-  Prewarm: 0
+  InterpolateRate: 1
+  Prewarm: 1
   Slithery: 1
   Curling: 0.5
   Springiness: 0
@@ -10956,7 +10980,7 @@ MonoBehaviour:
   UpdateAsLast: 1
   DetectZeroKeyframes: 1
   StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
+  OptimizeWithMesh: {fileID: 963434457}
   OptimizeWithMeshes: []
   TailAnimatorAmount: 1
   DetachChildren: 0
@@ -11542,6 +11566,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4918808854512486, guid: a4f63907440efa84492e58543e302e12, type: 3}
   m_PrefabInstance: {fileID: 1744456993}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1759546579 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -674402253053192165, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
+  m_PrefabInstance: {fileID: 1893853314}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1767901200
 PrefabInstance:
@@ -12153,8 +12182,8 @@ MonoBehaviour:
   IkInvertOrder: 0
   IKBlend: 1
   IKAnimatorBlend: 0.5
-  IKReactionQuality: 3
-  IKSmoothing: 1
+  IKReactionQuality: 1
+  IKSmoothing: 0.506
   IKStretchToTarget: 2
   IKStretchCurve:
     serializedVersion: 2
@@ -12311,7 +12340,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0, y: 1, z: 1}
+  WavingAxis: {x: 0.5, y: 0, z: 0.5}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -12431,7 +12460,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   DeflectOnlyCollisions: 1
-  _Editor_Category: 2
+  _Editor_Category: 0
   _Editor_FeaturesCategory: 2
   DrawGizmos: 1
   StartBone: {fileID: 1793204799}
@@ -12454,10 +12483,10 @@ MonoBehaviour:
   - {fileID: 1793204786}
   - {fileID: 1793204785}
   _GhostChainInitCount: 15
-  UpdateRate: 0
+  UpdateRate: 60
   AnimatePhysics: 0
-  InterpolateRate: 0
-  Prewarm: 0
+  InterpolateRate: 1
+  Prewarm: 1
   Slithery: 1
   Curling: 0.5
   Springiness: 0
@@ -12479,7 +12508,7 @@ MonoBehaviour:
   UpdateAsLast: 1
   DetectZeroKeyframes: 1
   StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
+  OptimizeWithMesh: {fileID: 246958535}
   OptimizeWithMeshes: []
   TailAnimatorAmount: 1
   DetachChildren: 0
@@ -13340,8 +13369,8 @@ MonoBehaviour:
   IkInvertOrder: 0
   IKBlend: 1
   IKAnimatorBlend: 0.5
-  IKReactionQuality: 3
-  IKSmoothing: 1
+  IKReactionQuality: 1
+  IKSmoothing: 0.506
   IKStretchToTarget: 2
   IKStretchCurve:
     serializedVersion: 2
@@ -13498,7 +13527,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0, y: 1, z: 1}
+  WavingAxis: {x: 0.5, y: 0, z: 0.5}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -13618,7 +13647,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   DeflectOnlyCollisions: 1
-  _Editor_Category: 2
+  _Editor_Category: 0
   _Editor_FeaturesCategory: 2
   DrawGizmos: 1
   StartBone: {fileID: 1893853330}
@@ -13641,10 +13670,10 @@ MonoBehaviour:
   - {fileID: 1893853317}
   - {fileID: 1893853315}
   _GhostChainInitCount: 15
-  UpdateRate: 0
+  UpdateRate: 60
   AnimatePhysics: 0
-  InterpolateRate: 0
-  Prewarm: 0
+  InterpolateRate: 1
+  Prewarm: 1
   Slithery: 1
   Curling: 0.5
   Springiness: 0
@@ -13666,7 +13695,7 @@ MonoBehaviour:
   UpdateAsLast: 1
   DetectZeroKeyframes: 1
   StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
+  OptimizeWithMesh: {fileID: 1759546579}
   OptimizeWithMeshes: []
   TailAnimatorAmount: 1
   DetachChildren: 0
@@ -14245,6 +14274,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
   m_PrefabInstance: {fileID: 1965386236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1991381566 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -674402253053192165, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
+  m_PrefabInstance: {fileID: 1406402238}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1992255947
 PrefabInstance:
@@ -15554,6 +15588,11 @@ Mesh:
 --- !u!4 &2127820374 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -2232110922815128302, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
+  m_PrefabInstance: {fileID: 408085460}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &2142390529 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -674402253053192165, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
   m_PrefabInstance: {fileID: 408085460}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1060871244175107
