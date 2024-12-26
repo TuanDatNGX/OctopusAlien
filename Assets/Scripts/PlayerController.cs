@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public float rotateSpeed;
     Vector3 inputDirection;
     public OctopusTail[] tails;
-    public List<Alien> listAlienInRange;
+    public List<EnemyBase> listAlienInRange;
     public Transform model;
     public Transform rangeObj;
     public Transform mouth;
@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
     public Material mat3;
     public Material matFace2;
     public Material matFace3;
-    Alien neareastAlien;
+    EnemyBase neareastAlien;
     Coroutine rangeActive;
     float currentExp = 0;
     int currentLevel = 1;
@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
         foreach (var alien in listAlienInRange)
         {
             float minDistance = 1000;
-            if (alien.currentState == AlienState.Idle)
+            if (alien.stateNow == State.Idle)
             {
                 float distance = Vector3.Distance(transform.position, alien.transform.position);
                 if (distance < minDistance)
@@ -64,9 +64,12 @@ public class PlayerController : MonoBehaviour
         {
             if(tail.gameObject.activeSelf && tail.currentState == TailState.Idle)
             {
-                if(neareastAlien != null && neareastAlien.currentState == AlienState.Idle)
+                if(neareastAlien != null)
                 {
-                    tail.CatchAlien(neareastAlien);
+                    if (!neareastAlien.listAttacker.Contains(gameObject))
+                    {
+                        tail.CatchAlien(neareastAlien);
+                    }
                     break;
                 }
             }
