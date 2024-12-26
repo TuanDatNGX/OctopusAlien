@@ -57,7 +57,7 @@ public class OctopusTail : MonoBehaviour
                             transform.DORewind(true);
                             tailAnimator.IKTarget = target.transform;
                             tailAnimator.UseIK = true;
-                            tailAnimator.TailAnimatorAmount = 0.25f;
+                            tailAnimator.TailAnimatorAmount = 0.85f;
                             currentBlend = 0;
                             tailAnimator.IKBlend = 0;
                             tailAnimator.IKContinousSolve = true;
@@ -97,12 +97,12 @@ public class OctopusTail : MonoBehaviour
                 transform.DOLocalRotate(defaultRotation, 2);
                 break;
             case TailState.Catch:
-                tailAnimator.UseIK = true;
-                tailAnimator.TailAnimatorAmount = 0.85f;
-                currentBlend = 0;
-                tailAnimator.IKBlend = 0;
-                tailAnimator.IKContinousSolve = true;
-                tailAnimator.Slithery = 1f;
+                //tailAnimator.UseIK = true;
+                //tailAnimator.TailAnimatorAmount = 0.85f;
+                //currentBlend = 0;
+                //tailAnimator.IKBlend = 0;
+                //tailAnimator.IKContinousSolve = true;
+                //tailAnimator.Slithery = 1f;
                 break;
             case TailState.Collect:
                 tailAnimator.TailAnimatorAmount = 0.15f;
@@ -112,7 +112,7 @@ public class OctopusTail : MonoBehaviour
 
     public void CatchAlien(EnemyBase alien)
     {
-        if (!canCatch) return;
+        //if (!canCatch) return;
         target = alien;
         //alien.target = this;
         //alien.ChangeState(AlienState.Catched);

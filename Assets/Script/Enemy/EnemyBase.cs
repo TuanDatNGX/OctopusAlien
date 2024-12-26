@@ -6,6 +6,7 @@ using Lean.Pool;
 
 public enum State
 {
+    None,
     Idle,
     RunAway,
     Attack,
@@ -61,10 +62,7 @@ public abstract class EnemyBase : MonoBehaviour
         aniEnemy.gameObject.SetActive(true);
         randomPosition2D = UnityEngine.Random.insideUnitCircle * myArea.range;
         transform.position = new Vector3(myArea.transform.position.x+randomPosition2D.x, 0, myArea.transform.position.z+randomPosition2D.y);
-        randomTarget = UnityEngine.Random.insideUnitCircle * myArea.range;
-        targetMove = new Vector3(myArea.transform.position.x + randomTarget.x, 0, myArea.transform.position.z + randomTarget.y);
         hpNow = statsBase.hp;
-        aniEnemy.SetFloat("Speed", 1f);
         listAttacker.Clear();
         ChangeState(State.Idle);
     }
@@ -93,13 +91,14 @@ public abstract class EnemyBase : MonoBehaviour
 
     public bool TakeDamage(OctopusTail _octopusTail)
     {
+        if (!listAttacker.Contains(_octopusTail.player.gameObject))
+        {
+            listAttacker.Add(_octopusTail.player.gameObject);
+        }
+
         if (canCatch && stateNow != State.Die)
         {
             ChangeState(State.RunAway);
-            if (!listAttacker.Contains(_octopusTail.player.gameObject))
-            {
-                listAttacker.Add(_octopusTail.player.gameObject);
-            }
             UpdateHp(-_octopusTail.player.GetComponent<CharacterStat>().ATK, _octopusTail);
             return true;
         }
@@ -199,6 +198,7 @@ public abstract class EnemyBase : MonoBehaviour
         switch (_stateChange)
         {
             case State.Idle:
+                ChangeTargetMove();
                 StartCoroutine(CountTimeDelayCatch());
                 aniEnemy.SetFloat("Speed", 1f);
                 break;
@@ -215,6 +215,12 @@ public abstract class EnemyBase : MonoBehaviour
                 Die();
                 break;
         }
+    }
+
+    public void ChangeTargetMove()
+    {
+        randomTarget = UnityEngine.Random.insideUnitCircle * myArea.range;
+        targetMove = new Vector3(myArea.transform.position.x + randomTarget.x, 0, myArea.transform.position.z + randomTarget.y);
     }
 
     IEnumerator CountDownRevive()

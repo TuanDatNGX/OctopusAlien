@@ -22,8 +22,7 @@ public class EnemyNormal : EnemyBase
                 countTimeDelayNextTarget -= Time.deltaTime;
                 if (countTimeDelayNextTarget <= 0)
                 {
-                    randomTarget = Random.insideUnitCircle * myArea.range;
-                    targetMove = new Vector3(myArea.transform.position.x+randomTarget.x, 0, myArea.transform.position.z+randomTarget.y);
+                    ChangeTargetMove();
                     aniEnemy.SetFloat("Speed", 1f);
                 }
             }
