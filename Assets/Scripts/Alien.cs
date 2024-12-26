@@ -108,7 +108,7 @@ public class Alien : MonoBehaviour
 
                 transform.DOMove(transform.position + new Vector3(0, 0.5f, 0), 0.1f).SetEase(Ease.Linear).OnComplete(() =>
                 {
-                    transform.DOMove(target.player.transform.position + new Vector3(0, -0.25f, 0), 0.25f).SetEase(Ease.Linear).OnComplete(() =>
+                    transform.DOMove(target.player.transform.position + new Vector3(0, -0.25f, 0), 0.35f).SetEase(Ease.Linear).OnComplete(() =>
                     {
                         target.ChangeState(TailState.Idle);
                         target.player.GetExp(rewardExp);
