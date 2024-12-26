@@ -15,8 +15,6 @@ public class AreaEnemy : MonoBehaviour
 {
     public float range;
     public List<AllEnemy> allEnemies;
-    Vector2 randomPosition2D;
-
     private void Start()
     {
         InitArea();
@@ -29,8 +27,6 @@ public class AreaEnemy : MonoBehaviour
             for(int j=0;j< allEnemies[i].amount; j++)
             {
                 EnemyBase enemyBase = LeanPool.Spawn(AssetsSO.Instance.enemyAssetsSO.enemyAssets[allEnemies[i].id],transform);
-                randomPosition2D = UnityEngine.Random.insideUnitCircle * range;
-                enemyBase.transform.position = new Vector3(randomPosition2D.x, 0, randomPosition2D.y);
                 enemyBase.InitEnemy(this);
             }
         }
