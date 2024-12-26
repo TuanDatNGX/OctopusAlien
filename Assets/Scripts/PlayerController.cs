@@ -136,6 +136,7 @@ public class PlayerController : MonoBehaviour
                         item.tailAnimator.transform.GetChild(1).GetComponent<SkinnedMeshRenderer>().material = mat2;
                     }
                 }
+
                 else if (levelUpData.enemyAssets[currentLevel.ToString()].evol == 2)
                 {
                     model.GetComponent<MeshRenderer>().material = matFace3;
