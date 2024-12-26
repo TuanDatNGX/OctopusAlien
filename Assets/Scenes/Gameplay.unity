@@ -731,15 +731,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162920787}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.07193606, y: 0.01927535, z: -0.25810012, w: 0.9632434}
+  m_LocalRotation: {x: -0.092296004, y: -0.7010574, z: 0.7010574, w: 0.092296004}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8333333, y: 0.83333325, z: 0.83333325}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4408486852729217}
   - {fileID: 1683704238}
   m_Father: {fileID: 4500688091760147}
-  m_LocalEulerAnglesHint: {x: -7.391, y: 4.295, z: -30.278}
+  m_LocalEulerAnglesHint: {x: 75, y: -90, z: 90}
 --- !u!114 &162920789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1231,6 +1230,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!137 &246958535 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -674402253053192165, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
+  m_PrefabInstance: {fileID: 1793204783}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &250529661
 Mesh:
   m_ObjectHideFlags: 8
@@ -1400,6 +1404,11 @@ Mesh:
 Transform:
   m_CorrespondingSourceObject: {fileID: 524298419690557804, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
   m_PrefabInstance: {fileID: 408085460}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &338719214 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -674402253053192165, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
+  m_PrefabInstance: {fileID: 500888551}
   m_PrefabAsset: {fileID: 0}
 --- !u!43 &342721893
 Mesh:
@@ -1865,39 +1874,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.39000005
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.25
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.43316403
+      value: -0.6830127
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.4331641
+      value: 0.18301274
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.55889976
+      value: -0.18301274
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.55889976
+      value: 0.6830127
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -180
+      value: -150
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 75.554
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_Name
@@ -2168,15 +2177,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.39000005
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.25
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2188,23 +2197,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.70710677
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.70710677
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -674402253053192165, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_Name
@@ -2536,7 +2549,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UseIK: 0
+  UseIK: 1
   IK:
     IKWeight: 0
     IKTargetPosition: {x: 0, y: 0, z: 0}
@@ -2557,7 +2570,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     Use2D: 0
     Invert: 0
-  IKTarget: {fileID: 0}
+  IKTarget: {fileID: 500888553}
   IKAutoWeights: 1
   IKBaseReactionWeight: 0.65
   IKReactionWeightCurve:
@@ -2586,13 +2599,13 @@ MonoBehaviour:
     m_RotationOrder: 4
   IKAutoAngleLimits: 1
   IKAutoAngleLimit: 40
-  IKContinousSolve: 0
+  IKContinousSolve: 1
   IkInvertOrder: 0
   IKBlend: 1
   IKAnimatorBlend: 0.5
-  IKReactionQuality: 2
-  IKSmoothing: 0
-  IKStretchToTarget: 0
+  IKReactionQuality: 1
+  IKSmoothing: 0.506
+  IKStretchToTarget: 2
   IKStretchCurve:
     serializedVersion: 2
     m_Curve:
@@ -2617,8 +2630,53 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  IKLimitSettings: []
-  IKSelectiveChain: 0
+  IKLimitSettings:
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 0
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 0
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  IKSelectiveChain: 1
   RotationOffset: {x: 0, y: 0, z: 0, w: 1}
   Curving: {x: 0, y: 0, z: 0, w: 1}
   UseCurvingCurve: 0
@@ -2703,7 +2761,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0, y: 1, z: 1}
+  WavingAxis: {x: 0, y: 0.1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -2823,7 +2881,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   DeflectOnlyCollisions: 1
-  _Editor_Category: 0
+  _Editor_Category: 2
   _Editor_FeaturesCategory: 0
   DrawGizmos: 1
   StartBone: {fileID: 500888567}
@@ -2846,10 +2904,10 @@ MonoBehaviour:
   - {fileID: 500888554}
   - {fileID: 500888553}
   _GhostChainInitCount: 15
-  UpdateRate: 0
+  UpdateRate: 60
   AnimatePhysics: 0
-  InterpolateRate: 0
-  Prewarm: 0
+  InterpolateRate: 1
+  Prewarm: 1
   Slithery: 1
   Curling: 0.5
   Springiness: 0
@@ -2871,7 +2929,7 @@ MonoBehaviour:
   UpdateAsLast: 1
   DetectZeroKeyframes: 1
   StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
+  OptimizeWithMesh: {fileID: 338719214}
   OptimizeWithMeshes: []
   TailAnimatorAmount: 1
   DetachChildren: 0
@@ -2879,6 +2937,11 @@ MonoBehaviour:
   Tangle: 0
   AnimateRoll: 0
   OverrideKeyframeAnimation: 0
+--- !u!137 &510972227 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -674402253053192165, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
+  m_PrefabInstance: {fileID: 1388144293}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &550404078
 GameObject:
   m_ObjectHideFlags: 0
@@ -3612,13 +3675,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713125138}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.7, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 1.1666666}
+  m_LocalScale: {x: 1.6666665, y: 1.6666662, z: 1.6666662}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1789040267}
-  m_Father: {fileID: 849552275}
+  m_Father: {fileID: 4500688091760147}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &713125140
 SphereCollider:
@@ -3935,15 +3998,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 767652368}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.052661058, y: 0.052661058, z: 0.70514315, w: 0.70514315}
+  m_LocalRotation: {x: 0.7053638, y: -0.018048879, z: 0.7068763, w: 0.049618322}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.83333325, y: 0.83333325, z: 0.83333325}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1178061907}
   - {fileID: 1893853316}
   m_Father: {fileID: 4500688091760147}
-  m_LocalEulerAnglesHint: {x: -8.542, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 5.481, y: 89.754, z: 177.427}
 --- !u!1001 &797124048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4174,8 +4236,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4500688091760147}
-  - {fileID: 713125139}
   - {fileID: 1744456994}
+  - {fileID: 1166355961}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &849552276
@@ -4220,6 +4282,7 @@ MonoBehaviour:
   characterController: {fileID: 849552276}
   characterStat: {fileID: 849552278}
   joystick: {fileID: 2029584093}
+  faceAnim: {fileID: 2071875425}
   moveSpeed: 2
   rotateSpeed: 500
   tails:
@@ -4233,8 +4296,10 @@ MonoBehaviour:
   listAlienInRange: []
   model: {fileID: 4500688091760147}
   rangeObj: {fileID: 713125139}
+  mouth: {fileID: 1077334992}
   rangeZone: {fileID: 1789040266}
   levelUpFx: {fileID: 1784918770}
+  levelUpFx2: {fileID: 1166355962}
   mat2: {fileID: 2100000, guid: 9c91cbbbf47894841b3d9922d7823edd, type: 2}
   mat3: {fileID: 2100000, guid: a1c01655968408c469bd105098d5ee75, type: 2}
   matFace2: {fileID: 2100000, guid: 26a8f1fd743800643bf343a849f8a939, type: 2}
@@ -4990,7 +5055,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
-  m_LocalPosition: {x: 0, y: 10, z: -7}
+  m_LocalPosition: {x: 29.6, y: 10, z: 12.73}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5056,6 +5121,11 @@ MonoBehaviour:
   smoothTime: 0.25
   velocity: {x: 0, y: 0, z: 0}
   target: {fileID: 849552275}
+--- !u!137 &963434457 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -674402253053192165, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
+  m_PrefabInstance: {fileID: 1683704237}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &969933721
 GameObject:
   m_ObjectHideFlags: 0
@@ -5454,15 +5524,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047148501}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.052661058, y: -0.052661058, z: -0.70514315, w: 0.70514315}
+  m_LocalRotation: {x: 0.07881834, y: -0.7027003, z: 0.07881834, w: 0.7027003}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.83333325, y: 0.83333325, z: 0.83333325}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4808373632565515}
   - {fileID: 500888552}
   m_Father: {fileID: 4500688091760147}
-  m_LocalEulerAnglesHint: {x: -8.542, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: -192.8, y: 90, z: -180}
 --- !u!114 &1047148503
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5554,6 +5623,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7642344674536302905, guid: a587111b6e520064f9e9067bb63f67bc, type: 3}
   m_PrefabInstance: {fileID: 1065838339}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1077334991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1077334992}
+  m_Layer: 0
+  m_Name: Mouth
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1077334992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077334991}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.0511, z: 0.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1628933460}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1078195424
 GameObject:
   m_ObjectHideFlags: 0
@@ -5892,7 +5992,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UseIK: 0
+  UseIK: 1
   IK:
     IKWeight: 0
     IKTargetPosition: {x: 0, y: 0, z: 0}
@@ -5913,7 +6013,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     Use2D: 0
     Invert: 0
-  IKTarget: {fileID: 0}
+  IKTarget: {fileID: 1055253674}
   IKAutoWeights: 1
   IKBaseReactionWeight: 0.65
   IKReactionWeightCurve:
@@ -5942,13 +6042,13 @@ MonoBehaviour:
     m_RotationOrder: 4
   IKAutoAngleLimits: 1
   IKAutoAngleLimit: 40
-  IKContinousSolve: 0
+  IKContinousSolve: 1
   IkInvertOrder: 0
   IKBlend: 1
   IKAnimatorBlend: 0.5
-  IKReactionQuality: 2
-  IKSmoothing: 0
-  IKStretchToTarget: 0
+  IKReactionQuality: 1
+  IKSmoothing: 0.506
+  IKStretchToTarget: 2
   IKStretchCurve:
     serializedVersion: 2
     m_Curve:
@@ -5973,8 +6073,53 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  IKLimitSettings: []
-  IKSelectiveChain: 0
+  IKLimitSettings:
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 10
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  IKSelectiveChain: 1
   RotationOffset: {x: 0, y: 0, z: 0, w: 1}
   Curving: {x: 0, y: 0, z: 0, w: 1}
   UseCurvingCurve: 0
@@ -6059,7 +6204,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0, y: 1, z: 1}
+  WavingAxis: {x: 0, y: 0.1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -6180,7 +6325,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   DeflectOnlyCollisions: 1
   _Editor_Category: 0
-  _Editor_FeaturesCategory: 0
+  _Editor_FeaturesCategory: 2
   DrawGizmos: 1
   StartBone: {fileID: 2127820374}
   EndBone: {fileID: 0}
@@ -6202,10 +6347,10 @@ MonoBehaviour:
   - {fileID: 1016008771}
   - {fileID: 1055253674}
   _GhostChainInitCount: 15
-  UpdateRate: 0
+  UpdateRate: 60
   AnimatePhysics: 0
-  InterpolateRate: 0
-  Prewarm: 0
+  InterpolateRate: 1
+  Prewarm: 1
   Slithery: 1
   Curling: 0.5
   Springiness: 0
@@ -6227,7 +6372,7 @@ MonoBehaviour:
   UpdateAsLast: 1
   DetectZeroKeyframes: 1
   StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
+  OptimizeWithMesh: {fileID: 2142390529}
   OptimizeWithMeshes: []
   TailAnimatorAmount: 1
   DetachChildren: 0
@@ -6335,15 +6480,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103999939}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.06449636, y: -0.037236992, z: -0.4986115, w: 0.86362046}
+  m_LocalRotation: {x: 0.18301274, y: -0.6830127, z: 0.18301274, w: 0.6830127}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.83333325, y: 0.83333325, z: 0.83333325}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4265441402569977}
   - {fileID: 1406402239}
   m_Father: {fileID: 4500688091760147}
-  m_LocalEulerAnglesHint: {x: -8.542, y: 0, z: -60}
+  m_LocalEulerAnglesHint: {x: 30, y: -90, z: 0}
 --- !u!114 &1103999941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6581,681 +6725,237 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1077870464431455611, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
   m_PrefabInstance: {fileID: 408085460}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1178061906
-GameObject:
+--- !u!1001 &1166355960
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1178061907}
-  - component: {fileID: 1178061909}
-  - component: {fileID: 1178061908}
-  m_Layer: 0
-  m_Name: Tail 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &1178061907
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1178061906}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071078, y: -0, z: 0.7071058, w: 0}
-  m_LocalPosition: {x: -0.398, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 767652370}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!114 &1178061908
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 849552275}
+    m_Modifications:
+    - target: {fileID: 1207179939759570, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_Name
+      value: Leaves buff vfx
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547987611104422, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547987611104422, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547987611104422, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547987611104422, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547987611104422, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547987611104422, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547987611104422, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547987611104422, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547987611104422, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547987611104422, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547987611104422, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547987611104422, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547987611104422, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547987611104422, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198034979798405810, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198034979798405810, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198034979798405810, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: simulationSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198076753212941926, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198076753212941926, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198076753212941926, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: simulationSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198377485014978066, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198377485014978066, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198377485014978066, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: simulationSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198624400257862958, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198624400257862958, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198624400257862958, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: simulationSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198665422404971792, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198665422404971792, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198665422404971792, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: simulationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198744557963163072, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198744557963163072, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198744557963163072, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: simulationSpeed
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198814004800323296, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198814004800323296, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198814004800323296, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: simulationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198890363123289014, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198890363123289014, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198890363123289014, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: simulationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198962035160479072, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198962035160479072, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198962035160479072, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: simulationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 198971440803005312, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198971440803005312, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198971440803005312, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: simulationSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 199063792655959762, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199358838967998498, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199376068494214830, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199383829144727424, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199407680048954362, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199476827112724632, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 199837098910955086, guid: 3cefa829969829542bf182f16e268213, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3cefa829969829542bf182f16e268213, type: 3}
+--- !u!4 &1166355961 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4547987611104422, guid: 3cefa829969829542bf182f16e268213, type: 3}
+  m_PrefabInstance: {fileID: 1166355960}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1178061906}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61574e354ba34a141ae2cc1228f5eda3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseCollision: 0
-  CollisionSpace: 1
-  CollisionMode: 0
-  CheapCollision: 0
-  DynamicWorldCollidersInclusion: 0
-  InclusionRadius: 1
-  IgnoreMeshColliders: 1
-  IncludedColliders: []
-  IncludedColliders2D: []
-  CollidersType: 0
-  CollideWithOtherTails: 0
-  CollideWithDisabledColliders: 1
-  CollisionSlippery: 1
-  ReflectCollision: 0
-  CollidersScaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  CollidersScaleMul: 6.5
-  CollisionsAutoCurve: 0.5
-  IgnoredColliders: []
-  IgnoredColliders2D: []
-  CollidersSameLayer: 1
-  CollidersAddRigidbody: 1
-  RigidbodyMass: 1
-  CollidersLayer: 0
-  UseSlitheryCurve: 0
-  SlitheryCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.75
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseCurlingCurve: 0
-  CurlingCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.3
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseSpringCurve: 0
-  SpringCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseSlipperyCurve: 0
-  SlipperyCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UsePosSpeedCurve: 0
-  PosCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseRotSpeedCurve: 0
-  RotCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.9
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UsePartialBlend: 0
-  BlendCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.95
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.45
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseIK: 0
-  IK:
-    IKWeight: 0
-    IKTargetPosition: {x: 0, y: 0, z: 0}
-    IKTargetRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastLocalDirection: {x: 0, y: 0, z: 0}
-    LocalDirection: {x: 0, y: 0, z: 0}
-    IKBones: []
-    ContinousSolving: 0
-    SyncWithAnimator: 0
-    ReactionQuality: 0
-    Smoothing: 0
-    StretchToTarget: 0
-    StretchCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    Use2D: 0
-    Invert: 0
-  IKTarget: {fileID: 0}
-  IKAutoWeights: 1
-  IKBaseReactionWeight: 0.65
-  IKReactionWeightCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.25
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  IKAutoAngleLimits: 1
-  IKAutoAngleLimit: 40
-  IKContinousSolve: 1
-  IkInvertOrder: 0
-  IKBlend: 1
-  IKAnimatorBlend: 0.85
-  IKReactionQuality: 2
-  IKSmoothing: 0.2
-  IKStretchToTarget: 0
-  IKStretchCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  IKLimitSettings: []
-  IKSelectiveChain: 0
-  RotationOffset: {x: 0, y: 0, z: 0, w: 1}
-  Curving: {x: 0, y: 0, z: 0, w: 1}
-  UseCurvingCurve: 0
-  CurvCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.75
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  LengthMultiplier: 1
-  UseLengthMulCurve: 0
-  LengthMulCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseGravityCurve: 0
-  GravityCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.65
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  Gravity: {x: 0, y: 0, z: 0}
-  UseWaving: 1
-  CosinusAdd: 1
-  FixedCycle: 0
-  WavingSpeed: 3.25
-  WavingRange: 0.4
-  WavingAxis: {x: 0, y: 1, z: 0}
-  WavingType: 0
-  AlternateWave: 1
-  UseWind: 0
-  WindEffectPower: 1
-  WindTurbulencePower: 1
-  WindWorldNoisePower: 0.5
-  WindEffect: {x: 0, y: 0, z: 0}
-  fDebug: 0
-  _gizmosEditorStartPreview: {fileID: 0}
-  _gizmospesp: {fileID: 0}
-  _gizmosEditorEndPreview: {fileID: 0}
-  _gizmospeep: {fileID: 0}
-  _editor_Title: Tail Animator 2
-  _editor_IsInspectorViewingColliders: 0
-  _editor_IsInspectorViewingIncludedColliders: 0
-  _editor_animatorViewedCounter: 1
-  TailSegments: []
-  GhostParent:
-    ProceduralPosition: {x: 0, y: 0, z: 0}
-    ProceduralPositionWeightBlended: {x: 0, y: 0, z: 0}
-    TrueTargetRotation: {x: 0, y: 0, z: 0, w: 1}
-    PosRefRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosition: {x: 0, y: 0, z: 0}
-    BlendValue: 1
-    BoneDimensionsScaled: {x: 0, y: 0, z: 0}
-    BoneLengthScaled: 0
-    InitialLocalPosition: {x: 0, y: 0, z: 0}
-    InitialLocalPositionInRoot: {x: 0, y: 0, z: 0}
-    InitialLocalRotationInRoot: {x: 0, y: 0, z: 0, w: 1}
-    LocalOffset: {x: 0, y: 0, z: 0}
-    InitialLocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    ColliderRadius: 1
-    CollisionContactFlag: 0
-    CollisionContactRelevancy: -1
-    VelocityHelper: {x: 0, y: 0, z: 0}
-    QVelocityHelper: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPush: {x: 0, y: 0, z: 0}
-    Curving: {x: 0, y: 0, z: 0, w: 1}
-    Gravity: {x: 0, y: 0, z: 0}
-    GravityLookOffset: {x: 0, y: 0, z: 0}
-    LengthMultiplier: 1
-    PositionSpeed: 1
-    RotationSpeed: 1
-    Springiness: 0
-    Slithery: 1
-    Curling: 0.5
-    Slippery: 1
-    LastKeyframeLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastKeyframeLocalPosition: {x: 0, y: 0, z: 0}
-  GhostChild:
-    ProceduralPosition: {x: 0, y: 0, z: 0}
-    ProceduralPositionWeightBlended: {x: 0, y: 0, z: 0}
-    TrueTargetRotation: {x: 0, y: 0, z: 0, w: 1}
-    PosRefRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosition: {x: 0, y: 0, z: 0}
-    BlendValue: 1
-    BoneDimensionsScaled: {x: 0, y: 0, z: 0}
-    BoneLengthScaled: 0
-    InitialLocalPosition: {x: 0, y: 0, z: 0}
-    InitialLocalPositionInRoot: {x: 0, y: 0, z: 0}
-    InitialLocalRotationInRoot: {x: 0, y: 0, z: 0, w: 1}
-    LocalOffset: {x: 0, y: 0, z: 0}
-    InitialLocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    ColliderRadius: 1
-    CollisionContactFlag: 0
-    CollisionContactRelevancy: -1
-    VelocityHelper: {x: 0, y: 0, z: 0}
-    QVelocityHelper: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPush: {x: 0, y: 0, z: 0}
-    Curving: {x: 0, y: 0, z: 0, w: 1}
-    Gravity: {x: 0, y: 0, z: 0}
-    GravityLookOffset: {x: 0, y: 0, z: 0}
-    LengthMultiplier: 1
-    PositionSpeed: 1
-    RotationSpeed: 1
-    Springiness: 0
-    Slithery: 1
-    Curling: 0.5
-    Slippery: 1
-    LastKeyframeLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastKeyframeLocalPosition: {x: 0, y: 0, z: 0}
-  UseMaxDistance: 0
-  DistanceFrom: {fileID: 0}
-  _distanceFrom_Auto: {fileID: 0}
-  MaximumDistance: 35
-  MaxOutDistanceFactor: 0
-  DistanceWithoutY: 0
-  DistanceMeasurePoint: {x: 0, y: 0, z: 0}
-  FadeDuration: 0.75
-  Deflection: 0
-  DeflectionStartAngle: 10
-  DeflectionSmooth: 0
-  DeflectionFalloff:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.1
-      outSlope: 0.1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 5
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  DeflectOnlyCollisions: 1
-  _Editor_Category: 0
-  _Editor_FeaturesCategory: 0
-  DrawGizmos: 1
-  StartBone: {fileID: 2127820374}
-  EndBone: {fileID: 0}
-  EndBoneJointOffset: {x: 0, y: 0, z: 0}
-  _TransformsGhostChain:
-  - {fileID: 2127820374}
-  - {fileID: 907305227}
-  - {fileID: 801702934}
-  - {fileID: 1623474082}
-  - {fileID: 817829396}
-  - {fileID: 149042371}
-  - {fileID: 178826570}
-  - {fileID: 80383010}
-  - {fileID: 278203932}
-  - {fileID: 1137192991}
-  - {fileID: 125910445}
-  - {fileID: 374362980}
-  - {fileID: 869013573}
-  - {fileID: 1016008771}
-  - {fileID: 1055253674}
-  _GhostChainInitCount: 15
-  UpdateRate: 0
-  AnimatePhysics: 0
-  InterpolateRate: 1
-  Prewarm: 0
-  Slithery: 1
-  Curling: 0.5
-  Springiness: 0
-  MaxStretching: 0.375
-  AngleLimit: 181
-  AngleLimitAxis: {x: 0, y: 0, z: 0}
-  LimitAxisRange: {x: 0, y: 0}
-  LimitSmoothing: 0.5
-  MotionInfluence: 1
-  MotionInfluenceInY: 1
-  IncludeParent: 1
-  UnifyBendiness: 0
-  ReactionSpeed: 0.9
-  Sustain: 0
-  RotationRelevancy: 1
-  SmoothingStyle: 1
-  TimeScale: 1
-  DeltaType: 4
-  UpdateAsLast: 1
-  DetectZeroKeyframes: 1
-  StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
-  OptimizeWithMeshes: []
-  TailAnimatorAmount: 1
-  DetachChildren: 0
-  Axis2D: 0
-  Tangle: 0
-  AnimateRoll: 0
-  OverrideKeyframeAnimation: 0
---- !u!114 &1178061909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!198 &1166355962 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198665422404971792, guid: 3cefa829969829542bf182f16e268213, type: 3}
+  m_PrefabInstance: {fileID: 1166355960}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1178061906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fff57c0a299d734ea794bbd62986e25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circlePoints: 8
-  LengthSegments: 18
-  ForwardLength: 4
-  Fatness: 0.2
-  LengthScale:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.18910813
-      value: 0.5129457
-      inSlope: -0.1432395
-      outSlope: -0.1432395
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.43545508
-      value: 0.9508675
-      inSlope: 0.011600658
-      outSlope: 0.011600658
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.055889904
-      inSlope: -2.6123033
-      outSlope: -2.6123033
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  RandomizeAtStart: 0
-  mat: {fileID: 2100000, guid: e74aecca15947e141bbe3d0790fa8eae, type: 2}
-  DrawGizmos: 1
-  BonesCount: 14
-  AddTailAnimator: 1
-  DetachForOptimization: 0
-  TargetTailAnimator: {fileID: 1178061908}
-  SetAsParent: 1
 --- !u!1 &1181163393
 GameObject:
   m_ObjectHideFlags: 0
@@ -7873,15 +7573,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377391453}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.07447385, y: -0, z: -0, w: 0.997223}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.6830127, y: -0.1830127, z: -0.1830127, w: 0.6830127}
+  m_LocalPosition: {x: 0, y: 0.154, z: -0}
   m_LocalScale: {x: 0.83333325, y: 0.83333325, z: 0.83333325}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1084007596}
-  - {fileID: 4316103728207771}
   m_Father: {fileID: 4500688091760147}
-  m_LocalEulerAnglesHint: {x: -8.542, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 60, y: -90, z: -90}
 --- !u!114 &1377391455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7920,15 +7619,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.39000005
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.25
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7940,23 +7639,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.70710677
+      value: 0.13052624
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.70710677
+      value: 0.9914449
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_Name
@@ -8288,7 +7987,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UseIK: 0
+  UseIK: 1
   IK:
     IKWeight: 0
     IKTargetPosition: {x: 0, y: 0, z: 0}
@@ -8338,13 +8037,13 @@ MonoBehaviour:
     m_RotationOrder: 4
   IKAutoAngleLimits: 1
   IKAutoAngleLimit: 40
-  IKContinousSolve: 0
+  IKContinousSolve: 1
   IkInvertOrder: 0
   IKBlend: 1
   IKAnimatorBlend: 0.5
-  IKReactionQuality: 2
-  IKSmoothing: 0
-  IKStretchToTarget: 0
+  IKReactionQuality: 1
+  IKSmoothing: 0.506
+  IKStretchToTarget: 2
   IKStretchCurve:
     serializedVersion: 2
     m_Curve:
@@ -8369,8 +8068,53 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  IKLimitSettings: []
-  IKSelectiveChain: 0
+  IKLimitSettings:
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  IKSelectiveChain: 1
   RotationOffset: {x: 0, y: 0, z: 0, w: 1}
   Curving: {x: 0, y: 0, z: 0, w: 1}
   UseCurvingCurve: 0
@@ -8455,7 +8199,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0, y: 1, z: 1}
+  WavingAxis: {x: 0, y: 0.1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -8575,7 +8319,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   DeflectOnlyCollisions: 1
-  _Editor_Category: 2
+  _Editor_Category: 0
   _Editor_FeaturesCategory: 2
   DrawGizmos: 1
   StartBone: {fileID: 1388144309}
@@ -8598,10 +8342,10 @@ MonoBehaviour:
   - {fileID: 1388144296}
   - {fileID: 1388144295}
   _GhostChainInitCount: 15
-  UpdateRate: 0
+  UpdateRate: 60
   AnimatePhysics: 0
-  InterpolateRate: 0
-  Prewarm: 0
+  InterpolateRate: 1
+  Prewarm: 1
   Slithery: 1
   Curling: 0.5
   Springiness: 0
@@ -8623,7 +8367,7 @@ MonoBehaviour:
   UpdateAsLast: 1
   DetectZeroKeyframes: 1
   StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
+  OptimizeWithMesh: {fileID: 510972227}
   OptimizeWithMeshes: []
   TailAnimatorAmount: 1
   DetachChildren: 0
@@ -8818,15 +8562,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.39000005
+      value: 0.45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.25
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8834,27 +8578,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.000000011175868
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.70710677
+      value: -0.10417936
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.70710677
+      value: 0.9945586
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
+      value: 168.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_Name
@@ -9186,7 +8930,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UseIK: 0
+  UseIK: 1
   IK:
     IKWeight: 0
     IKTargetPosition: {x: 0, y: 0, z: 0}
@@ -9207,7 +8951,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     Use2D: 0
     Invert: 0
-  IKTarget: {fileID: 0}
+  IKTarget: {fileID: 1406402240}
   IKAutoWeights: 1
   IKBaseReactionWeight: 0.65
   IKReactionWeightCurve:
@@ -9236,13 +8980,13 @@ MonoBehaviour:
     m_RotationOrder: 4
   IKAutoAngleLimits: 1
   IKAutoAngleLimit: 40
-  IKContinousSolve: 0
+  IKContinousSolve: 1
   IkInvertOrder: 0
   IKBlend: 1
   IKAnimatorBlend: 0.5
-  IKReactionQuality: 2
-  IKSmoothing: 0
-  IKStretchToTarget: 0
+  IKReactionQuality: 1
+  IKSmoothing: 0.506
+  IKStretchToTarget: 2
   IKStretchCurve:
     serializedVersion: 2
     m_Curve:
@@ -9267,8 +9011,53 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  IKLimitSettings: []
-  IKSelectiveChain: 0
+  IKLimitSettings:
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  IKSelectiveChain: 1
   RotationOffset: {x: 0, y: 0, z: 0, w: 1}
   Curving: {x: 0, y: 0, z: 0, w: 1}
   UseCurvingCurve: 0
@@ -9353,7 +9142,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0, y: 1, z: 1}
+  WavingAxis: {x: 0, y: 0.1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -9474,7 +9263,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   DeflectOnlyCollisions: 1
   _Editor_Category: 0
-  _Editor_FeaturesCategory: 0
+  _Editor_FeaturesCategory: 2
   DrawGizmos: 1
   StartBone: {fileID: 1406402254}
   EndBone: {fileID: 0}
@@ -9496,10 +9285,10 @@ MonoBehaviour:
   - {fileID: 1406402241}
   - {fileID: 1406402240}
   _GhostChainInitCount: 15
-  UpdateRate: 0
+  UpdateRate: 60
   AnimatePhysics: 0
-  InterpolateRate: 0
-  Prewarm: 0
+  InterpolateRate: 1
+  Prewarm: 1
   Slithery: 1
   Curling: 0.5
   Springiness: 0
@@ -9521,7 +9310,7 @@ MonoBehaviour:
   UpdateAsLast: 1
   DetectZeroKeyframes: 1
   StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
+  OptimizeWithMesh: {fileID: 1991381566}
   OptimizeWithMeshes: []
   TailAnimatorAmount: 1
   DetachChildren: 0
@@ -9594,15 +9383,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434415367}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.07193627, y: -0.01927535, z: 0.25810048, w: 0.96324337}
+  m_LocalRotation: {x: 0.6532815, y: -0.27059805, z: 0.6532815, w: 0.27059805}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8333332, y: 0.83333325, z: 0.83333325}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4827491763112379}
   - {fileID: 1388144294}
   m_Father: {fileID: 4500688091760147}
-  m_LocalEulerAnglesHint: {x: -7.391, y: -4.295, z: 30.278}
+  m_LocalEulerAnglesHint: {x: 45, y: 90, z: 180}
 --- !u!114 &1434415369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10281,6 +10069,150 @@ Transform:
   - {fileID: 1715529119}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1628933459
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4500688091760147}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.013
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.416
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.292
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.57760406
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.81631714
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -109.436
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8549690836703394644, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.000009334667
+      objectReference: {fileID: 0}
+    - target: {fileID: -8539690970169491274, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -0.042885862
+      objectReference: {fileID: 0}
+    - target: {fileID: -8539690970169491274, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 2.3976636
+      objectReference: {fileID: 0}
+    - target: {fileID: -8539690970169491274, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.77546364
+      objectReference: {fileID: 0}
+    - target: {fileID: -43475527947608012, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 1.0613484
+      objectReference: {fileID: 0}
+    - target: {fileID: -43475527947608012, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90.01427
+      objectReference: {fileID: 0}
+    - target: {fileID: -43475527947608012, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.108481675
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_Name
+      value: spikeball_lv1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561694366707440235, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -0.000006340508
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561694366707440235, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.99998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561694366707440235, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 36.089092
+      objectReference: {fileID: 0}
+    - target: {fileID: 7599951099381864192, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -1.5456501
+      objectReference: {fileID: 0}
+    - target: {fileID: 7599951099381864192, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 108.73779
+      objectReference: {fileID: 0}
+    - target: {fileID: 7599951099381864192, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -93.09074
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419903757476475239, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0.0000060723623
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419903757476475239, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.99998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8419903757476475239, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -35.61412
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1077334992}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2071875425}
+  m_SourcePrefab: {fileID: 100100000, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+--- !u!4 &1628933460 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+  m_PrefabInstance: {fileID: 1628933459}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1664500514
 GameObject:
   m_ObjectHideFlags: 0
@@ -10492,39 +10424,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.37
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.39000005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.25
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 0.7010574
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.09229593
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.70710677
+      value: 0.09229593
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.70710677
+      value: 0.7010574
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -10860,7 +10792,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UseIK: 0
+  UseIK: 1
   IK:
     IKWeight: 0
     IKTargetPosition: {x: 0, y: 0, z: 0}
@@ -10881,7 +10813,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     Use2D: 0
     Invert: 0
-  IKTarget: {fileID: 0}
+  IKTarget: {fileID: 1683704239}
   IKAutoWeights: 1
   IKBaseReactionWeight: 0.65
   IKReactionWeightCurve:
@@ -10910,13 +10842,13 @@ MonoBehaviour:
     m_RotationOrder: 4
   IKAutoAngleLimits: 1
   IKAutoAngleLimit: 40
-  IKContinousSolve: 0
+  IKContinousSolve: 1
   IkInvertOrder: 0
   IKBlend: 1
   IKAnimatorBlend: 0.5
-  IKReactionQuality: 2
-  IKSmoothing: 0
-  IKStretchToTarget: 0
+  IKReactionQuality: 1
+  IKSmoothing: 0.506
+  IKStretchToTarget: 2
   IKStretchCurve:
     serializedVersion: 2
     m_Curve:
@@ -10941,8 +10873,53 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  IKLimitSettings: []
-  IKSelectiveChain: 0
+  IKLimitSettings:
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  IKSelectiveChain: 1
   RotationOffset: {x: 0, y: 0, z: 0, w: 1}
   Curving: {x: 0, y: 0, z: 0, w: 1}
   UseCurvingCurve: 0
@@ -11027,7 +11004,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0, y: 1, z: 1}
+  WavingAxis: {x: 0, y: 0.1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -11148,7 +11125,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   DeflectOnlyCollisions: 1
   _Editor_Category: 0
-  _Editor_FeaturesCategory: 0
+  _Editor_FeaturesCategory: 2
   DrawGizmos: 1
   StartBone: {fileID: 1683704253}
   EndBone: {fileID: 0}
@@ -11170,10 +11147,10 @@ MonoBehaviour:
   - {fileID: 1683704240}
   - {fileID: 1683704239}
   _GhostChainInitCount: 15
-  UpdateRate: 0
+  UpdateRate: 60
   AnimatePhysics: 0
-  InterpolateRate: 0
-  Prewarm: 0
+  InterpolateRate: 1
+  Prewarm: 1
   Slithery: 1
   Curling: 0.5
   Springiness: 0
@@ -11195,7 +11172,7 @@ MonoBehaviour:
   UpdateAsLast: 1
   DetectZeroKeyframes: 1
   StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
+  OptimizeWithMesh: {fileID: 963434457}
   OptimizeWithMeshes: []
   TailAnimatorAmount: 1
   DetachChildren: 0
@@ -11304,6 +11281,111 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
+--- !u!1 &1714885445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1714885449}
+  - component: {fileID: 1714885448}
+  - component: {fileID: 1714885447}
+  - component: {fileID: 1714885446}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!135 &1714885446
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714885445}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1714885447
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714885445}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1714885448
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714885445}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1714885449
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714885445}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 28.694, y: 0.99, z: 21.386}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1715529115
 GameObject:
   m_ObjectHideFlags: 0
@@ -11410,6 +11492,111 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1627633499}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1733493016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1733493017}
+  - component: {fileID: 1733493020}
+  - component: {fileID: 1733493019}
+  - component: {fileID: 1733493018}
+  m_Layer: 0
+  m_Name: PR_TailAnimatorDemo_SphereMonster (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1733493017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733493016}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.071, z: 0.095}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4500688091760147}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!135 &1733493018
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733493016}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1733493019
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733493016}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e74aecca15947e141bbe3d0790fa8eae, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &1733493020
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1733493016}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1744456993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11572,6 +11759,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4918808854512486, guid: a4f63907440efa84492e58543e302e12, type: 3}
   m_PrefabInstance: {fileID: 1744456993}
   m_PrefabAsset: {fileID: 0}
+--- !u!137 &1759546579 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -674402253053192165, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
+  m_PrefabInstance: {fileID: 1893853314}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1767901200
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11673,15 +11865,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.2
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.2
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.2
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11689,7 +11881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: 7498669545198421303, guid: a97ebd8b47efcfa47bdeef5b5925fa5d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11760,15 +11952,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.39000005
+      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.25
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.w
@@ -11780,23 +11972,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.70710677
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.70710677
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_Name
@@ -12128,7 +12320,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UseIK: 0
+  UseIK: 1
   IK:
     IKWeight: 0
     IKTargetPosition: {x: 0, y: 0, z: 0}
@@ -12149,7 +12341,7 @@ MonoBehaviour:
       m_RotationOrder: 4
     Use2D: 0
     Invert: 0
-  IKTarget: {fileID: 0}
+  IKTarget: {fileID: 1793204785}
   IKAutoWeights: 1
   IKBaseReactionWeight: 0.65
   IKReactionWeightCurve:
@@ -12178,13 +12370,13 @@ MonoBehaviour:
     m_RotationOrder: 4
   IKAutoAngleLimits: 1
   IKAutoAngleLimit: 40
-  IKContinousSolve: 0
+  IKContinousSolve: 1
   IkInvertOrder: 0
   IKBlend: 1
   IKAnimatorBlend: 0.5
-  IKReactionQuality: 2
-  IKSmoothing: 0
-  IKStretchToTarget: 0
+  IKReactionQuality: 1
+  IKSmoothing: 0.506
+  IKStretchToTarget: 2
   IKStretchCurve:
     serializedVersion: 2
     m_Curve:
@@ -12209,8 +12401,53 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  IKLimitSettings: []
-  IKSelectiveChain: 0
+  IKLimitSettings:
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  IKSelectiveChain: 1
   RotationOffset: {x: 0, y: 0, z: 0, w: 1}
   Curving: {x: 0, y: 0, z: 0, w: 1}
   UseCurvingCurve: 0
@@ -12295,7 +12532,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0, y: 1, z: 1}
+  WavingAxis: {x: 0, y: 0.1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -12416,7 +12653,7 @@ MonoBehaviour:
     m_RotationOrder: 4
   DeflectOnlyCollisions: 1
   _Editor_Category: 0
-  _Editor_FeaturesCategory: 0
+  _Editor_FeaturesCategory: 2
   DrawGizmos: 1
   StartBone: {fileID: 1793204799}
   EndBone: {fileID: 0}
@@ -12438,10 +12675,10 @@ MonoBehaviour:
   - {fileID: 1793204786}
   - {fileID: 1793204785}
   _GhostChainInitCount: 15
-  UpdateRate: 0
+  UpdateRate: 60
   AnimatePhysics: 0
-  InterpolateRate: 0
-  Prewarm: 0
+  InterpolateRate: 1
+  Prewarm: 1
   Slithery: 1
   Curling: 0.5
   Springiness: 0
@@ -12463,7 +12700,7 @@ MonoBehaviour:
   UpdateAsLast: 1
   DetectZeroKeyframes: 1
   StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
+  OptimizeWithMesh: {fileID: 246958535}
   OptimizeWithMeshes: []
   TailAnimatorAmount: 1
   DetachChildren: 0
@@ -12722,15 +12959,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1871975860}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.06449636, y: 0.037236992, z: 0.4986115, w: 0.86362046}
+  m_LocalRotation: {x: 0.64989436, y: -0.12769176, z: 0.6632454, w: 0.34847918}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.83333325, y: 0.83333325, z: 0.83333325}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4814155863533423}
   - {fileID: 1793204784}
   m_Father: {fileID: 4500688091760147}
-  m_LocalEulerAnglesHint: {x: -8.542, y: 0, z: 60}
+  m_LocalEulerAnglesHint: {x: 38.487, y: 80.984, z: 157.758}
 --- !u!114 &1871975862
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12907,39 +13143,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.39000005
+      value: 0.22
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.25
+      value: 0.09
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 0.00000014901158
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.00000011920926
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.70710677
+      value: 0.01881475
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.70710677
+      value: 0.999823
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
+      value: 182.156
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: -180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
       propertyPath: m_Name
@@ -13271,7 +13507,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  UseIK: 0
+  UseIK: 1
   IK:
     IKWeight: 0
     IKTargetPosition: {x: 0, y: 0, z: 0}
@@ -13321,13 +13557,13 @@ MonoBehaviour:
     m_RotationOrder: 4
   IKAutoAngleLimits: 1
   IKAutoAngleLimit: 40
-  IKContinousSolve: 0
+  IKContinousSolve: 1
   IkInvertOrder: 0
   IKBlend: 1
   IKAnimatorBlend: 0.5
-  IKReactionQuality: 2
-  IKSmoothing: 0
-  IKStretchToTarget: 0
+  IKReactionQuality: 1
+  IKSmoothing: 0.506
+  IKStretchToTarget: 2
   IKStretchCurve:
     serializedVersion: 2
     m_Curve:
@@ -13352,8 +13588,53 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  IKLimitSettings: []
-  IKSelectiveChain: 0
+  IKLimitSettings:
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  - AngleLimit: 45
+    TwistAngleLimit: 5
+    UseInChain: 1
+  IKSelectiveChain: 1
   RotationOffset: {x: 0, y: 0, z: 0, w: 1}
   Curving: {x: 0, y: 0, z: 0, w: 1}
   UseCurvingCurve: 0
@@ -13438,7 +13719,7 @@ MonoBehaviour:
   FixedCycle: 0
   WavingSpeed: 1
   WavingRange: 0.6
-  WavingAxis: {x: 0, y: 1, z: 1}
+  WavingAxis: {x: 0, y: 0.1, z: 1}
   WavingType: 1
   AlternateWave: 1
   UseWind: 0
@@ -13558,8 +13839,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   DeflectOnlyCollisions: 1
-  _Editor_Category: 2
-  _Editor_FeaturesCategory: 0
+  _Editor_Category: 0
+  _Editor_FeaturesCategory: 2
   DrawGizmos: 1
   StartBone: {fileID: 1893853330}
   EndBone: {fileID: 0}
@@ -13581,10 +13862,10 @@ MonoBehaviour:
   - {fileID: 1893853317}
   - {fileID: 1893853315}
   _GhostChainInitCount: 15
-  UpdateRate: 0
+  UpdateRate: 60
   AnimatePhysics: 0
-  InterpolateRate: 0
-  Prewarm: 0
+  InterpolateRate: 1
+  Prewarm: 1
   Slithery: 1
   Curling: 0.5
   Springiness: 0
@@ -13606,7 +13887,7 @@ MonoBehaviour:
   UpdateAsLast: 1
   DetectZeroKeyframes: 1
   StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
+  OptimizeWithMesh: {fileID: 1759546579}
   OptimizeWithMeshes: []
   TailAnimatorAmount: 1
   DetachChildren: 0
@@ -14108,6 +14389,89 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1001 &1965386236
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 4500688091760147}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.017
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.319
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.041559603
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.9991361
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -184.764
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
+      propertyPath: m_Name
+      value: Skul_lp
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
+--- !u!4 &1965386237 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 10b75ba2a46761440a0b35bff106ebc4, type: 3}
+  m_PrefabInstance: {fileID: 1965386236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &1991381566 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -674402253053192165, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
+  m_PrefabInstance: {fileID: 1406402238}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1992255947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15018,6 +15382,32 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &2071875424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 51f5362e8fe521b4085827b0970a1f4e, type: 3}
+  m_PrefabInstance: {fileID: 1628933459}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2071875425
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071875424}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8fc49fa4f32b97248a77e11a6d6f3cba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &2075253600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15392,6 +15782,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -2232110922815128302, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
   m_PrefabInstance: {fileID: 408085460}
   m_PrefabAsset: {fileID: 0}
+--- !u!137 &2142390529 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -674402253053192165, guid: 9c49025b2433b78479987eebe7d2b9ae, type: 3}
+  m_PrefabInstance: {fileID: 408085460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1060871244175107
 GameObject:
   m_ObjectHideFlags: 0
@@ -15411,159 +15806,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1098000449544133
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4827491763112379}
-  - component: {fileID: 114401355490707449}
-  - component: {fileID: 114605716694646033}
-  m_Layer: 0
-  m_Name: Tail 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!1 &1123131988759349
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4408486852729217}
-  - component: {fileID: 114536365615331271}
-  - component: {fileID: 114430649994172729}
-  m_Layer: 0
-  m_Name: Tail 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!1 &1346142334598583
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4316103728207771}
-  - component: {fileID: 114911121496452927}
-  - component: {fileID: 114679040123914569}
-  m_Layer: 0
-  m_Name: Tail 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!1 &1714975670630681
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4265441402569977}
-  - component: {fileID: 114875028120917921}
-  - component: {fileID: 114692164401598569}
-  m_Layer: 0
-  m_Name: Tail 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!1 &1747889635555919
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4808373632565515}
-  - component: {fileID: 114808836476846823}
-  - component: {fileID: 114162676096058615}
-  m_Layer: 0
-  m_Name: Tail 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!1 &1965571699407917
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4814155863533423}
-  - component: {fileID: 114802738682472417}
-  - component: {fileID: 114858217904718005}
-  m_Layer: 0
-  m_Name: Tail 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &4265441402569977
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1714975670630681}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.7071058, z: -0, w: 0.7071078}
-  m_LocalPosition: {x: 0.39800003, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1103999940}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!4 &4316103728207771
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346142334598583}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.5000007, y: 0.4999993, z: -0.49999925, w: 0.50000083}
-  m_LocalPosition: {x: 0, y: -0.39800012, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1377391454}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!4 &4408486852729217
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1123131988759349}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.27059832, y: 0.65328056, z: -0.27059752, w: 0.65328246}
-  m_LocalPosition: {x: 0.2814286, y: -0.2814284, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 162920788}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!4 &4500688091760147
 Transform:
   m_ObjectHideFlags: 0
@@ -15577,6 +15819,9 @@ Transform:
   m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1965386237}
+  - {fileID: 1628933460}
+  - {fileID: 1733493017}
   - {fileID: 1377391454}
   - {fileID: 162920788}
   - {fileID: 1434415368}
@@ -15584,53 +15829,9 @@ Transform:
   - {fileID: 1103999940}
   - {fileID: 1047148502}
   - {fileID: 767652370}
+  - {fileID: 713125139}
   m_Father: {fileID: 849552275}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!4 &4808373632565515
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1747889635555919}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.7071078, y: -0, z: 0.7071058, w: 0}
-  m_LocalPosition: {x: -0.398, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1047148502}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!4 &4814155863533423
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965571699407917}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.5000008, y: 0.49999928, z: 0.49999928, w: 0.5000008}
-  m_LocalPosition: {x: 0, y: 0.39800012, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1871975861}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!4 &4827491763112379
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1098000449544133}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.6532824, y: 0.27059776, z: -0.65328056, w: 0.2705985}
-  m_LocalPosition: {x: -0.2814285, y: -0.28142864, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1434415368}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!23 &23125268313812443
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15638,7 +15839,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060871244175107}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -15681,3840 +15882,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1060871244175107}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114162676096058615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1747889635555919}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61574e354ba34a141ae2cc1228f5eda3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseCollision: 0
-  CollisionSpace: 1
-  CollisionMode: 0
-  CheapCollision: 0
-  DynamicWorldCollidersInclusion: 0
-  InclusionRadius: 1
-  IgnoreMeshColliders: 1
-  IncludedColliders: []
-  IncludedColliders2D: []
-  CollidersType: 0
-  CollideWithOtherTails: 0
-  CollideWithDisabledColliders: 1
-  CollisionSlippery: 1
-  ReflectCollision: 0
-  CollidersScaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  CollidersScaleMul: 6.5
-  CollisionsAutoCurve: 0.5
-  IgnoredColliders: []
-  IgnoredColliders2D: []
-  CollidersSameLayer: 1
-  CollidersAddRigidbody: 1
-  RigidbodyMass: 1
-  CollidersLayer: 0
-  UseSlitheryCurve: 0
-  SlitheryCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.75
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseCurlingCurve: 0
-  CurlingCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.3
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseSpringCurve: 0
-  SpringCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseSlipperyCurve: 0
-  SlipperyCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UsePosSpeedCurve: 0
-  PosCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseRotSpeedCurve: 0
-  RotCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.9
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UsePartialBlend: 0
-  BlendCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.95
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.45
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseIK: 0
-  IK:
-    IKWeight: 0
-    IKTargetPosition: {x: 0, y: 0, z: 0}
-    IKTargetRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastLocalDirection: {x: 0, y: 0, z: 0}
-    LocalDirection: {x: 0, y: 0, z: 0}
-    IKBones: []
-    ContinousSolving: 0
-    SyncWithAnimator: 0
-    ReactionQuality: 0
-    Smoothing: 0
-    StretchToTarget: 0
-    StretchCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    Use2D: 0
-    Invert: 0
-  IKTarget: {fileID: 0}
-  IKAutoWeights: 1
-  IKBaseReactionWeight: 0.65
-  IKReactionWeightCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.25
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  IKAutoAngleLimits: 1
-  IKAutoAngleLimit: 40
-  IKContinousSolve: 1
-  IkInvertOrder: 0
-  IKBlend: 1
-  IKAnimatorBlend: 0.85
-  IKReactionQuality: 2
-  IKSmoothing: 0.2
-  IKStretchToTarget: 0
-  IKStretchCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  IKLimitSettings: []
-  IKSelectiveChain: 0
-  RotationOffset: {x: 0, y: 0, z: 0, w: 1}
-  Curving: {x: 0, y: 0, z: 0, w: 1}
-  UseCurvingCurve: 0
-  CurvCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.75
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  LengthMultiplier: 1
-  UseLengthMulCurve: 0
-  LengthMulCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseGravityCurve: 0
-  GravityCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.65
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  Gravity: {x: 0, y: 0, z: 0}
-  UseWaving: 1
-  CosinusAdd: 1
-  FixedCycle: 0
-  WavingSpeed: 3.25
-  WavingRange: 0.4
-  WavingAxis: {x: 0, y: 1, z: 0}
-  WavingType: 0
-  AlternateWave: 1
-  UseWind: 0
-  WindEffectPower: 1
-  WindTurbulencePower: 1
-  WindWorldNoisePower: 0.5
-  WindEffect: {x: 0, y: 0, z: 0}
-  fDebug: 0
-  _gizmosEditorStartPreview: {fileID: 0}
-  _gizmospesp: {fileID: 0}
-  _gizmosEditorEndPreview: {fileID: 0}
-  _gizmospeep: {fileID: 0}
-  _editor_Title: Tail Animator 2
-  _editor_IsInspectorViewingColliders: 0
-  _editor_IsInspectorViewingIncludedColliders: 0
-  _editor_animatorViewedCounter: 1
-  TailSegments: []
-  GhostParent:
-    ProceduralPosition: {x: 0, y: 0, z: 0}
-    ProceduralPositionWeightBlended: {x: 0, y: 0, z: 0}
-    TrueTargetRotation: {x: 0, y: 0, z: 0, w: 1}
-    PosRefRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosition: {x: 0, y: 0, z: 0}
-    BlendValue: 1
-    BoneDimensionsScaled: {x: 0, y: 0, z: 0}
-    BoneLengthScaled: 0
-    InitialLocalPosition: {x: 0, y: 0, z: 0}
-    InitialLocalPositionInRoot: {x: 0, y: 0, z: 0}
-    InitialLocalRotationInRoot: {x: 0, y: 0, z: 0, w: 1}
-    LocalOffset: {x: 0, y: 0, z: 0}
-    InitialLocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    ColliderRadius: 1
-    CollisionContactFlag: 0
-    CollisionContactRelevancy: -1
-    VelocityHelper: {x: 0, y: 0, z: 0}
-    QVelocityHelper: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPush: {x: 0, y: 0, z: 0}
-    Curving: {x: 0, y: 0, z: 0, w: 1}
-    Gravity: {x: 0, y: 0, z: 0}
-    GravityLookOffset: {x: 0, y: 0, z: 0}
-    LengthMultiplier: 1
-    PositionSpeed: 1
-    RotationSpeed: 1
-    Springiness: 0
-    Slithery: 1
-    Curling: 0.5
-    Slippery: 1
-    LastKeyframeLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastKeyframeLocalPosition: {x: 0, y: 0, z: 0}
-  GhostChild:
-    ProceduralPosition: {x: 0, y: 0, z: 0}
-    ProceduralPositionWeightBlended: {x: 0, y: 0, z: 0}
-    TrueTargetRotation: {x: 0, y: 0, z: 0, w: 1}
-    PosRefRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosition: {x: 0, y: 0, z: 0}
-    BlendValue: 1
-    BoneDimensionsScaled: {x: 0, y: 0, z: 0}
-    BoneLengthScaled: 0
-    InitialLocalPosition: {x: 0, y: 0, z: 0}
-    InitialLocalPositionInRoot: {x: 0, y: 0, z: 0}
-    InitialLocalRotationInRoot: {x: 0, y: 0, z: 0, w: 1}
-    LocalOffset: {x: 0, y: 0, z: 0}
-    InitialLocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    ColliderRadius: 1
-    CollisionContactFlag: 0
-    CollisionContactRelevancy: -1
-    VelocityHelper: {x: 0, y: 0, z: 0}
-    QVelocityHelper: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPush: {x: 0, y: 0, z: 0}
-    Curving: {x: 0, y: 0, z: 0, w: 1}
-    Gravity: {x: 0, y: 0, z: 0}
-    GravityLookOffset: {x: 0, y: 0, z: 0}
-    LengthMultiplier: 1
-    PositionSpeed: 1
-    RotationSpeed: 1
-    Springiness: 0
-    Slithery: 1
-    Curling: 0.5
-    Slippery: 1
-    LastKeyframeLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastKeyframeLocalPosition: {x: 0, y: 0, z: 0}
-  UseMaxDistance: 0
-  DistanceFrom: {fileID: 0}
-  _distanceFrom_Auto: {fileID: 0}
-  MaximumDistance: 35
-  MaxOutDistanceFactor: 0
-  DistanceWithoutY: 0
-  DistanceMeasurePoint: {x: 0, y: 0, z: 0}
-  FadeDuration: 0.75
-  Deflection: 0
-  DeflectionStartAngle: 10
-  DeflectionSmooth: 0
-  DeflectionFalloff:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.1
-      outSlope: 0.1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 5
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  DeflectOnlyCollisions: 1
-  _Editor_Category: 0
-  _Editor_FeaturesCategory: 0
-  DrawGizmos: 1
-  StartBone: {fileID: 2127820374}
-  EndBone: {fileID: 0}
-  EndBoneJointOffset: {x: 0, y: 0, z: 0}
-  _TransformsGhostChain:
-  - {fileID: 2127820374}
-  - {fileID: 907305227}
-  - {fileID: 801702934}
-  - {fileID: 1623474082}
-  - {fileID: 817829396}
-  - {fileID: 149042371}
-  - {fileID: 178826570}
-  - {fileID: 80383010}
-  - {fileID: 278203932}
-  - {fileID: 1137192991}
-  - {fileID: 125910445}
-  - {fileID: 374362980}
-  - {fileID: 869013573}
-  - {fileID: 1016008771}
-  - {fileID: 1055253674}
-  _GhostChainInitCount: 15
-  UpdateRate: 0
-  AnimatePhysics: 0
-  InterpolateRate: 1
-  Prewarm: 0
-  Slithery: 1
-  Curling: 0.5
-  Springiness: 0
-  MaxStretching: 0.375
-  AngleLimit: 181
-  AngleLimitAxis: {x: 0, y: 0, z: 0}
-  LimitAxisRange: {x: 0, y: 0}
-  LimitSmoothing: 0.5
-  MotionInfluence: 1
-  MotionInfluenceInY: 1
-  IncludeParent: 1
-  UnifyBendiness: 0
-  ReactionSpeed: 0.9
-  Sustain: 0
-  RotationRelevancy: 1
-  SmoothingStyle: 1
-  TimeScale: 1
-  DeltaType: 4
-  UpdateAsLast: 1
-  DetectZeroKeyframes: 1
-  StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
-  OptimizeWithMeshes: []
-  TailAnimatorAmount: 1
-  DetachChildren: 0
-  Axis2D: 0
-  Tangle: 0
-  AnimateRoll: 0
-  OverrideKeyframeAnimation: 0
---- !u!114 &114401355490707449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1098000449544133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fff57c0a299d734ea794bbd62986e25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circlePoints: 8
-  LengthSegments: 18
-  ForwardLength: 4
-  Fatness: 0.2
-  LengthScale:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.67639035
-      value: 0.9911765
-      inSlope: -4.9094267
-      outSlope: -4.9094267
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.055889904
-      inSlope: -2.6123033
-      outSlope: -2.6123033
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  RandomizeAtStart: 0
-  mat: {fileID: 2100000, guid: e74aecca15947e141bbe3d0790fa8eae, type: 2}
-  DrawGizmos: 1
-  BonesCount: 14
-  AddTailAnimator: 1
-  DetachForOptimization: 0
-  TargetTailAnimator: {fileID: 114605716694646033}
-  SetAsParent: 1
---- !u!114 &114430649994172729
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1123131988759349}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61574e354ba34a141ae2cc1228f5eda3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseCollision: 0
-  CollisionSpace: 1
-  CollisionMode: 0
-  CheapCollision: 0
-  DynamicWorldCollidersInclusion: 0
-  InclusionRadius: 1
-  IgnoreMeshColliders: 1
-  IncludedColliders: []
-  IncludedColliders2D: []
-  CollidersType: 0
-  CollideWithOtherTails: 0
-  CollideWithDisabledColliders: 1
-  CollisionSlippery: 1
-  ReflectCollision: 0
-  CollidersScaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  CollidersScaleMul: 6.5
-  CollisionsAutoCurve: 0.5
-  IgnoredColliders: []
-  IgnoredColliders2D: []
-  CollidersSameLayer: 1
-  CollidersAddRigidbody: 1
-  RigidbodyMass: 1
-  CollidersLayer: 0
-  UseSlitheryCurve: 0
-  SlitheryCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.75
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseCurlingCurve: 0
-  CurlingCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.3
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseSpringCurve: 0
-  SpringCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseSlipperyCurve: 0
-  SlipperyCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UsePosSpeedCurve: 0
-  PosCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseRotSpeedCurve: 0
-  RotCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.9
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UsePartialBlend: 0
-  BlendCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.95
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.45
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseIK: 0
-  IK:
-    IKWeight: 0
-    IKTargetPosition: {x: 0, y: 0, z: 0}
-    IKTargetRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastLocalDirection: {x: 0, y: 0, z: 0}
-    LocalDirection: {x: 0, y: 0, z: 0}
-    IKBones: []
-    ContinousSolving: 0
-    SyncWithAnimator: 0
-    ReactionQuality: 0
-    Smoothing: 0
-    StretchToTarget: 0
-    StretchCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    Use2D: 0
-    Invert: 0
-  IKTarget: {fileID: 0}
-  IKAutoWeights: 1
-  IKBaseReactionWeight: 0.65
-  IKReactionWeightCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.25
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  IKAutoAngleLimits: 1
-  IKAutoAngleLimit: 40
-  IKContinousSolve: 1
-  IkInvertOrder: 0
-  IKBlend: 1
-  IKAnimatorBlend: 0.85
-  IKReactionQuality: 2
-  IKSmoothing: 0.2
-  IKStretchToTarget: 0
-  IKStretchCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  IKLimitSettings: []
-  IKSelectiveChain: 0
-  RotationOffset: {x: 0, y: 0, z: 0, w: 1}
-  Curving: {x: 0, y: 0, z: 0, w: 1}
-  UseCurvingCurve: 0
-  CurvCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.75
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  LengthMultiplier: 1
-  UseLengthMulCurve: 0
-  LengthMulCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseGravityCurve: 0
-  GravityCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.65
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  Gravity: {x: 0, y: 0, z: 0}
-  UseWaving: 1
-  CosinusAdd: 1
-  FixedCycle: 0
-  WavingSpeed: 3.25
-  WavingRange: 0.4
-  WavingAxis: {x: 0, y: 1, z: 0}
-  WavingType: 0
-  AlternateWave: 1
-  UseWind: 0
-  WindEffectPower: 1
-  WindTurbulencePower: 1
-  WindWorldNoisePower: 0.5
-  WindEffect: {x: 0, y: 0, z: 0}
-  fDebug: 0
-  _gizmosEditorStartPreview: {fileID: 0}
-  _gizmospesp: {fileID: 0}
-  _gizmosEditorEndPreview: {fileID: 0}
-  _gizmospeep: {fileID: 0}
-  _editor_Title: Tail Animator 2
-  _editor_IsInspectorViewingColliders: 0
-  _editor_IsInspectorViewingIncludedColliders: 0
-  _editor_animatorViewedCounter: 1
-  TailSegments: []
-  GhostParent:
-    ProceduralPosition: {x: 0, y: 0, z: 0}
-    ProceduralPositionWeightBlended: {x: 0, y: 0, z: 0}
-    TrueTargetRotation: {x: 0, y: 0, z: 0, w: 1}
-    PosRefRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosition: {x: 0, y: 0, z: 0}
-    BlendValue: 1
-    BoneDimensionsScaled: {x: 0, y: 0, z: 0}
-    BoneLengthScaled: 0
-    InitialLocalPosition: {x: 0, y: 0, z: 0}
-    InitialLocalPositionInRoot: {x: 0, y: 0, z: 0}
-    InitialLocalRotationInRoot: {x: 0, y: 0, z: 0, w: 1}
-    LocalOffset: {x: 0, y: 0, z: 0}
-    InitialLocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    ColliderRadius: 1
-    CollisionContactFlag: 0
-    CollisionContactRelevancy: -1
-    VelocityHelper: {x: 0, y: 0, z: 0}
-    QVelocityHelper: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPush: {x: 0, y: 0, z: 0}
-    Curving: {x: 0, y: 0, z: 0, w: 1}
-    Gravity: {x: 0, y: 0, z: 0}
-    GravityLookOffset: {x: 0, y: 0, z: 0}
-    LengthMultiplier: 1
-    PositionSpeed: 1
-    RotationSpeed: 1
-    Springiness: 0
-    Slithery: 1
-    Curling: 0.5
-    Slippery: 1
-    LastKeyframeLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastKeyframeLocalPosition: {x: 0, y: 0, z: 0}
-  GhostChild:
-    ProceduralPosition: {x: 0, y: 0, z: 0}
-    ProceduralPositionWeightBlended: {x: 0, y: 0, z: 0}
-    TrueTargetRotation: {x: 0, y: 0, z: 0, w: 1}
-    PosRefRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosition: {x: 0, y: 0, z: 0}
-    BlendValue: 1
-    BoneDimensionsScaled: {x: 0, y: 0, z: 0}
-    BoneLengthScaled: 0
-    InitialLocalPosition: {x: 0, y: 0, z: 0}
-    InitialLocalPositionInRoot: {x: 0, y: 0, z: 0}
-    InitialLocalRotationInRoot: {x: 0, y: 0, z: 0, w: 1}
-    LocalOffset: {x: 0, y: 0, z: 0}
-    InitialLocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    ColliderRadius: 1
-    CollisionContactFlag: 0
-    CollisionContactRelevancy: -1
-    VelocityHelper: {x: 0, y: 0, z: 0}
-    QVelocityHelper: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPush: {x: 0, y: 0, z: 0}
-    Curving: {x: 0, y: 0, z: 0, w: 1}
-    Gravity: {x: 0, y: 0, z: 0}
-    GravityLookOffset: {x: 0, y: 0, z: 0}
-    LengthMultiplier: 1
-    PositionSpeed: 1
-    RotationSpeed: 1
-    Springiness: 0
-    Slithery: 1
-    Curling: 0.5
-    Slippery: 1
-    LastKeyframeLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastKeyframeLocalPosition: {x: 0, y: 0, z: 0}
-  UseMaxDistance: 0
-  DistanceFrom: {fileID: 0}
-  _distanceFrom_Auto: {fileID: 0}
-  MaximumDistance: 35
-  MaxOutDistanceFactor: 0
-  DistanceWithoutY: 0
-  DistanceMeasurePoint: {x: 0, y: 0, z: 0}
-  FadeDuration: 0.75
-  Deflection: 0
-  DeflectionStartAngle: 10
-  DeflectionSmooth: 0
-  DeflectionFalloff:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.1
-      outSlope: 0.1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 5
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  DeflectOnlyCollisions: 1
-  _Editor_Category: 0
-  _Editor_FeaturesCategory: 0
-  DrawGizmos: 1
-  StartBone: {fileID: 2127820374}
-  EndBone: {fileID: 0}
-  EndBoneJointOffset: {x: 0, y: 0, z: 0}
-  _TransformsGhostChain:
-  - {fileID: 2127820374}
-  - {fileID: 907305227}
-  - {fileID: 801702934}
-  - {fileID: 1623474082}
-  - {fileID: 817829396}
-  - {fileID: 149042371}
-  - {fileID: 178826570}
-  - {fileID: 80383010}
-  - {fileID: 278203932}
-  - {fileID: 1137192991}
-  - {fileID: 125910445}
-  - {fileID: 374362980}
-  - {fileID: 869013573}
-  - {fileID: 1016008771}
-  - {fileID: 1055253674}
-  _GhostChainInitCount: 15
-  UpdateRate: 0
-  AnimatePhysics: 0
-  InterpolateRate: 1
-  Prewarm: 0
-  Slithery: 1
-  Curling: 0.5
-  Springiness: 0
-  MaxStretching: 1
-  AngleLimit: 181
-  AngleLimitAxis: {x: 0, y: 0, z: 0}
-  LimitAxisRange: {x: 0, y: 0}
-  LimitSmoothing: 0.5
-  MotionInfluence: 1
-  MotionInfluenceInY: 1
-  IncludeParent: 1
-  UnifyBendiness: 0
-  ReactionSpeed: 0.9
-  Sustain: 0
-  RotationRelevancy: 1
-  SmoothingStyle: 1
-  TimeScale: 1
-  DeltaType: 4
-  UpdateAsLast: 1
-  DetectZeroKeyframes: 1
-  StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
-  OptimizeWithMeshes: []
-  TailAnimatorAmount: 1
-  DetachChildren: 0
-  Axis2D: 0
-  Tangle: 0
-  AnimateRoll: 0
-  OverrideKeyframeAnimation: 0
---- !u!114 &114536365615331271
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1123131988759349}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fff57c0a299d734ea794bbd62986e25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circlePoints: 8
-  LengthSegments: 18
-  ForwardLength: 4
-  Fatness: 0.2
-  LengthScale:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.67639035
-      value: 0.9911765
-      inSlope: -4.9094267
-      outSlope: -4.9094267
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.055889904
-      inSlope: -2.6123033
-      outSlope: -2.6123033
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  RandomizeAtStart: 0
-  mat: {fileID: 2100000, guid: e74aecca15947e141bbe3d0790fa8eae, type: 2}
-  DrawGizmos: 1
-  BonesCount: 14
-  AddTailAnimator: 1
-  DetachForOptimization: 0
-  TargetTailAnimator: {fileID: 114430649994172729}
-  SetAsParent: 1
---- !u!114 &114605716694646033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1098000449544133}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61574e354ba34a141ae2cc1228f5eda3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseCollision: 0
-  CollisionSpace: 1
-  CollisionMode: 0
-  CheapCollision: 0
-  DynamicWorldCollidersInclusion: 0
-  InclusionRadius: 1
-  IgnoreMeshColliders: 1
-  IncludedColliders: []
-  IncludedColliders2D: []
-  CollidersType: 0
-  CollideWithOtherTails: 0
-  CollideWithDisabledColliders: 1
-  CollisionSlippery: 1
-  ReflectCollision: 0
-  CollidersScaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  CollidersScaleMul: 6.5
-  CollisionsAutoCurve: 0.5
-  IgnoredColliders: []
-  IgnoredColliders2D: []
-  CollidersSameLayer: 1
-  CollidersAddRigidbody: 1
-  RigidbodyMass: 1
-  CollidersLayer: 0
-  UseSlitheryCurve: 0
-  SlitheryCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.75
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseCurlingCurve: 0
-  CurlingCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.3
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseSpringCurve: 0
-  SpringCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseSlipperyCurve: 0
-  SlipperyCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UsePosSpeedCurve: 0
-  PosCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseRotSpeedCurve: 0
-  RotCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.9
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UsePartialBlend: 0
-  BlendCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.95
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.45
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseIK: 0
-  IK:
-    IKWeight: 0
-    IKTargetPosition: {x: 0, y: 0, z: 0}
-    IKTargetRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastLocalDirection: {x: 0, y: 0, z: 0}
-    LocalDirection: {x: 0, y: 0, z: 0}
-    IKBones: []
-    ContinousSolving: 0
-    SyncWithAnimator: 0
-    ReactionQuality: 0
-    Smoothing: 0
-    StretchToTarget: 0
-    StretchCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    Use2D: 0
-    Invert: 0
-  IKTarget: {fileID: 0}
-  IKAutoWeights: 1
-  IKBaseReactionWeight: 0.65
-  IKReactionWeightCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.25
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  IKAutoAngleLimits: 1
-  IKAutoAngleLimit: 40
-  IKContinousSolve: 1
-  IkInvertOrder: 0
-  IKBlend: 1
-  IKAnimatorBlend: 0.85
-  IKReactionQuality: 2
-  IKSmoothing: 0.2
-  IKStretchToTarget: 0
-  IKStretchCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  IKLimitSettings: []
-  IKSelectiveChain: 0
-  RotationOffset: {x: 0, y: 0, z: 0, w: 1}
-  Curving: {x: 0, y: 0, z: 0, w: 1}
-  UseCurvingCurve: 0
-  CurvCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.75
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  LengthMultiplier: 1
-  UseLengthMulCurve: 0
-  LengthMulCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseGravityCurve: 0
-  GravityCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.65
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  Gravity: {x: 0, y: 0, z: 0}
-  UseWaving: 1
-  CosinusAdd: 1
-  FixedCycle: 0
-  WavingSpeed: 3.25
-  WavingRange: 0.4
-  WavingAxis: {x: 0, y: 1, z: 0}
-  WavingType: 0
-  AlternateWave: 1
-  UseWind: 0
-  WindEffectPower: 1
-  WindTurbulencePower: 1
-  WindWorldNoisePower: 0.5
-  WindEffect: {x: 0, y: 0, z: 0}
-  fDebug: 0
-  _gizmosEditorStartPreview: {fileID: 0}
-  _gizmospesp: {fileID: 0}
-  _gizmosEditorEndPreview: {fileID: 0}
-  _gizmospeep: {fileID: 0}
-  _editor_Title: Tail Animator 2
-  _editor_IsInspectorViewingColliders: 0
-  _editor_IsInspectorViewingIncludedColliders: 0
-  _editor_animatorViewedCounter: 1
-  TailSegments: []
-  GhostParent:
-    ProceduralPosition: {x: 0, y: 0, z: 0}
-    ProceduralPositionWeightBlended: {x: 0, y: 0, z: 0}
-    TrueTargetRotation: {x: 0, y: 0, z: 0, w: 1}
-    PosRefRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosition: {x: 0, y: 0, z: 0}
-    BlendValue: 1
-    BoneDimensionsScaled: {x: 0, y: 0, z: 0}
-    BoneLengthScaled: 0
-    InitialLocalPosition: {x: 0, y: 0, z: 0}
-    InitialLocalPositionInRoot: {x: 0, y: 0, z: 0}
-    InitialLocalRotationInRoot: {x: 0, y: 0, z: 0, w: 1}
-    LocalOffset: {x: 0, y: 0, z: 0}
-    InitialLocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    ColliderRadius: 1
-    CollisionContactFlag: 0
-    CollisionContactRelevancy: -1
-    VelocityHelper: {x: 0, y: 0, z: 0}
-    QVelocityHelper: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPush: {x: 0, y: 0, z: 0}
-    Curving: {x: 0, y: 0, z: 0, w: 1}
-    Gravity: {x: 0, y: 0, z: 0}
-    GravityLookOffset: {x: 0, y: 0, z: 0}
-    LengthMultiplier: 1
-    PositionSpeed: 1
-    RotationSpeed: 1
-    Springiness: 0
-    Slithery: 1
-    Curling: 0.5
-    Slippery: 1
-    LastKeyframeLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastKeyframeLocalPosition: {x: 0, y: 0, z: 0}
-  GhostChild:
-    ProceduralPosition: {x: 0, y: 0, z: 0}
-    ProceduralPositionWeightBlended: {x: 0, y: 0, z: 0}
-    TrueTargetRotation: {x: 0, y: 0, z: 0, w: 1}
-    PosRefRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosition: {x: 0, y: 0, z: 0}
-    BlendValue: 1
-    BoneDimensionsScaled: {x: 0, y: 0, z: 0}
-    BoneLengthScaled: 0
-    InitialLocalPosition: {x: 0, y: 0, z: 0}
-    InitialLocalPositionInRoot: {x: 0, y: 0, z: 0}
-    InitialLocalRotationInRoot: {x: 0, y: 0, z: 0, w: 1}
-    LocalOffset: {x: 0, y: 0, z: 0}
-    InitialLocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    ColliderRadius: 1
-    CollisionContactFlag: 0
-    CollisionContactRelevancy: -1
-    VelocityHelper: {x: 0, y: 0, z: 0}
-    QVelocityHelper: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPush: {x: 0, y: 0, z: 0}
-    Curving: {x: 0, y: 0, z: 0, w: 1}
-    Gravity: {x: 0, y: 0, z: 0}
-    GravityLookOffset: {x: 0, y: 0, z: 0}
-    LengthMultiplier: 1
-    PositionSpeed: 1
-    RotationSpeed: 1
-    Springiness: 0
-    Slithery: 1
-    Curling: 0.5
-    Slippery: 1
-    LastKeyframeLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastKeyframeLocalPosition: {x: 0, y: 0, z: 0}
-  UseMaxDistance: 0
-  DistanceFrom: {fileID: 0}
-  _distanceFrom_Auto: {fileID: 0}
-  MaximumDistance: 35
-  MaxOutDistanceFactor: 0
-  DistanceWithoutY: 0
-  DistanceMeasurePoint: {x: 0, y: 0, z: 0}
-  FadeDuration: 0.75
-  Deflection: 0
-  DeflectionStartAngle: 10
-  DeflectionSmooth: 0
-  DeflectionFalloff:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.1
-      outSlope: 0.1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 5
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  DeflectOnlyCollisions: 1
-  _Editor_Category: 1
-  _Editor_FeaturesCategory: 2
-  DrawGizmos: 1
-  StartBone: {fileID: 2127820374}
-  EndBone: {fileID: 0}
-  EndBoneJointOffset: {x: 0, y: 0, z: 0}
-  _TransformsGhostChain:
-  - {fileID: 2127820374}
-  - {fileID: 907305227}
-  - {fileID: 801702934}
-  - {fileID: 1623474082}
-  - {fileID: 817829396}
-  - {fileID: 149042371}
-  - {fileID: 178826570}
-  - {fileID: 80383010}
-  - {fileID: 278203932}
-  - {fileID: 1137192991}
-  - {fileID: 125910445}
-  - {fileID: 374362980}
-  - {fileID: 869013573}
-  - {fileID: 1016008771}
-  - {fileID: 1055253674}
-  _GhostChainInitCount: 15
-  UpdateRate: 0
-  AnimatePhysics: 0
-  InterpolateRate: 1
-  Prewarm: 0
-  Slithery: 1
-  Curling: 0.5
-  Springiness: 0
-  MaxStretching: 1
-  AngleLimit: 181
-  AngleLimitAxis: {x: 0, y: 0, z: 0}
-  LimitAxisRange: {x: 0, y: 0}
-  LimitSmoothing: 0.5
-  MotionInfluence: 1
-  MotionInfluenceInY: 1
-  IncludeParent: 1
-  UnifyBendiness: 0
-  ReactionSpeed: 0.9
-  Sustain: 0
-  RotationRelevancy: 1
-  SmoothingStyle: 1
-  TimeScale: 1
-  DeltaType: 4
-  UpdateAsLast: 1
-  DetectZeroKeyframes: 1
-  StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
-  OptimizeWithMeshes: []
-  TailAnimatorAmount: 1
-  DetachChildren: 0
-  Axis2D: 0
-  Tangle: 0
-  AnimateRoll: 0
-  OverrideKeyframeAnimation: 0
---- !u!114 &114679040123914569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346142334598583}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61574e354ba34a141ae2cc1228f5eda3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseCollision: 0
-  CollisionSpace: 1
-  CollisionMode: 0
-  CheapCollision: 0
-  DynamicWorldCollidersInclusion: 0
-  InclusionRadius: 1
-  IgnoreMeshColliders: 1
-  IncludedColliders: []
-  IncludedColliders2D: []
-  CollidersType: 0
-  CollideWithOtherTails: 0
-  CollideWithDisabledColliders: 1
-  CollisionSlippery: 1
-  ReflectCollision: 0
-  CollidersScaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  CollidersScaleMul: 6.5
-  CollisionsAutoCurve: 0.5
-  IgnoredColliders: []
-  IgnoredColliders2D: []
-  CollidersSameLayer: 1
-  CollidersAddRigidbody: 1
-  RigidbodyMass: 1
-  CollidersLayer: 0
-  UseSlitheryCurve: 0
-  SlitheryCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.75
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseCurlingCurve: 0
-  CurlingCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.3
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseSpringCurve: 0
-  SpringCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseSlipperyCurve: 0
-  SlipperyCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UsePosSpeedCurve: 0
-  PosCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseRotSpeedCurve: 0
-  RotCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.9
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UsePartialBlend: 0
-  BlendCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.95
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.45
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseIK: 0
-  IK:
-    IKWeight: 0
-    IKTargetPosition: {x: 0, y: 0, z: 0}
-    IKTargetRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastLocalDirection: {x: 0, y: 0, z: 0}
-    LocalDirection: {x: 0, y: 0, z: 0}
-    IKBones: []
-    ContinousSolving: 0
-    SyncWithAnimator: 0
-    ReactionQuality: 0
-    Smoothing: 0
-    StretchToTarget: 0
-    StretchCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    Use2D: 0
-    Invert: 0
-  IKTarget: {fileID: 0}
-  IKAutoWeights: 1
-  IKBaseReactionWeight: 0.65
-  IKReactionWeightCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.25
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  IKAutoAngleLimits: 1
-  IKAutoAngleLimit: 40
-  IKContinousSolve: 1
-  IkInvertOrder: 0
-  IKBlend: 1
-  IKAnimatorBlend: 0.85
-  IKReactionQuality: 2
-  IKSmoothing: 0.2
-  IKStretchToTarget: 0
-  IKStretchCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  IKLimitSettings: []
-  IKSelectiveChain: 0
-  RotationOffset: {x: 0, y: 0, z: 0, w: 1}
-  Curving: {x: 0, y: 0, z: 0, w: 1}
-  UseCurvingCurve: 0
-  CurvCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.75
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  LengthMultiplier: 1
-  UseLengthMulCurve: 0
-  LengthMulCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseGravityCurve: 0
-  GravityCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.65
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  Gravity: {x: 0, y: 0, z: 0}
-  UseWaving: 1
-  CosinusAdd: 1
-  FixedCycle: 0
-  WavingSpeed: 3.25
-  WavingRange: 0.4
-  WavingAxis: {x: 0, y: 1, z: 0}
-  WavingType: 0
-  AlternateWave: 1
-  UseWind: 0
-  WindEffectPower: 1
-  WindTurbulencePower: 1
-  WindWorldNoisePower: 0.5
-  WindEffect: {x: 0, y: 0, z: 0}
-  fDebug: 0
-  _gizmosEditorStartPreview: {fileID: 0}
-  _gizmospesp: {fileID: 0}
-  _gizmosEditorEndPreview: {fileID: 0}
-  _gizmospeep: {fileID: 0}
-  _editor_Title: Tail Animator 2
-  _editor_IsInspectorViewingColliders: 0
-  _editor_IsInspectorViewingIncludedColliders: 0
-  _editor_animatorViewedCounter: 1
-  TailSegments: []
-  GhostParent:
-    ProceduralPosition: {x: 0, y: 0, z: 0}
-    ProceduralPositionWeightBlended: {x: 0, y: 0, z: 0}
-    TrueTargetRotation: {x: 0, y: 0, z: 0, w: 1}
-    PosRefRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosition: {x: 0, y: 0, z: 0}
-    BlendValue: 1
-    BoneDimensionsScaled: {x: 0, y: 0, z: 0}
-    BoneLengthScaled: 0
-    InitialLocalPosition: {x: 0, y: 0, z: 0}
-    InitialLocalPositionInRoot: {x: 0, y: 0, z: 0}
-    InitialLocalRotationInRoot: {x: 0, y: 0, z: 0, w: 1}
-    LocalOffset: {x: 0, y: 0, z: 0}
-    InitialLocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    ColliderRadius: 1
-    CollisionContactFlag: 0
-    CollisionContactRelevancy: -1
-    VelocityHelper: {x: 0, y: 0, z: 0}
-    QVelocityHelper: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPush: {x: 0, y: 0, z: 0}
-    Curving: {x: 0, y: 0, z: 0, w: 1}
-    Gravity: {x: 0, y: 0, z: 0}
-    GravityLookOffset: {x: 0, y: 0, z: 0}
-    LengthMultiplier: 1
-    PositionSpeed: 1
-    RotationSpeed: 1
-    Springiness: 0
-    Slithery: 1
-    Curling: 0.5
-    Slippery: 1
-    LastKeyframeLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastKeyframeLocalPosition: {x: 0, y: 0, z: 0}
-  GhostChild:
-    ProceduralPosition: {x: 0, y: 0, z: 0}
-    ProceduralPositionWeightBlended: {x: 0, y: 0, z: 0}
-    TrueTargetRotation: {x: 0, y: 0, z: 0, w: 1}
-    PosRefRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosition: {x: 0, y: 0, z: 0}
-    BlendValue: 1
-    BoneDimensionsScaled: {x: 0, y: 0, z: 0}
-    BoneLengthScaled: 0
-    InitialLocalPosition: {x: 0, y: 0, z: 0}
-    InitialLocalPositionInRoot: {x: 0, y: 0, z: 0}
-    InitialLocalRotationInRoot: {x: 0, y: 0, z: 0, w: 1}
-    LocalOffset: {x: 0, y: 0, z: 0}
-    InitialLocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    ColliderRadius: 1
-    CollisionContactFlag: 0
-    CollisionContactRelevancy: -1
-    VelocityHelper: {x: 0, y: 0, z: 0}
-    QVelocityHelper: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPush: {x: 0, y: 0, z: 0}
-    Curving: {x: 0, y: 0, z: 0, w: 1}
-    Gravity: {x: 0, y: 0, z: 0}
-    GravityLookOffset: {x: 0, y: 0, z: 0}
-    LengthMultiplier: 1
-    PositionSpeed: 1
-    RotationSpeed: 1
-    Springiness: 0
-    Slithery: 1
-    Curling: 0.5
-    Slippery: 1
-    LastKeyframeLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastKeyframeLocalPosition: {x: 0, y: 0, z: 0}
-  UseMaxDistance: 0
-  DistanceFrom: {fileID: 0}
-  _distanceFrom_Auto: {fileID: 0}
-  MaximumDistance: 35
-  MaxOutDistanceFactor: 0
-  DistanceWithoutY: 0
-  DistanceMeasurePoint: {x: 0, y: 0, z: 0}
-  FadeDuration: 0.75
-  Deflection: 0
-  DeflectionStartAngle: 10
-  DeflectionSmooth: 0
-  DeflectionFalloff:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.1
-      outSlope: 0.1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 5
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  DeflectOnlyCollisions: 1
-  _Editor_Category: 2
-  _Editor_FeaturesCategory: 2
-  DrawGizmos: 1
-  StartBone: {fileID: 2127820374}
-  EndBone: {fileID: 0}
-  EndBoneJointOffset: {x: 0, y: 0, z: 0}
-  _TransformsGhostChain:
-  - {fileID: 2127820374}
-  - {fileID: 907305227}
-  - {fileID: 801702934}
-  - {fileID: 1623474082}
-  - {fileID: 817829396}
-  - {fileID: 149042371}
-  - {fileID: 178826570}
-  - {fileID: 80383010}
-  - {fileID: 278203932}
-  - {fileID: 1137192991}
-  - {fileID: 125910445}
-  - {fileID: 374362980}
-  - {fileID: 869013573}
-  - {fileID: 1016008771}
-  - {fileID: 1055253674}
-  _GhostChainInitCount: 15
-  UpdateRate: 0
-  AnimatePhysics: 0
-  InterpolateRate: 1
-  Prewarm: 0
-  Slithery: 1
-  Curling: 0.5
-  Springiness: 0
-  MaxStretching: 1
-  AngleLimit: 181
-  AngleLimitAxis: {x: 0, y: 0, z: 0}
-  LimitAxisRange: {x: 0, y: 0}
-  LimitSmoothing: 0.5
-  MotionInfluence: 1
-  MotionInfluenceInY: 1
-  IncludeParent: 1
-  UnifyBendiness: 0
-  ReactionSpeed: 0.9
-  Sustain: 0
-  RotationRelevancy: 1
-  SmoothingStyle: 1
-  TimeScale: 1
-  DeltaType: 4
-  UpdateAsLast: 1
-  DetectZeroKeyframes: 1
-  StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
-  OptimizeWithMeshes: []
-  TailAnimatorAmount: 1
-  DetachChildren: 0
-  Axis2D: 0
-  Tangle: 0
-  AnimateRoll: 0
-  OverrideKeyframeAnimation: 0
---- !u!114 &114692164401598569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1714975670630681}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61574e354ba34a141ae2cc1228f5eda3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseCollision: 0
-  CollisionSpace: 1
-  CollisionMode: 0
-  CheapCollision: 0
-  DynamicWorldCollidersInclusion: 0
-  InclusionRadius: 1
-  IgnoreMeshColliders: 1
-  IncludedColliders: []
-  IncludedColliders2D: []
-  CollidersType: 0
-  CollideWithOtherTails: 0
-  CollideWithDisabledColliders: 1
-  CollisionSlippery: 1
-  ReflectCollision: 0
-  CollidersScaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  CollidersScaleMul: 6.5
-  CollisionsAutoCurve: 0.5
-  IgnoredColliders: []
-  IgnoredColliders2D: []
-  CollidersSameLayer: 1
-  CollidersAddRigidbody: 1
-  RigidbodyMass: 1
-  CollidersLayer: 0
-  UseSlitheryCurve: 0
-  SlitheryCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.75
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseCurlingCurve: 0
-  CurlingCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.3
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseSpringCurve: 0
-  SpringCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseSlipperyCurve: 0
-  SlipperyCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UsePosSpeedCurve: 0
-  PosCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseRotSpeedCurve: 0
-  RotCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.9
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UsePartialBlend: 0
-  BlendCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.95
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.45
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseIK: 0
-  IK:
-    IKWeight: 0
-    IKTargetPosition: {x: 0, y: 0, z: 0}
-    IKTargetRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastLocalDirection: {x: 0, y: 0, z: 0}
-    LocalDirection: {x: 0, y: 0, z: 0}
-    IKBones: []
-    ContinousSolving: 0
-    SyncWithAnimator: 0
-    ReactionQuality: 0
-    Smoothing: 0
-    StretchToTarget: 0
-    StretchCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    Use2D: 0
-    Invert: 0
-  IKTarget: {fileID: 0}
-  IKAutoWeights: 1
-  IKBaseReactionWeight: 0.65
-  IKReactionWeightCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.25
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  IKAutoAngleLimits: 1
-  IKAutoAngleLimit: 40
-  IKContinousSolve: 1
-  IkInvertOrder: 0
-  IKBlend: 1
-  IKAnimatorBlend: 0.85
-  IKReactionQuality: 2
-  IKSmoothing: 0.2
-  IKStretchToTarget: 0
-  IKStretchCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  IKLimitSettings: []
-  IKSelectiveChain: 0
-  RotationOffset: {x: 0, y: 0, z: 0, w: 1}
-  Curving: {x: 0, y: 0, z: 0, w: 1}
-  UseCurvingCurve: 0
-  CurvCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.75
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  LengthMultiplier: 1
-  UseLengthMulCurve: 0
-  LengthMulCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseGravityCurve: 0
-  GravityCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.65
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  Gravity: {x: 0, y: 0, z: 0}
-  UseWaving: 1
-  CosinusAdd: 1
-  FixedCycle: 0
-  WavingSpeed: 3.25
-  WavingRange: 0.4
-  WavingAxis: {x: 0, y: 1, z: 0}
-  WavingType: 0
-  AlternateWave: 1
-  UseWind: 0
-  WindEffectPower: 1
-  WindTurbulencePower: 1
-  WindWorldNoisePower: 0.5
-  WindEffect: {x: 0, y: 0, z: 0}
-  fDebug: 0
-  _gizmosEditorStartPreview: {fileID: 0}
-  _gizmospesp: {fileID: 0}
-  _gizmosEditorEndPreview: {fileID: 0}
-  _gizmospeep: {fileID: 0}
-  _editor_Title: Tail Animator 2
-  _editor_IsInspectorViewingColliders: 0
-  _editor_IsInspectorViewingIncludedColliders: 0
-  _editor_animatorViewedCounter: 1
-  TailSegments: []
-  GhostParent:
-    ProceduralPosition: {x: 0, y: 0, z: 0}
-    ProceduralPositionWeightBlended: {x: 0, y: 0, z: 0}
-    TrueTargetRotation: {x: 0, y: 0, z: 0, w: 1}
-    PosRefRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosition: {x: 0, y: 0, z: 0}
-    BlendValue: 1
-    BoneDimensionsScaled: {x: 0, y: 0, z: 0}
-    BoneLengthScaled: 0
-    InitialLocalPosition: {x: 0, y: 0, z: 0}
-    InitialLocalPositionInRoot: {x: 0, y: 0, z: 0}
-    InitialLocalRotationInRoot: {x: 0, y: 0, z: 0, w: 1}
-    LocalOffset: {x: 0, y: 0, z: 0}
-    InitialLocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    ColliderRadius: 1
-    CollisionContactFlag: 0
-    CollisionContactRelevancy: -1
-    VelocityHelper: {x: 0, y: 0, z: 0}
-    QVelocityHelper: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPush: {x: 0, y: 0, z: 0}
-    Curving: {x: 0, y: 0, z: 0, w: 1}
-    Gravity: {x: 0, y: 0, z: 0}
-    GravityLookOffset: {x: 0, y: 0, z: 0}
-    LengthMultiplier: 1
-    PositionSpeed: 1
-    RotationSpeed: 1
-    Springiness: 0
-    Slithery: 1
-    Curling: 0.5
-    Slippery: 1
-    LastKeyframeLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastKeyframeLocalPosition: {x: 0, y: 0, z: 0}
-  GhostChild:
-    ProceduralPosition: {x: 0, y: 0, z: 0}
-    ProceduralPositionWeightBlended: {x: 0, y: 0, z: 0}
-    TrueTargetRotation: {x: 0, y: 0, z: 0, w: 1}
-    PosRefRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosition: {x: 0, y: 0, z: 0}
-    BlendValue: 1
-    BoneDimensionsScaled: {x: 0, y: 0, z: 0}
-    BoneLengthScaled: 0
-    InitialLocalPosition: {x: 0, y: 0, z: 0}
-    InitialLocalPositionInRoot: {x: 0, y: 0, z: 0}
-    InitialLocalRotationInRoot: {x: 0, y: 0, z: 0, w: 1}
-    LocalOffset: {x: 0, y: 0, z: 0}
-    InitialLocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    ColliderRadius: 1
-    CollisionContactFlag: 0
-    CollisionContactRelevancy: -1
-    VelocityHelper: {x: 0, y: 0, z: 0}
-    QVelocityHelper: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPush: {x: 0, y: 0, z: 0}
-    Curving: {x: 0, y: 0, z: 0, w: 1}
-    Gravity: {x: 0, y: 0, z: 0}
-    GravityLookOffset: {x: 0, y: 0, z: 0}
-    LengthMultiplier: 1
-    PositionSpeed: 1
-    RotationSpeed: 1
-    Springiness: 0
-    Slithery: 1
-    Curling: 0.5
-    Slippery: 1
-    LastKeyframeLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastKeyframeLocalPosition: {x: 0, y: 0, z: 0}
-  UseMaxDistance: 0
-  DistanceFrom: {fileID: 0}
-  _distanceFrom_Auto: {fileID: 0}
-  MaximumDistance: 35
-  MaxOutDistanceFactor: 0
-  DistanceWithoutY: 0
-  DistanceMeasurePoint: {x: 0, y: 0, z: 0}
-  FadeDuration: 0.75
-  Deflection: 0
-  DeflectionStartAngle: 10
-  DeflectionSmooth: 0
-  DeflectionFalloff:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.1
-      outSlope: 0.1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 5
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  DeflectOnlyCollisions: 1
-  _Editor_Category: 0
-  _Editor_FeaturesCategory: 0
-  DrawGizmos: 1
-  StartBone: {fileID: 2127820374}
-  EndBone: {fileID: 0}
-  EndBoneJointOffset: {x: 0, y: 0, z: 0}
-  _TransformsGhostChain:
-  - {fileID: 2127820374}
-  - {fileID: 907305227}
-  - {fileID: 801702934}
-  - {fileID: 1623474082}
-  - {fileID: 817829396}
-  - {fileID: 149042371}
-  - {fileID: 178826570}
-  - {fileID: 80383010}
-  - {fileID: 278203932}
-  - {fileID: 1137192991}
-  - {fileID: 125910445}
-  - {fileID: 374362980}
-  - {fileID: 869013573}
-  - {fileID: 1016008771}
-  - {fileID: 1055253674}
-  _GhostChainInitCount: 15
-  UpdateRate: 0
-  AnimatePhysics: 0
-  InterpolateRate: 1
-  Prewarm: 0
-  Slithery: 1
-  Curling: 0.5
-  Springiness: 0
-  MaxStretching: 0.375
-  AngleLimit: 181
-  AngleLimitAxis: {x: 0, y: 0, z: 0}
-  LimitAxisRange: {x: 0, y: 0}
-  LimitSmoothing: 0.5
-  MotionInfluence: 1
-  MotionInfluenceInY: 1
-  IncludeParent: 1
-  UnifyBendiness: 0
-  ReactionSpeed: 0.9
-  Sustain: 0
-  RotationRelevancy: 1
-  SmoothingStyle: 1
-  TimeScale: 1
-  DeltaType: 4
-  UpdateAsLast: 1
-  DetectZeroKeyframes: 1
-  StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
-  OptimizeWithMeshes: []
-  TailAnimatorAmount: 1
-  DetachChildren: 0
-  Axis2D: 0
-  Tangle: 0
-  AnimateRoll: 0
-  OverrideKeyframeAnimation: 0
---- !u!114 &114802738682472417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965571699407917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fff57c0a299d734ea794bbd62986e25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circlePoints: 8
-  LengthSegments: 18
-  ForwardLength: 4
-  Fatness: 0.2
-  LengthScale:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.18910813
-      value: 0.5129457
-      inSlope: -0.1432395
-      outSlope: -0.1432395
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.43545508
-      value: 0.9508675
-      inSlope: 0.011600658
-      outSlope: 0.011600658
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.055889904
-      inSlope: -2.6123033
-      outSlope: -2.6123033
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  RandomizeAtStart: 0
-  mat: {fileID: 2100000, guid: e74aecca15947e141bbe3d0790fa8eae, type: 2}
-  DrawGizmos: 1
-  BonesCount: 14
-  AddTailAnimator: 1
-  DetachForOptimization: 0
-  TargetTailAnimator: {fileID: 114858217904718005}
-  SetAsParent: 1
---- !u!114 &114808836476846823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1747889635555919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fff57c0a299d734ea794bbd62986e25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circlePoints: 8
-  LengthSegments: 18
-  ForwardLength: 4
-  Fatness: 0.2
-  LengthScale:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.18910813
-      value: 0.5129457
-      inSlope: -0.1432395
-      outSlope: -0.1432395
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.43545508
-      value: 0.9508675
-      inSlope: 0.011600658
-      outSlope: 0.011600658
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.055889904
-      inSlope: -2.6123033
-      outSlope: -2.6123033
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  RandomizeAtStart: 0
-  mat: {fileID: 2100000, guid: e74aecca15947e141bbe3d0790fa8eae, type: 2}
-  DrawGizmos: 1
-  BonesCount: 14
-  AddTailAnimator: 1
-  DetachForOptimization: 0
-  TargetTailAnimator: {fileID: 114162676096058615}
-  SetAsParent: 1
---- !u!114 &114858217904718005
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1965571699407917}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61574e354ba34a141ae2cc1228f5eda3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UseCollision: 0
-  CollisionSpace: 1
-  CollisionMode: 0
-  CheapCollision: 0
-  DynamicWorldCollidersInclusion: 0
-  InclusionRadius: 1
-  IgnoreMeshColliders: 1
-  IncludedColliders: []
-  IncludedColliders2D: []
-  CollidersType: 0
-  CollideWithOtherTails: 0
-  CollideWithDisabledColliders: 1
-  CollisionSlippery: 1
-  ReflectCollision: 0
-  CollidersScaleCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  CollidersScaleMul: 6.5
-  CollisionsAutoCurve: 0.5
-  IgnoredColliders: []
-  IgnoredColliders2D: []
-  CollidersSameLayer: 1
-  CollidersAddRigidbody: 1
-  RigidbodyMass: 1
-  CollidersLayer: 0
-  UseSlitheryCurve: 0
-  SlitheryCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.75
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseCurlingCurve: 0
-  CurlingCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.3
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseSpringCurve: 0
-  SpringCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseSlipperyCurve: 0
-  SlipperyCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UsePosSpeedCurve: 0
-  PosCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.7
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseRotSpeedCurve: 0
-  RotCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.9
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UsePartialBlend: 0
-  BlendCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.95
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.45
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseIK: 0
-  IK:
-    IKWeight: 0
-    IKTargetPosition: {x: 0, y: 0, z: 0}
-    IKTargetRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastLocalDirection: {x: 0, y: 0, z: 0}
-    LocalDirection: {x: 0, y: 0, z: 0}
-    IKBones: []
-    ContinousSolving: 0
-    SyncWithAnimator: 0
-    ReactionQuality: 0
-    Smoothing: 0
-    StretchToTarget: 0
-    StretchCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    Use2D: 0
-    Invert: 0
-  IKTarget: {fileID: 0}
-  IKAutoWeights: 1
-  IKBaseReactionWeight: 0.65
-  IKReactionWeightCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.25
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  IKAutoAngleLimits: 1
-  IKAutoAngleLimit: 40
-  IKContinousSolve: 1
-  IkInvertOrder: 0
-  IKBlend: 1
-  IKAnimatorBlend: 0.85
-  IKReactionQuality: 2
-  IKSmoothing: 0.2
-  IKStretchToTarget: 0
-  IKStretchCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  IKLimitSettings: []
-  IKSelectiveChain: 0
-  RotationOffset: {x: 0, y: 0, z: 0, w: 1}
-  Curving: {x: 0, y: 0, z: 0, w: 1}
-  UseCurvingCurve: 0
-  CurvCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.75
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  LengthMultiplier: 1
-  UseLengthMulCurve: 0
-  LengthMulCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  UseGravityCurve: 0
-  GravityCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0.65
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  Gravity: {x: 0, y: 0, z: 0}
-  UseWaving: 1
-  CosinusAdd: 1
-  FixedCycle: 0
-  WavingSpeed: 3.25
-  WavingRange: 0.4
-  WavingAxis: {x: 0, y: 1, z: 0}
-  WavingType: 0
-  AlternateWave: 1
-  UseWind: 0
-  WindEffectPower: 1
-  WindTurbulencePower: 1
-  WindWorldNoisePower: 0.5
-  WindEffect: {x: 0, y: 0, z: 0}
-  fDebug: 0
-  _gizmosEditorStartPreview: {fileID: 0}
-  _gizmospesp: {fileID: 0}
-  _gizmosEditorEndPreview: {fileID: 0}
-  _gizmospeep: {fileID: 0}
-  _editor_Title: Tail Animator 2
-  _editor_IsInspectorViewingColliders: 0
-  _editor_IsInspectorViewingIncludedColliders: 0
-  _editor_animatorViewedCounter: 1
-  TailSegments: []
-  GhostParent:
-    ProceduralPosition: {x: 0, y: 0, z: 0}
-    ProceduralPositionWeightBlended: {x: 0, y: 0, z: 0}
-    TrueTargetRotation: {x: 0, y: 0, z: 0, w: 1}
-    PosRefRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosition: {x: 0, y: 0, z: 0}
-    BlendValue: 1
-    BoneDimensionsScaled: {x: 0, y: 0, z: 0}
-    BoneLengthScaled: 0
-    InitialLocalPosition: {x: 0, y: 0, z: 0}
-    InitialLocalPositionInRoot: {x: 0, y: 0, z: 0}
-    InitialLocalRotationInRoot: {x: 0, y: 0, z: 0, w: 1}
-    LocalOffset: {x: 0, y: 0, z: 0}
-    InitialLocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    ColliderRadius: 1
-    CollisionContactFlag: 0
-    CollisionContactRelevancy: -1
-    VelocityHelper: {x: 0, y: 0, z: 0}
-    QVelocityHelper: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPush: {x: 0, y: 0, z: 0}
-    Curving: {x: 0, y: 0, z: 0, w: 1}
-    Gravity: {x: 0, y: 0, z: 0}
-    GravityLookOffset: {x: 0, y: 0, z: 0}
-    LengthMultiplier: 1
-    PositionSpeed: 1
-    RotationSpeed: 1
-    Springiness: 0
-    Slithery: 1
-    Curling: 0.5
-    Slippery: 1
-    LastKeyframeLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastKeyframeLocalPosition: {x: 0, y: 0, z: 0}
-  GhostChild:
-    ProceduralPosition: {x: 0, y: 0, z: 0}
-    ProceduralPositionWeightBlended: {x: 0, y: 0, z: 0}
-    TrueTargetRotation: {x: 0, y: 0, z: 0, w: 1}
-    PosRefRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosReferenceRotation: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPosition: {x: 0, y: 0, z: 0}
-    BlendValue: 1
-    BoneDimensionsScaled: {x: 0, y: 0, z: 0}
-    BoneLengthScaled: 0
-    InitialLocalPosition: {x: 0, y: 0, z: 0}
-    InitialLocalPositionInRoot: {x: 0, y: 0, z: 0}
-    InitialLocalRotationInRoot: {x: 0, y: 0, z: 0, w: 1}
-    LocalOffset: {x: 0, y: 0, z: 0}
-    InitialLocalRotation: {x: 0, y: 0, z: 0, w: 1}
-    ColliderRadius: 1
-    CollisionContactFlag: 0
-    CollisionContactRelevancy: -1
-    VelocityHelper: {x: 0, y: 0, z: 0}
-    QVelocityHelper: {x: 0, y: 0, z: 0, w: 1}
-    PreviousPush: {x: 0, y: 0, z: 0}
-    Curving: {x: 0, y: 0, z: 0, w: 1}
-    Gravity: {x: 0, y: 0, z: 0}
-    GravityLookOffset: {x: 0, y: 0, z: 0}
-    LengthMultiplier: 1
-    PositionSpeed: 1
-    RotationSpeed: 1
-    Springiness: 0
-    Slithery: 1
-    Curling: 0.5
-    Slippery: 1
-    LastKeyframeLocalRotation: {x: 0, y: 0, z: 0, w: 0}
-    LastKeyframeLocalPosition: {x: 0, y: 0, z: 0}
-  UseMaxDistance: 0
-  DistanceFrom: {fileID: 0}
-  _distanceFrom_Auto: {fileID: 0}
-  MaximumDistance: 35
-  MaxOutDistanceFactor: 0
-  DistanceWithoutY: 0
-  DistanceMeasurePoint: {x: 0, y: 0, z: 0}
-  FadeDuration: 0.75
-  Deflection: 0
-  DeflectionStartAngle: 10
-  DeflectionSmooth: 0
-  DeflectionFalloff:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0.1
-      outSlope: 0.1
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 5
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  DeflectOnlyCollisions: 1
-  _Editor_Category: 2
-  _Editor_FeaturesCategory: 2
-  DrawGizmos: 1
-  StartBone: {fileID: 2127820374}
-  EndBone: {fileID: 0}
-  EndBoneJointOffset: {x: 0, y: 0, z: 0}
-  _TransformsGhostChain:
-  - {fileID: 2127820374}
-  - {fileID: 907305227}
-  - {fileID: 801702934}
-  - {fileID: 1623474082}
-  - {fileID: 817829396}
-  - {fileID: 149042371}
-  - {fileID: 178826570}
-  - {fileID: 80383010}
-  - {fileID: 278203932}
-  - {fileID: 1137192991}
-  - {fileID: 125910445}
-  - {fileID: 374362980}
-  - {fileID: 869013573}
-  - {fileID: 1016008771}
-  - {fileID: 1055253674}
-  _GhostChainInitCount: 15
-  UpdateRate: 0
-  AnimatePhysics: 0
-  InterpolateRate: 1
-  Prewarm: 0
-  Slithery: 1
-  Curling: 0.5
-  Springiness: 0
-  MaxStretching: 0.375
-  AngleLimit: 181
-  AngleLimitAxis: {x: 0, y: 0, z: 0}
-  LimitAxisRange: {x: 0, y: 0}
-  LimitSmoothing: 0.5
-  MotionInfluence: 1
-  MotionInfluenceInY: 1
-  IncludeParent: 1
-  UnifyBendiness: 0
-  ReactionSpeed: 0.9
-  Sustain: 0
-  RotationRelevancy: 1
-  SmoothingStyle: 1
-  TimeScale: 1
-  DeltaType: 4
-  UpdateAsLast: 1
-  DetectZeroKeyframes: 1
-  StartAfterTPose: 1
-  OptimizeWithMesh: {fileID: 0}
-  OptimizeWithMeshes: []
-  TailAnimatorAmount: 1
-  DetachChildren: 0
-  Axis2D: 0
-  Tangle: 0
-  AnimateRoll: 0
-  OverrideKeyframeAnimation: 0
---- !u!114 &114875028120917921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1714975670630681}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fff57c0a299d734ea794bbd62986e25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circlePoints: 8
-  LengthSegments: 18
-  ForwardLength: 4
-  Fatness: 0.2
-  LengthScale:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.18910813
-      value: 0.5129457
-      inSlope: -0.1432395
-      outSlope: -0.1432395
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.43545508
-      value: 0.9508675
-      inSlope: 0.011600658
-      outSlope: 0.011600658
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.055889904
-      inSlope: -2.6123033
-      outSlope: -2.6123033
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  RandomizeAtStart: 0
-  mat: {fileID: 2100000, guid: e74aecca15947e141bbe3d0790fa8eae, type: 2}
-  DrawGizmos: 1
-  BonesCount: 14
-  AddTailAnimator: 1
-  DetachForOptimization: 0
-  TargetTailAnimator: {fileID: 114692164401598569}
-  SetAsParent: 1
---- !u!114 &114911121496452927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1346142334598583}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fff57c0a299d734ea794bbd62986e25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  circlePoints: 8
-  LengthSegments: 18
-  ForwardLength: 4
-  Fatness: 0.2
-  LengthScale:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.18910813
-      value: 0.5129457
-      inSlope: -0.1432395
-      outSlope: -0.1432395
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.43545508
-      value: 0.9508675
-      inSlope: 0.011600658
-      outSlope: 0.011600658
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0.055889904
-      inSlope: -2.6123033
-      outSlope: -2.6123033
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  RandomizeAtStart: 0
-  mat: {fileID: 2100000, guid: e74aecca15947e141bbe3d0790fa8eae, type: 2}
-  DrawGizmos: 1
-  BonesCount: 14
-  AddTailAnimator: 1
-  DetachForOptimization: 0
-  TargetTailAnimator: {fileID: 114679040123914569}
-  SetAsParent: 1
 --- !u!135 &135280058376473123
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19622,7 +15989,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3201831219907672776, guid: 11893df29ece139469ac69e50f44a22e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3756878490773769269, guid: 11893df29ece139469ac69e50f44a22e, type: 3}
       propertyPath: m_IsActive
@@ -19718,3 +16085,4 @@ SceneRoots:
   - {fileID: 1329784441}
   - {fileID: 1484770934}
   - {fileID: 571288759452764310}
+  - {fileID: 1714885449}

@@ -20,18 +20,28 @@ public class OctopusTail : MonoBehaviour
     Vector3 defaultRotation;
     float currentBlend = 0;
     float speedCollect = 5;
+    bool canCatch = false;
 
     private void Awake()
     {
         defaultRotation = transform.localEulerAngles;
     }
 
+    private void OnEnable()
+    {
+        tailAnimator.LengthMultiplier = 0;
+        DOTween.To(() => tailAnimator.LengthMultiplier, x => tailAnimator.LengthMultiplier = x, 1f, 1f).OnComplete(() =>
+        {
+            canCatch = true;
+        });
+    }
+
     private void Update()
     {
-        if (currentState == TailState.Catch)
-        {
-            transform.LookAt(target.transform);
-        }
+        //if (currentState == TailState.Catch)
+        //{
+        //    transform.LookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z));
+        //}
         switch (currentState)
         {
             case TailState.Idle:
@@ -64,6 +74,14 @@ public class OctopusTail : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        if (currentState == TailState.Catch)
+        {
+            transform.LookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z));
+        }
+    }
+
     public void ChangeState(TailState state)
     {
         if (currentState == state) return;
@@ -79,14 +97,22 @@ public class OctopusTail : MonoBehaviour
                 transform.DOLocalRotate(defaultRotation, 2);
                 break;
             case TailState.Catch:
-          
+                tailAnimator.UseIK = true;
+                tailAnimator.TailAnimatorAmount = 0.85f;
+                currentBlend = 0;
+                tailAnimator.IKBlend = 0;
+                tailAnimator.IKContinousSolve = true;
+                tailAnimator.Slithery = 1f;
                 break;
-            case TailState.Collect: break;
+            case TailState.Collect:
+                tailAnimator.TailAnimatorAmount = 0.15f;
+                break;
         }
     }
 
     public void CatchAlien(EnemyBase alien)
     {
+        if (!canCatch) return;
         target = alien;
         //alien.target = this;
         //alien.ChangeState(AlienState.Catched);

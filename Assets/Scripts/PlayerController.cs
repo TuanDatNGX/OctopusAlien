@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public CharacterController characterController;
     public CharacterStat characterStat;
     public FloatingJoystick joystick;
+    public Animator faceAnim;
     public float moveSpeed;
     public float rotateSpeed;
     Vector3 inputDirection;
@@ -17,8 +18,10 @@ public class PlayerController : MonoBehaviour
     public List<EnemyBase> listAlienInRange;
     public Transform model;
     public Transform rangeObj;
+    public Transform mouth;
     public GameObject rangeZone;
     public ParticleSystem levelUpFx;
+    public ParticleSystem levelUpFx2;
     public Material mat2;
     public Material mat3;
     public Material matFace2;
@@ -85,6 +88,7 @@ public class PlayerController : MonoBehaviour
              if(rangeActive == null)
              rangeActive = StartCoroutine(DeActiveRangeZone());
         }
+        Move();
     }
 
     IEnumerator DeActiveRangeZone()
@@ -106,7 +110,7 @@ public class PlayerController : MonoBehaviour
             if (levelUpData.enemyAssets[currentLevel.ToString()].size != 0)
             {
                 model.transform.DOScale(model.localScale.x + defaultScale * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
-                Camera.main.DOFieldOfView(Camera.main.fieldOfView + defaultCam * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
+                Camera.main.DOFieldOfView(Camera.main.fieldOfView + 0.4f * defaultCam * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
             }
             if (levelUpData.enemyAssets[currentLevel.ToString()].tentacles > 0)
             {
@@ -115,13 +119,18 @@ public class PlayerController : MonoBehaviour
                     if (!tails[i].gameObject.activeSelf)
                     {
                         tails[i].gameObject.SetActive(true);
+                        levelUpFx2.Play();
                         return;
                     }
                 }
             }
             if (levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius != 0)
             {
-                rangeObj.transform.DOScale(rangeObj.localScale.x + 0.2f * levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius, 0.35f);
+                //rangeObj.transform.DOScale(rangeObj.localScale.x + 0.2f * levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius, 0.35f);
+                //foreach (OctopusTail t in tails)
+                //{
+                //    t.tailAnimator.LengthMultiplier = t.tailAnimator.LengthMultiplier + 0.05f * levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius;
+                //}
             }
             if (levelUpData.enemyAssets[currentLevel.ToString()].evol != 0)
             {
@@ -133,6 +142,7 @@ public class PlayerController : MonoBehaviour
                         item.tailAnimator.transform.GetChild(1).GetComponent<SkinnedMeshRenderer>().material = mat2;
                     }
                 }
+
                 else if (levelUpData.enemyAssets[currentLevel.ToString()].evol == 2)
                 {
                     model.GetComponent<MeshRenderer>().material = matFace3;
@@ -141,6 +151,7 @@ public class PlayerController : MonoBehaviour
                         item.tailAnimator.transform.GetChild(1).GetComponent<SkinnedMeshRenderer>().material = mat3;
                     }
                 }
+                levelUpFx2.Play();
             }
             characterStat.ATK += levelUpData.enemyAssets[currentLevel.ToString()].Atk;
             characterStat.HP += levelUpData.enemyAssets[currentLevel.ToString()].Hp;
@@ -153,7 +164,7 @@ public class PlayerController : MonoBehaviour
         UiController.Instance.UpdateExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp, currentLevel);
     }
 
-    protected virtual void FixedUpdate()
+    protected void Move()
     {
         inputDirection = new Vector3(joystick.Direction.x, 0, joystick.Direction.y);
         if (inputDirection.magnitude > 0.1f)
@@ -167,5 +178,17 @@ public class PlayerController : MonoBehaviour
         {
             characterController.Move(Vector3.zero * Time.deltaTime);
         }
+    }
+
+    public void ActionEat()
+    {
+        Eat = StartCoroutine(CoEat());
+    }
+
+    Coroutine Eat;
+    IEnumerator CoEat()
+    {
+        yield return new WaitForSeconds(0.1f);
+        faceAnim.Play("Eat");
     }
 }
