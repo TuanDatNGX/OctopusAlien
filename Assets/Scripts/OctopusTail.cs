@@ -29,7 +29,7 @@ public class OctopusTail : MonoBehaviour
     {
         if (currentState == TailState.Catch)
         {
-            transform.LookAt(target.transform);
+            transform.LookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z));
         }
         switch (currentState)
         {
