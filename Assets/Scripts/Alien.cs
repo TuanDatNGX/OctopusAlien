@@ -24,13 +24,17 @@ public class Alien : MonoBehaviour
     public GameObject hpObj;
     public Image hpFill;
     public float currentHp = 100;
+    public float maxHp = 100;
     public float Speed;
+    public float heal = 100;
+    public int rewardExp;
     Tween moving;
     Vector3 des;
 
     private void Start()
     {
         Move();
+        currentHp = maxHp;
         animator.SetFloat("Speed", 1);
     }
 
@@ -42,7 +46,7 @@ public class Alien : MonoBehaviour
     public void Move()
     {
         des = new Vector3(Random.Range(-circle.radius, circle.radius), 0, Random.Range(-circle.radius, circle.radius));
-        animator.transform.LookAt(circle.transform.position + des);
+        transform.LookAt(circle.transform.position + des);
         moving = transform.DOLocalMove(des, Vector3.Distance(transform.localPosition, des) / Speed).SetEase(Ease.Linear).OnComplete(() =>
         {
             if(gameObject.activeSelf)
@@ -60,15 +64,15 @@ public class Alien : MonoBehaviour
         switch (currentState)
         {
             case AlienState.Idle:
-                currentHp += 100 * Time.deltaTime;
-                hpFill.fillAmount = currentHp / 100f;
-                if (currentHp >= 100) currentHp = 100;
-                hpObj.SetActive(currentHp < 100);
+                currentHp += heal * Time.deltaTime;
+                hpFill.fillAmount = currentHp / maxHp;
+                if (currentHp >= maxHp) currentHp = maxHp;
+                hpObj.SetActive(currentHp < maxHp);
                 break;
             case AlienState.Catched:
-                currentHp -= 100 * Time.deltaTime;
-                hpFill.fillAmount = currentHp / 100f;
-                hpObj.SetActive(currentHp < 100);
+                currentHp -= target.player.GetComponent<CharacterStat>().ATK * Time.deltaTime;
+                hpFill.fillAmount = currentHp / maxHp;
+                hpObj.SetActive(currentHp < maxHp);
                 if (currentHp <= 0)
                 {
                     currentHp = 0;
@@ -97,14 +101,22 @@ public class Alien : MonoBehaviour
                 growingRoot.SetActive(true);
                 break;
             case AlienState.Collect:
+                //animator.Play("Floating");
                 target.player.listAlienInRange.Remove(this);
                 collider.enabled = false;
                 target.ChangeState(TailState.Collect);
-                transform.DOMove(target.transform.position, 0.25f).SetEase(Ease.Linear).OnComplete(() =>
+
+                transform.DOMove(transform.position + new Vector3(0, 0.5f, 0), 0.1f).SetEase(Ease.Linear).OnComplete(() =>
                 {
-                    target.ChangeState(TailState.Idle);
-                    UiController.Instance.ShowExp(transform.position);
-                    gameObject.SetActive(false);
+                    transform.DOMove(target.transform.position, 0.25f).SetEase(Ease.Linear).OnComplete(() =>
+                    {
+                        target.ChangeState(TailState.Idle);
+                        target.player.GetExp(rewardExp);
+                        UiController.Instance.ShowExp(transform.position, rewardExp);
+                        EffectController.Instance.SpawnBloodFx(transform.position);
+                        EffectController.Instance.SpawnBloodFx2(new Vector3(transform.position.x, 0, transform.position.z));
+                        gameObject.SetActive(false);
+                    });
                 });
                 break;
         }

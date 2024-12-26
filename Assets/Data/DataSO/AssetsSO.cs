@@ -6,4 +6,5 @@ using UnityEngine;
 public class AssetsSO : KBTemplate.SO.SingletonSO.SingletonSO<AssetsSO>
 {
     public EnemyAssetsSO enemyAssetsSO;
+    public LevelDataAssetsSO levelUpDataAssetSO;
 }

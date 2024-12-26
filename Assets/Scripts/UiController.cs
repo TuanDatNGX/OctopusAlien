@@ -3,25 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using DG.Tweening;
+using UnityEngine.UI;
+using Unity.PlasticSCM.Editor.WebApi;
 
 public class UiController : MonoBehaviour
 {
     public static UiController Instance;
     public Transform expTransform;
     public TextMeshProUGUI[] expObj;
+    public TextMeshProUGUI levelTxt;
     public GameObject dragToMove;
+    public Slider ExpSlider;
     int expId = 0;
+    Tween expTween;
 
     private void Awake()
     {
         Instance = this;
     }
 
+
     public TextMeshProUGUI ExpTxt;
 
-    public void ShowExp(Vector3 pos)
+    public void ShowExp(Vector3 pos, float expNum)
     {
         GameObject exp = expObj[expId].gameObject;
+        expObj[expId].text = "+" + expNum.ToString() + " Exp";
         expId++;
         if (expId >= expObj.Length) expId = 0;
         exp.transform.localPosition = new Vector3(0, -110, 0);
@@ -29,5 +36,12 @@ public class UiController : MonoBehaviour
         exp.transform.DOLocalMoveY(exp.transform.localPosition.y + 50f, 0.55f).OnComplete(() => {
             exp.gameObject.SetActive(false);
         });
+    }
+
+    public void UpdateExp(float current, float max, int level)
+    {
+        expTween.Kill();
+        expTween = ExpSlider.DOValue(current / max, 0.25f);
+        levelTxt.text = "Level " + level.ToString();
     }
 }
