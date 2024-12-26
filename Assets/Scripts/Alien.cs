@@ -101,7 +101,7 @@ public class Alien : MonoBehaviour
                 growingRoot.SetActive(true);
                 break;
             case AlienState.Collect:
-                //animator.Play("Floating");
+                animator.Play("Floating");
                 target.player.listAlienInRange.Remove(this);
                 collider.enabled = false;
                 target.ChangeState(TailState.Collect);
