@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public Transform rangeObj;
     public GameObject rangeZone;
     public ParticleSystem levelUpFx;
+    public ParticleSystem levelUpFx2;
     public Material mat2;
     public Material mat3;
     public Material matFace2;
@@ -112,6 +113,7 @@ public class PlayerController : MonoBehaviour
                     if (!tails[i].gameObject.activeSelf)
                     {
                         tails[i].gameObject.SetActive(true);
+                        levelUpFx2.Play();
                         return;
                     }
                 }
@@ -142,6 +144,7 @@ public class PlayerController : MonoBehaviour
                         item.tailAnimator.transform.GetChild(1).GetComponent<SkinnedMeshRenderer>().material = mat3;
                     }
                 }
+                levelUpFx2.Play();
             }
             characterStat.ATK += levelUpData.enemyAssets[currentLevel.ToString()].Atk;
             characterStat.HP += levelUpData.enemyAssets[currentLevel.ToString()].Hp;
