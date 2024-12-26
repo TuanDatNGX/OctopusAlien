@@ -19,10 +19,20 @@ public class OctopusTail : MonoBehaviour
     public Alien target;
     Vector3 defaultRotation;
     float currentBlend = 0;
+    bool canCatch = false;
 
     private void Awake()
     {
         defaultRotation = transform.localEulerAngles;
+    }
+
+    private void OnEnable()
+    {
+        tailAnimator.LengthMultiplier = 0;
+        DOTween.To(() => tailAnimator.LengthMultiplier, x => tailAnimator.LengthMultiplier = x, 1f, 1f).OnComplete(() =>
+        {
+            canCatch = true;
+        });
     }
 
     private void Update()
@@ -73,6 +83,7 @@ public class OctopusTail : MonoBehaviour
 
     public void CatchAlien(Alien alien)
     {
+        if (!canCatch) return;
         target = alien;
         alien.target = this;
         tailAnimator.IKTarget = alien.hit;
