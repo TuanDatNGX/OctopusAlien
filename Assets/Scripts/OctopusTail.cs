@@ -37,7 +37,7 @@ public class OctopusTail : MonoBehaviour
         Material[] materials = new Material[2];
 
         defaultMat = skinnedMeshRenderer.material;
-        skinnedMeshRenderer.material = player.outlineMat;
+        skinnedMeshRenderer.material = octopus.outlineMat;
         tailAnimator.LengthMultiplier = 0;
         StartCoroutine(ActiveMesh());
     }
@@ -170,7 +170,7 @@ public class OctopusTail : MonoBehaviour
             if(Vector3.Distance(target.transform.position, octopus.mouth.position) < .1f)
             {
                 target.AffterDie();
-                player.GetExp(target.statsBase.rewardExp);
+                octopus.GetExp(target.statsBase.rewardExp);
                 EffectController.Instance.SpawnBloodFx(target.transform.position);
                 target = null;
                 ChangeState(TailState.Idle);

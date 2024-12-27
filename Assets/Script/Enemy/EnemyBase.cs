@@ -149,8 +149,6 @@ public abstract class EnemyBase : MonoBehaviour
                 {
                     ChangeState(State.Die);
                     _octopusTail.CollectTarget();
-                    //ham cong kinh nghiem _octopusTail
-                    _octopusTail.octopus.GetExp(statsBase.rewardExp);
                 }
                 break;
             case State.Attack:
