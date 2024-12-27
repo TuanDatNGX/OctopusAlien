@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     public Material mat3;
     public Material matFace2;
     public Material matFace3;
+    public Material outlineMat;
     EnemyBase neareastAlien;
     Coroutine rangeActive;
     float currentExp = 0;
