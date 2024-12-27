@@ -17,6 +17,7 @@ public class OctopusTail : MonoBehaviour
     public TailAnimator2 tailAnimator;
     public TailState currentState = TailState.Idle;
     public EnemyBase target;
+    public ParticleSystem[] effectTail;
     Vector3 defaultRotation;
     float currentBlend = 0;
     float speedCollect = 5;
@@ -30,8 +31,13 @@ public class OctopusTail : MonoBehaviour
     private void OnEnable()
     {
         tailAnimator.LengthMultiplier = 0;
-        DOTween.To(() => tailAnimator.LengthMultiplier, x => tailAnimator.LengthMultiplier = x, 1f, 1f).OnComplete(() =>
+
+        DOTween.To(() => tailAnimator.LengthMultiplier, x => tailAnimator.LengthMultiplier = x, 1f, 0.5f).OnComplete(() =>
         {
+            foreach (var effect in effectTail)
+            {
+                effect.Play();
+            }
             canCatch = true;
         });
     }

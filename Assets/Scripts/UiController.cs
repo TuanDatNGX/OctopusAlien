@@ -5,6 +5,7 @@ using TMPro;
 using DG.Tweening;
 using UnityEngine.UI;
 using Unity.PlasticSCM.Editor.WebApi;
+using UnityEngine.SceneManagement;
 
 public class UiController : MonoBehaviour
 {
@@ -43,5 +44,10 @@ public class UiController : MonoBehaviour
         expTween.Kill();
         expTween = ExpSlider.DOValue(current / max, 0.25f);
         levelTxt.text = "Level " + level.ToString();
+    }
+
+    public void ButtonReset()
+    {
+        SceneManager.LoadScene("Gameplay");
     }
 }
