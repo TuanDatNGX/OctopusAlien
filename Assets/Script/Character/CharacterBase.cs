@@ -46,6 +46,7 @@ public abstract class CharacterBase : MonoBehaviour
     public Material mat3;
     public Material matFace2;
     public Material matFace3;
+    public Material outlineMat;
     public EnemyBase neareastAlien;
     public Coroutine rangeActive;
     public float currentExp = 0;
