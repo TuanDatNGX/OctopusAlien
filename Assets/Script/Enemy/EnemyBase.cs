@@ -78,6 +78,7 @@ public abstract class EnemyBase : MonoBehaviour
 
     public virtual void Die()
     {
+        aniEnemy.Play("Floating");
         colliderEnemy.enabled = false;
         myArea.listEnemies[listEnemyId].Remove(this);
         LeanPool.Despawn(hpBar);
@@ -217,6 +218,7 @@ public abstract class EnemyBase : MonoBehaviour
             case State.Idle:
                 ChangeTargetMove();
                 StartCoroutine(CountTimeDelayCatch());
+                aniEnemy.Play("Move");
                 aniEnemy.SetFloat("Speed", 1f);
                 break;
             case State.RunAway:
@@ -225,6 +227,7 @@ public abstract class EnemyBase : MonoBehaviour
                 {
                     hpBar = LeanPool.Spawn(GameManager.Instance.hpBar, UIManager.Instance.parentHP);
                 }
+                aniEnemy.Play("Move");
                 aniEnemy.SetFloat("Speed", 1f);
                 break;
             case State.Attack:
