@@ -98,6 +98,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (!tails[i].gameObject.activeSelf)
                 {
+                    tails[i].skinnedMeshRenderer.enabled = false;
                     tails[i].gameObject.SetActive(true);
                     levelUpFx2.Play();
                     return;
@@ -137,6 +138,7 @@ public class PlayerController : MonoBehaviour
                 {
                     if (!tails[i].gameObject.activeSelf)
                     {
+                        tails[i].skinnedMeshRenderer.enabled = false;
                         tails[i].gameObject.SetActive(true);
                         levelUpFx2.Play();
                         return;
