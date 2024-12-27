@@ -89,6 +89,19 @@ public class PlayerController : MonoBehaviour
              rangeActive = StartCoroutine(DeActiveRangeZone());
         }
         Move();
+
+        if(Input.GetKeyDown(KeyCode.C))
+        {
+            for (int i = 0; i < tails.Length; i++)
+            {
+                if (!tails[i].gameObject.activeSelf)
+                {
+                    tails[i].gameObject.SetActive(true);
+                    levelUpFx2.Play();
+                    return;
+                }
+            }
+        }
     }
 
     IEnumerator DeActiveRangeZone()
@@ -189,6 +202,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator CoEat()
     {
         yield return new WaitForSeconds(0.1f);
+        AudioManager.Instance.PlaySoundEat();
         faceAnim.Play("Eat");
     }
 }
