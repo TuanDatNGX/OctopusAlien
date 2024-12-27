@@ -466,6 +466,7 @@ MonoBehaviour:
   growingRoot: {fileID: 5535747444627890787}
   hit: {fileID: 4187890310891266671}
   canRunAway: 0
+  listEnemyId: 0
 --- !u!1 &5535747444627890787
 GameObject:
   m_ObjectHideFlags: 0
