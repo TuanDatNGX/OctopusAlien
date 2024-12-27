@@ -62,8 +62,8 @@ public abstract class CharacterBase : MonoBehaviour
     private void Awake()
     {
         defaultScale = model.transform.localScale.x;
-        defaultMovespeed = characterStatsBase.moveSpeed;
-        moveSpeed = defaultMovespeed * characterStatsBase.moveSpeed / 10;
+        //defaultMovespeed = characterStatsBase.moveSpeed;
+        moveSpeed = characterStatsBase.moveSpeed;
         if (!isBot)
         {
             defaultCam = Camera.main.fieldOfView;
@@ -201,7 +201,7 @@ public abstract class CharacterBase : MonoBehaviour
             characterStatsBase.heal += levelUpData.enemyAssets[currentLevel.ToString()].Heal;
             characterStatsBase.moveSpeed += levelUpData.enemyAssets[currentLevel.ToString()].speed;
             characterStatsBase.rangeAttack += levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius;
-            moveSpeed = defaultMovespeed * characterStatsBase.moveSpeed / 10;
+            moveSpeed = characterStatsBase.moveSpeed;
             LevelUp();
         }
         if (!isBot)
