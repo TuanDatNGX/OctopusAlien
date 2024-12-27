@@ -3889,7 +3889,7 @@ MonoBehaviour:
   ATK: 10
   HP: 20
   Heal: 2
-  MoveSpeed: 10
+  MoveSpeed: 8
   Radius: 5
   Tentacle: 1
 --- !u!4 &869013573 stripped
