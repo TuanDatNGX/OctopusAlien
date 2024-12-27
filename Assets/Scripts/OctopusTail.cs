@@ -6,6 +6,7 @@ using DG.Tweening;
 
 public enum TailState
 {
+    None,
     Idle,
     Catch,
     Collect,
@@ -13,9 +14,9 @@ public enum TailState
 
 public class OctopusTail : MonoBehaviour
 {
-    public PlayerController player;
+    public CharacterBase octopus;
     public TailAnimator2 tailAnimator;
-    public TailState currentState = TailState.Idle;
+    public TailState currentState = TailState.None;
     public EnemyBase target;
     public ParticleSystem[] effectTail;
     public SkinnedMeshRenderer skinnedMeshRenderer;
@@ -28,6 +29,7 @@ public class OctopusTail : MonoBehaviour
     private void Awake()
     {
         defaultRotation = transform.localEulerAngles;
+        ChangeState(TailState.Idle);
     }
 
     private void OnEnable()
@@ -35,7 +37,7 @@ public class OctopusTail : MonoBehaviour
         Material[] materials = new Material[2];
 
         defaultMat = skinnedMeshRenderer.material;
-        skinnedMeshRenderer.material = player.outlineMat;
+        skinnedMeshRenderer.material = octopus.outlineMat;
         tailAnimator.LengthMultiplier = 0;
         StartCoroutine(ActiveMesh());
     }
@@ -74,8 +76,8 @@ public class OctopusTail : MonoBehaviour
                         if (!tailAnimator.IKTarget)
                         {
                             transform.DORewind(true);
-                            tailAnimator.IKTarget = target.hit;
                             tailAnimator.UseIK = true;
+                            tailAnimator.IKTarget = target.hit;
                             tailAnimator.TailAnimatorAmount = 0.85f;
                             currentBlend = 0;
                             tailAnimator.IKBlend = 0;
@@ -140,31 +142,34 @@ public class OctopusTail : MonoBehaviour
 
     void CheckTargetOutRange()
     {
-        if (!player.listAlienInRange.Contains(target))
+        if (!octopus.listAlienInRange.Contains(target) || target.stateNow == State.Die)
         {
-            target = null;
-            ChangeState(TailState.Idle);
+            if (currentState != TailState.Collect)
+            {
+                octopus.listAlienInRange.Remove(target);
+                target = null;
+                ChangeState(TailState.Idle);
+            }
         }
     }
 
     public void CollectTarget()
     {
-        player.listAlienInRange.Remove(target);
+        octopus.listAlienInRange.Remove(target);
         ChangeState(TailState.Collect);
         StartCoroutine(CollectingTarget());
     }
 
     IEnumerator CollectingTarget()
     {
-        player.ActionEat();
+        octopus.ActionEat();
 
         while (true)
         {
-            target.transform.position = Vector3.MoveTowards(target.transform.position, player.mouth.position, speedCollect * Time.deltaTime);
-            if (Vector3.Distance(target.transform.position, player.mouth.position) < .1f)
+            target.transform.position = Vector3.MoveTowards(target.transform.position, octopus.mouth.position, speedCollect * Time.deltaTime);
+            if(Vector3.Distance(target.transform.position, octopus.mouth.position) < .1f)
             {
                 target.AffterDie();
-                player.GetExp(target.statsBase.rewardExp);
                 EffectController.Instance.SpawnBloodFx(target.transform.position);
                 target = null;
                 ChangeState(TailState.Idle);

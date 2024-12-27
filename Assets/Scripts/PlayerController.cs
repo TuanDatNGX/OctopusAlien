@@ -51,7 +51,7 @@ public class PlayerController : MonoBehaviour
         foreach (var alien in listAlienInRange)
         {
             float minDistance = 1000;
-            if (alien.stateNow == State.Idle)
+            if (!alien.listAttacker.Contains(gameObject))
             {
                 float distance = Vector3.Distance(transform.position, alien.transform.position);
                 if (distance < minDistance)

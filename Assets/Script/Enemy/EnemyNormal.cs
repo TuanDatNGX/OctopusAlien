@@ -37,7 +37,6 @@ public class EnemyNormal : EnemyBase
     public override void RunAway()
     {
         if (listAttacker.Count == 0) return; // Không có player nào thì không làm gì
-
         // Tính toán hướng ngược lại tất cả các player
         Vector3 totalOppositeDirection = Vector3.zero;
         foreach (GameObject player in listAttacker)

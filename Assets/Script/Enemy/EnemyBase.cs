@@ -30,6 +30,7 @@ public struct StatsAIEnemy
     public float detectionRange;
     public int numDirections;
     public float timeDelayNextTarget;
+    public float timeDelayRunAway;
     public float timeDelayCatch;
 }
 
@@ -52,8 +53,9 @@ public abstract class EnemyBase : MonoBehaviour
     public HpBarController hpBar;
     public GameObject growingRoot;
     public Transform hit;
+    public bool canRunAway;
+    bool canCatch = true;
     Vector2 randomPosition2D;
-    bool canCatch=true;
     GameObject blood;
 
 
@@ -94,26 +96,26 @@ public abstract class EnemyBase : MonoBehaviour
 
     public bool TakeDamage(OctopusTail _octopusTail)
     {
-        if (!listAttacker.Contains(_octopusTail.player.gameObject))
+        if (!listAttacker.Contains(_octopusTail.octopus.gameObject))
         {
-            listAttacker.Add(_octopusTail.player.gameObject);
+            listAttacker.Add(_octopusTail.octopus.gameObject);
         }
 
         if (canCatch && stateNow != State.Die)
         {
             growingRoot.gameObject.SetActive(true);
             ChangeState(State.RunAway);
-            UpdateHp(-_octopusTail.player.GetComponent<CharacterStat>().ATK, _octopusTail);
+            UpdateHp(-_octopusTail.octopus.GetComponent<CharacterStat>().ATK, _octopusTail);
             return true;
         }
         return false;
     }
 
-    public void Escaped(PlayerController _playerController)
+    public void Escaped(CharacterBase _characterBase)
     {
-        if (listAttacker.Contains(_playerController.gameObject))
+        if (listAttacker.Contains(_characterBase.gameObject))
         {
-            listAttacker.Remove(_playerController.gameObject);
+            listAttacker.Remove(_characterBase.gameObject);
         }
         if(listAttacker.Count <= 0)
         {
@@ -143,12 +145,12 @@ public abstract class EnemyBase : MonoBehaviour
                 }
                 break;
             case State.RunAway:
-
                 if (hpNow <= 0)
                 {
                     ChangeState(State.Die);
                     _octopusTail.CollectTarget();
                     //ham cong kinh nghiem _octopusTail
+                    _octopusTail.octopus.GetExp(statsBase.rewardExp);
                 }
                 break;
             case State.Attack:
@@ -170,11 +172,18 @@ public abstract class EnemyBase : MonoBehaviour
                 MoveToDirection();
                 if (hpNow < statsBase.hp)
                 {
-                    UpdateHp(50);
+                    UpdateHp(statsBase.hp*0.5f);
                 }
                 break;
             case State.RunAway:
-                RunAway();
+                if (canRunAway)
+                {
+                    RunAway();
+                }
+                else
+                {
+                    Idle();
+                }
                 MoveToDirection();
                 break;
             case State.Attack:
@@ -211,6 +220,7 @@ public abstract class EnemyBase : MonoBehaviour
                 aniEnemy.SetFloat("Speed", 1f);
                 break;
             case State.RunAway:
+                StartCoroutine(CountTimeDelayRunAway());
                 if (!hpBar)
                 {
                     hpBar = LeanPool.Spawn(GameManager.Instance.hpBar, UIManager.Instance.parentHP);
@@ -235,6 +245,13 @@ public abstract class EnemyBase : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         InitEnemy(myArea);
+    }
+
+    IEnumerator CountTimeDelayRunAway()
+    {
+        canRunAway = false;
+        yield return new WaitForSeconds(statsAIEnemy.timeDelayRunAway);
+        canRunAway = true;
     }
 
     IEnumerator CountTimeDelayCatch()

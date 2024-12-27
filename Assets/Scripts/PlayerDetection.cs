@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerDetection : MonoBehaviour
 {
-    public PlayerController controller;
+    public CharacterBase controller;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Enemy"))
