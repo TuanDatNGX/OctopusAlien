@@ -219,6 +219,7 @@ public abstract class CharacterBase : MonoBehaviour
             characterStatsBase.moveSpeed += levelUpData.enemyAssets[currentLevel.ToString()].speed;
             characterStatsBase.rangeAttack += levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius;
             moveSpeed = characterStatsBase.moveSpeed;
+            Handheld.Vibrate();
             LevelUp();
         }
         if (!isBot)
