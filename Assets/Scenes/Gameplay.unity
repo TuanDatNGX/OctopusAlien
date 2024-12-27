@@ -340,6 +340,120 @@ MonoBehaviour:
   m_MinRegionArea: 2
   m_NavMeshData: {fileID: 23800000, guid: 64352451b4ca36f40b33c2b38528cbe4, type: 2}
   m_BuildHeightMesh: 0
+--- !u!1001 &197877387
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1516301190581847600, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_Name
+      value: OctopusBot1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+--- !u!1001 &316358224
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1516301190581847600, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_Name
+      value: OctopusBot1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 9.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee75e11203081ef47814924821dfc88a, type: 3}
 --- !u!1 &349173318
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,6 +722,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 374803593}
   m_CullTransparentMesh: 1
+--- !u!1001 &477366101
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1516301190581847600, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_Name
+      value: OctopusBot1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee75e11203081ef47814924821dfc88a, type: 3}
 --- !u!1 &514988630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1139,6 +1310,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 725825262}
   m_CullTransparentMesh: 1
+--- !u!1001 &783947404
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1516301190581847600, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_Name
+      value: OctopusBot1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 31.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee75e11203081ef47814924821dfc88a, type: 3}
 --- !u!4 &849552275 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3800655747662338938, guid: 59397bbc465dd844ea2bb0f5b62309f6, type: 3}
@@ -2073,6 +2301,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1218883185}
   m_CullTransparentMesh: 1
+--- !u!1001 &1226745979
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1516301190581847600, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_Name
+      value: OctopusBot1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 7.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee75e11203081ef47814924821dfc88a, type: 3}
 --- !u!1 &1231977301
 GameObject:
   m_ObjectHideFlags: 0
@@ -2207,6 +2492,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231977301}
   m_CullTransparentMesh: 1
+--- !u!1001 &1293563771
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1516301190581847600, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_Name
+      value: OctopusBot1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -28.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee75e11203081ef47814924821dfc88a, type: 3}
 --- !u!1 &1327051351
 GameObject:
   m_ObjectHideFlags: 0
@@ -2335,6 +2677,63 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1001 &1383185893
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1516301190581847600, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_Name
+      value: OctopusBot1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 17.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee75e11203081ef47814924821dfc88a, type: 3}
 --- !u!1 &1413848891
 GameObject:
   m_ObjectHideFlags: 0
@@ -2595,6 +2994,63 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 848}
   m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &1652849697
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1516301190581847600, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_Name
+      value: OctopusBot1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -15.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ee75e11203081ef47814924821dfc88a, type: 3}
 --- !u!1 &1664500514
 GameObject:
   m_ObjectHideFlags: 0
@@ -3808,7 +4264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.41
+      value: 23.6
       objectReference: {fileID: 0}
     - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3816,7 +4272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 18.81
+      value: -5.1
       objectReference: {fileID: 0}
     - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3932,4 +4388,12 @@ SceneRoots:
   - {fileID: 1486333245}
   - {fileID: 4891786181169264295}
   - {fileID: 3045641685764134761}
+  - {fileID: 1652849697}
+  - {fileID: 477366101}
+  - {fileID: 1293563771}
+  - {fileID: 316358224}
+  - {fileID: 783947404}
+  - {fileID: 197877387}
+  - {fileID: 1383185893}
+  - {fileID: 1226745979}
   - {fileID: 571288759452764310}

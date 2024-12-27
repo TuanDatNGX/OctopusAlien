@@ -451,8 +451,8 @@ MonoBehaviour:
     detectionRange: 20
     numDirections: 36
     timeDelayNextTarget: 1
-    timeDelayRunAway: 0
-    timeDelayCatch: 1
+    timeDelayRunAway: 1
+    timeDelayCatch: 0
   rotateMultiplier: 300
   stateNow: 0
   hpNow: 0
