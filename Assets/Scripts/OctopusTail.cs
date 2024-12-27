@@ -173,6 +173,7 @@ public class OctopusTail : MonoBehaviour
                 target.AffterDie();
                 octopus.GetExp(target.statsBase.rewardExp);
                 EffectController.Instance.SpawnBloodFx(target.transform.position);
+                AudioManager.Instance.PlaySoundEat();
                 target = null;
                 ChangeState(TailState.Idle);
                 break;
