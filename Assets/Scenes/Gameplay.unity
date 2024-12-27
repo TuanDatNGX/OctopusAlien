@@ -4429,6 +4429,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5414868503194697043, guid: 11893df29ece139469ac69e50f44a22e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5471333583456942717, guid: 11893df29ece139469ac69e50f44a22e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5732426053032907347, guid: 11893df29ece139469ac69e50f44a22e, type: 3}
       propertyPath: m_IsActive
       value: 1

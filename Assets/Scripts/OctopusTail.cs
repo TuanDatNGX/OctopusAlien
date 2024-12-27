@@ -169,7 +169,7 @@ public class OctopusTail : MonoBehaviour
             target.transform.position = Vector3.MoveTowards(target.transform.position, octopus.mouth.position, speedCollect * Time.deltaTime);
             if(Vector3.Distance(target.transform.position, octopus.mouth.position) < .1f)
             {
-                Handheld.Vibrate();
+                //Handheld.Vibrate();
                 target.AffterDie();
                 octopus.GetExp(target.statsBase.rewardExp);
                 EffectController.Instance.SpawnBloodFx(target.transform.position);
