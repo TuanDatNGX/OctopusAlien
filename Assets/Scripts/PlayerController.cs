@@ -179,8 +179,11 @@ public class PlayerController : MonoBehaviour
             characterStat.Heal += levelUpData.enemyAssets[currentLevel.ToString()].Heal;
             characterStat.MoveSpeed += levelUpData.enemyAssets[currentLevel.ToString()].speed;
             characterStat.Radius += levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius;
+            characterStat.Tentacle += levelUpData.enemyAssets[currentLevel.ToString()].tentacles;
 
             moveSpeed = defaultMovespeed * characterStat.MoveSpeed / 10;
+
+            StatsBoard.Instance.UpdateData(characterStat);
         }
         UiController.Instance.UpdateExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp, currentLevel);
     }
