@@ -3871,6 +3871,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 680615272747143237, guid: 59397bbc465dd844ea2bb0f5b62309f6, type: 3}
+      propertyPath: characterStatsBase.moveSpeed
+      value: 1.8
+      objectReference: {fileID: 0}
     - target: {fileID: 3800655747662338938, guid: 59397bbc465dd844ea2bb0f5b62309f6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.55
