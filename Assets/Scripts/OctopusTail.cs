@@ -42,7 +42,7 @@ public class OctopusTail : MonoBehaviour
 
     IEnumerator ActiveMesh()
     {
-        yield return new WaitForSeconds(0.15f);
+        yield return new WaitForSeconds(0.01f);
         skinnedMeshRenderer.enabled = true;
         DOTween.To(() => tailAnimator.LengthMultiplier, x => tailAnimator.LengthMultiplier = x, 1f, 0.7f).OnComplete(() =>
         {
@@ -161,7 +161,7 @@ public class OctopusTail : MonoBehaviour
         while (true)
         {
             target.transform.position = Vector3.MoveTowards(target.transform.position, player.mouth.position, speedCollect * Time.deltaTime);
-            if(Vector3.Distance(target.transform.position, player.mouth.position) < .1f)
+            if (Vector3.Distance(target.transform.position, player.mouth.position) < .1f)
             {
                 target.AffterDie();
                 player.GetExp(target.statsBase.rewardExp);
