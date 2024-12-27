@@ -232,7 +232,7 @@ MonoBehaviour:
       Data: 1
     - Name: speed
       Entry: 4
-      Data: 0.2
+      Data: 0.3
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -358,7 +358,7 @@ MonoBehaviour:
       Data: 1
     - Name: speed
       Entry: 4
-      Data: 0.3
+      Data: 0.4
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -526,7 +526,7 @@ MonoBehaviour:
       Data: 1
     - Name: speed
       Entry: 4
-      Data: 0.4
+      Data: 0.5
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -652,7 +652,7 @@ MonoBehaviour:
       Data: 1
     - Name: speed
       Entry: 4
-      Data: 0.4
+      Data: 0.5
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -778,7 +778,7 @@ MonoBehaviour:
       Data: 1
     - Name: speed
       Entry: 4
-      Data: 0.4
+      Data: 0.5
     - Name: CatchingRadius
       Entry: 4
       Data: 2
