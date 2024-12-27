@@ -441,12 +441,12 @@ MonoBehaviour:
   posHpBar: {fileID: 4067905592269340240}
   statsBase:
     id: 4
-    hp: 200
+    hp: 100
     attack: 0
     delayAttack: 0
     moveSpeed: 3
     levelAI: 0
-    rewardExp: 33
+    rewardExp: 17
   statsAIEnemy:
     detectionRange: 20
     numDirections: 36
