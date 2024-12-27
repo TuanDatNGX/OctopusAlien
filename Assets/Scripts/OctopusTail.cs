@@ -114,7 +114,7 @@ public class OctopusTail : MonoBehaviour
                 tailAnimator.UseIK = false;
                 tailAnimator.IKTarget = null;
                 tailAnimator.TailAnimatorAmount = 1f;
-                tailAnimator.Slithery = 0.67f;
+                tailAnimator.Slithery = 1;
                 transform.DOLocalRotate(defaultRotation, 2);
                 break;
             case TailState.Catch:
@@ -173,6 +173,7 @@ public class OctopusTail : MonoBehaviour
                 target.AffterDie();
                 octopus.GetExp(target.statsBase.rewardExp);
                 EffectController.Instance.SpawnBloodFx(target.transform.position);
+                AudioManager.Instance.PlaySoundEat();
                 target = null;
                 ChangeState(TailState.Idle);
                 break;
