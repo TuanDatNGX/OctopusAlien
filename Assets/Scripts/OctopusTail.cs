@@ -170,6 +170,7 @@ public class OctopusTail : MonoBehaviour
             if(Vector3.Distance(target.transform.position, octopus.mouth.position) < .1f)
             {
                 target.AffterDie();
+                octopus.GetExp(target.statsBase.rewardExp);
                 EffectController.Instance.SpawnBloodFx(target.transform.position);
                 target = null;
                 ChangeState(TailState.Idle);
