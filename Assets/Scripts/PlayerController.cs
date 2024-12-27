@@ -92,6 +92,7 @@ public class PlayerController : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.C))
         {
+            AudioManager.Instance.PlaySoundLevelUp();
             for (int i = 0; i < tails.Length; i++)
             {
                 if (!tails[i].gameObject.activeSelf)
@@ -115,7 +116,11 @@ public class PlayerController : MonoBehaviour
     {
         if (currentLevel >= 20) return;
         currentExp += exp;
-        while(currentExp >= levelUpData.enemyAssets[currentLevel.ToString()].exp)
+        if(currentExp >= levelUpData.enemyAssets[currentLevel.ToString()].exp)
+        {
+            AudioManager.Instance.PlaySoundLevelUp();
+        }
+        while (currentExp >= levelUpData.enemyAssets[currentLevel.ToString()].exp)
         {
             currentExp -= levelUpData.enemyAssets[currentLevel.ToString()].exp;
             currentLevel += 1;

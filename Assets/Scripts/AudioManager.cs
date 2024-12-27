@@ -14,6 +14,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip soundEat;
     public AudioClip soundAlien;
+    public AudioClip soundLevelUp;
 
     public void PlaySoundEat()
     {
@@ -23,5 +24,10 @@ public class AudioManager : MonoBehaviour
     public void PlaySoundAlien()
     {
         audioSource.PlayOneShot(soundAlien);
+    }
+
+    public void PlaySoundLevelUp()
+    {
+        audioSource.PlayOneShot(soundLevelUp);
     }
 }
