@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     public Material mat3;
     public Material matFace2;
     public Material matFace3;
+    public Material outlineMat;
     EnemyBase neareastAlien;
     Coroutine rangeActive;
     float currentExp = 0;
@@ -97,6 +98,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (!tails[i].gameObject.activeSelf)
                 {
+                    tails[i].skinnedMeshRenderer.enabled = false;
                     tails[i].gameObject.SetActive(true);
                     levelUpFx2.Play();
                     return;
@@ -136,6 +138,7 @@ public class PlayerController : MonoBehaviour
                 {
                     if (!tails[i].gameObject.activeSelf)
                     {
+                        tails[i].skinnedMeshRenderer.enabled = false;
                         tails[i].gameObject.SetActive(true);
                         levelUpFx2.Play();
                         return;

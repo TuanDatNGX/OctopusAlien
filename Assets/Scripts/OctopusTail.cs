@@ -18,10 +18,12 @@ public class OctopusTail : MonoBehaviour
     public TailState currentState = TailState.Idle;
     public EnemyBase target;
     public ParticleSystem[] effectTail;
+    public SkinnedMeshRenderer skinnedMeshRenderer;
     Vector3 defaultRotation;
     float currentBlend = 0;
     float speedCollect = 5;
     bool canCatch = false;
+    Material defaultMat;
 
     private void Awake()
     {
@@ -30,10 +32,16 @@ public class OctopusTail : MonoBehaviour
 
     private void OnEnable()
     {
-        tailAnimator.LengthMultiplier = 0;
+        Material[] materials = new Material[2];
 
+        defaultMat = skinnedMeshRenderer.material;
+        skinnedMeshRenderer.material = player.outlineMat;
+        skinnedMeshRenderer.enabled = false;
+        tailAnimator.LengthMultiplier = 0;
+        skinnedMeshRenderer.enabled = true;
         DOTween.To(() => tailAnimator.LengthMultiplier, x => tailAnimator.LengthMultiplier = x, 1f, 0.5f).OnComplete(() =>
         {
+            skinnedMeshRenderer.material = defaultMat;
             foreach (var effect in effectTail)
             {
                 effect.Play();
