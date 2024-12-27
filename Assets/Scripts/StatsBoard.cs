@@ -12,7 +12,7 @@ public class StatsBoard : MonoBehaviour
         Instance = this;
     }
 
-    public CharacterStat stats;
+    public CharacterStatsBase stats;
 
     public TextMeshProUGUI atk;
     public TextMeshProUGUI hp;
@@ -20,19 +20,14 @@ public class StatsBoard : MonoBehaviour
     public TextMeshProUGUI speed;
     public TextMeshProUGUI radius;
     public TextMeshProUGUI tentacle;
-    private void OnEnable()
-    {
-        if(stats != null)
-        UpdateData(stats);
-    }
 
-    public void UpdateData(CharacterStat stat)
+    public void UpdateData(CharacterStatsBase stat)
     {
-        atk.text = "Atk: " + stat.ATK.ToString();
-        hp.text = "Hp: " + stat.HP.ToString();
-        heal.text = "Heal: " + stat.Heal.ToString();
-        speed.text = "Move speed: " + stat.MoveSpeed.ToString();
-        radius.text = "Radius: " + stat.Radius.ToString();
-        tentacle.text = "Tentacles: " + stat.Tentacle.ToString();
+        atk.text = "Atk: " + stat.attack.ToString();
+        hp.text = "Hp: " + stat.hp.ToString();
+        heal.text = "Heal: " + stat.heal.ToString();
+        speed.text = "Move speed: " + stat.moveSpeed.ToString();
+        radius.text = "Radius: " + stat.rangeAttack.ToString();
+        tentacle.text = "Tentacles: " + stat.tentacle.ToString();
     }
 }

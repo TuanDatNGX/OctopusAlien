@@ -9,7 +9,8 @@ public class AICharacterController : CharacterBase
     public float randomMoveRadius;
     private void Start()
     {
-        navMeshAgent.speed = characterStatsBase.moveSpeed;
+        navMeshAgent.speed = moveSpeed;
+        navMeshAgent.angularSpeed = rotateSpeed;
         SetTarget();
     }
     public override void Move()
@@ -49,5 +50,10 @@ public class AICharacterController : CharacterBase
         {
             navMeshAgent.SetDestination(_targetTransform.position);
         }
+    }
+
+    public override void LevelUp()
+    {
+        navMeshAgent.speed = moveSpeed;
     }
 }

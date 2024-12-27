@@ -23,13 +23,14 @@ public struct CharacterStatsBase
     public float rangeAttack;
     public float moveSpeed;
     public float levelAI;
+    public float tentacle;
+    public float heal;
 }
 
 public abstract class CharacterBase : MonoBehaviour
 {
     public bool isBot;
     public CharacterStatsBase characterStatsBase;
-    public CharacterStat characterStat;
     public LevelDataAssetsSO levelUpData;
     public Animator faceAnim;
     public float moveSpeed;
@@ -57,19 +58,21 @@ public abstract class CharacterBase : MonoBehaviour
     float defaultCam;
     public StateCharacter stateNow;
 
-    private void Start()
+
+    private void Awake()
     {
         defaultScale = model.transform.localScale.x;
-        defaultMovespeed = moveSpeed;
+        defaultMovespeed = characterStatsBase.moveSpeed;
+        moveSpeed = defaultMovespeed * characterStatsBase.moveSpeed / 10;
         if (!isBot)
         {
             defaultCam = Camera.main.fieldOfView;
         }
     }
 
-
     public abstract void Move();
     public abstract void Attack();
+    public abstract void LevelUp();
 
     private void Update()
     {
@@ -193,19 +196,20 @@ public abstract class CharacterBase : MonoBehaviour
                 }
                 levelUpFx2.Play();
             }
-            characterStat.ATK += levelUpData.enemyAssets[currentLevel.ToString()].Atk;
-            characterStat.HP += levelUpData.enemyAssets[currentLevel.ToString()].Hp;
-            characterStat.Heal += levelUpData.enemyAssets[currentLevel.ToString()].Heal;
-            characterStat.MoveSpeed += levelUpData.enemyAssets[currentLevel.ToString()].speed;
-            characterStat.Radius += levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius;
-
-            moveSpeed = defaultMovespeed * characterStat.MoveSpeed / 10;
+            characterStatsBase.attack += levelUpData.enemyAssets[currentLevel.ToString()].Atk;
+            characterStatsBase.hp += levelUpData.enemyAssets[currentLevel.ToString()].Hp;
+            characterStatsBase.heal += levelUpData.enemyAssets[currentLevel.ToString()].Heal;
+            characterStatsBase.moveSpeed += levelUpData.enemyAssets[currentLevel.ToString()].speed;
+            characterStatsBase.rangeAttack += levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius;
+            moveSpeed = defaultMovespeed * characterStatsBase.moveSpeed / 10;
+            LevelUp();
         }
         if (!isBot)
         {
             UiController.Instance.UpdateExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp, currentLevel);
         }
     }
+
 
     public void ChangeState(StateCharacter _stateCharacter)
     {

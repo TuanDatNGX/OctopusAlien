@@ -7,8 +7,18 @@ public class PlayerCharacterController : CharacterBase
     public CharacterController characterController;
     public FloatingJoystick joystick;
     Vector3 inputDirection;
+
+    private void Start()
+    {
+            StatsBoard.Instance.UpdateData(characterStatsBase);
+    }
     public override void Attack()
     {
+    }
+
+    public override void LevelUp()
+    {
+        StatsBoard.Instance.UpdateData(characterStatsBase);
     }
 
     public override void Move()
