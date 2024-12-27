@@ -105,7 +105,7 @@ public abstract class EnemyBase : MonoBehaviour
         {
             growingRoot.gameObject.SetActive(true);
             ChangeState(State.RunAway);
-            UpdateHp(-_octopusTail.octopus.GetComponent<CharacterStat>().ATK, _octopusTail);
+            UpdateHp(-_octopusTail.octopus.characterStatsBase.attack, _octopusTail);
             return true;
         }
         return false;
