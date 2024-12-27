@@ -36,10 +36,15 @@ public class OctopusTail : MonoBehaviour
 
         defaultMat = skinnedMeshRenderer.material;
         skinnedMeshRenderer.material = player.outlineMat;
-        skinnedMeshRenderer.enabled = false;
         tailAnimator.LengthMultiplier = 0;
+        StartCoroutine(ActiveMesh());
+    }
+
+    IEnumerator ActiveMesh()
+    {
+        yield return new WaitForSeconds(0.15f);
         skinnedMeshRenderer.enabled = true;
-        DOTween.To(() => tailAnimator.LengthMultiplier, x => tailAnimator.LengthMultiplier = x, 1f, 0.5f).OnComplete(() =>
+        DOTween.To(() => tailAnimator.LengthMultiplier, x => tailAnimator.LengthMultiplier = x, 1f, 0.7f).OnComplete(() =>
         {
             skinnedMeshRenderer.material = defaultMat;
             foreach (var effect in effectTail)
