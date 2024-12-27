@@ -446,11 +446,12 @@ MonoBehaviour:
     delayAttack: 0
     moveSpeed: 0.5
     levelAI: 0
-    rewardExp: 0
+    rewardExp: 1
   statsAIEnemy:
     detectionRange: 20
     numDirections: 36
     timeDelayNextTarget: 1
+    timeDelayRunAway: 2
     timeDelayCatch: 1
   rotateMultiplier: 300
   stateNow: 0
@@ -464,6 +465,7 @@ MonoBehaviour:
   hpBar: {fileID: 0}
   growingRoot: {fileID: 5535747444627890787}
   hit: {fileID: 4187890310891266671}
+  canRunAway: 0
 --- !u!1 &5535747444627890787
 GameObject:
   m_ObjectHideFlags: 0

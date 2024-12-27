@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class AICharecerController : CharacterBase
+public class AICharacterController : CharacterBase
 {
     public NavMeshAgent navMeshAgent;
-    [SerializeField] float randomMoveRadius;
-
+    public float randomMoveRadius;
     private void Start()
     {
         navMeshAgent.speed = characterStatsBase.moveSpeed;
