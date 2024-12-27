@@ -3843,7 +3843,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5cc3c800aa24de64984060a9d322c69e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 21894bce0d5ad8f47aee8d58b6a74a6c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.7
   m_Pitch: 1
@@ -4264,10 +4264,6 @@ PrefabInstance:
     - target: {fileID: 1192001473703998009, guid: 11893df29ece139469ac69e50f44a22e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3469890176655024046, guid: 11893df29ece139469ac69e50f44a22e, type: 3}
-      propertyPath: allEnemies.Array.data[0].amount
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
