@@ -29,6 +29,7 @@ public class AreaEnemy : MonoBehaviour
             listEnemies.Add(tmp);
             timers.Add(0);
         }
+        InitArea();
     }
 
     private void Update()
