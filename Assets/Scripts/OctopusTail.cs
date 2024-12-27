@@ -18,10 +18,13 @@ public class OctopusTail : MonoBehaviour
     public TailAnimator2 tailAnimator;
     public TailState currentState = TailState.None;
     public EnemyBase target;
+    public ParticleSystem[] effectTail;
+    public SkinnedMeshRenderer skinnedMeshRenderer;
     Vector3 defaultRotation;
     float currentBlend = 0;
     float speedCollect = 5;
     bool canCatch = false;
+    Material defaultMat;
 
     private void Awake()
     {
@@ -31,9 +34,25 @@ public class OctopusTail : MonoBehaviour
 
     private void OnEnable()
     {
+        Material[] materials = new Material[2];
+
+        defaultMat = skinnedMeshRenderer.material;
+        skinnedMeshRenderer.material = player.outlineMat;
         tailAnimator.LengthMultiplier = 0;
-        DOTween.To(() => tailAnimator.LengthMultiplier, x => tailAnimator.LengthMultiplier = x, 1f, 1f).OnComplete(() =>
+        StartCoroutine(ActiveMesh());
+    }
+
+    IEnumerator ActiveMesh()
+    {
+        yield return new WaitForSeconds(0.01f);
+        skinnedMeshRenderer.enabled = true;
+        DOTween.To(() => tailAnimator.LengthMultiplier, x => tailAnimator.LengthMultiplier = x, 1f, 0.7f).OnComplete(() =>
         {
+            skinnedMeshRenderer.material = defaultMat;
+            foreach (var effect in effectTail)
+            {
+                effect.Play();
+            }
             canCatch = true;
         });
     }
@@ -151,6 +170,7 @@ public class OctopusTail : MonoBehaviour
             if(Vector3.Distance(target.transform.position, octopus.mouth.position) < .1f)
             {
                 target.AffterDie();
+                player.GetExp(target.statsBase.rewardExp);
                 EffectController.Instance.SpawnBloodFx(target.transform.position);
                 target = null;
                 ChangeState(TailState.Idle);

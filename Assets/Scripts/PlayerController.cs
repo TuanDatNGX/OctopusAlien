@@ -26,6 +26,7 @@ public class PlayerController : MonoBehaviour
     public Material mat3;
     public Material matFace2;
     public Material matFace3;
+    public Material outlineMat;
     EnemyBase neareastAlien;
     Coroutine rangeActive;
     float currentExp = 0;
@@ -89,6 +90,21 @@ public class PlayerController : MonoBehaviour
              rangeActive = StartCoroutine(DeActiveRangeZone());
         }
         Move();
+
+        if(Input.GetKeyDown(KeyCode.C))
+        {
+            AudioManager.Instance.PlaySoundLevelUp();
+            for (int i = 0; i < tails.Length; i++)
+            {
+                if (!tails[i].gameObject.activeSelf)
+                {
+                    tails[i].skinnedMeshRenderer.enabled = false;
+                    tails[i].gameObject.SetActive(true);
+                    levelUpFx2.Play();
+                    return;
+                }
+            }
+        }
     }
 
     IEnumerator DeActiveRangeZone()
@@ -102,7 +118,11 @@ public class PlayerController : MonoBehaviour
     {
         if (currentLevel >= 20) return;
         currentExp += exp;
-        while(currentExp >= levelUpData.enemyAssets[currentLevel.ToString()].exp)
+        if(currentExp >= levelUpData.enemyAssets[currentLevel.ToString()].exp)
+        {
+            AudioManager.Instance.PlaySoundLevelUp();
+        }
+        while (currentExp >= levelUpData.enemyAssets[currentLevel.ToString()].exp)
         {
             currentExp -= levelUpData.enemyAssets[currentLevel.ToString()].exp;
             currentLevel += 1;
@@ -118,6 +138,7 @@ public class PlayerController : MonoBehaviour
                 {
                     if (!tails[i].gameObject.activeSelf)
                     {
+                        tails[i].skinnedMeshRenderer.enabled = false;
                         tails[i].gameObject.SetActive(true);
                         levelUpFx2.Play();
                         return;
@@ -158,8 +179,11 @@ public class PlayerController : MonoBehaviour
             characterStat.Heal += levelUpData.enemyAssets[currentLevel.ToString()].Heal;
             characterStat.MoveSpeed += levelUpData.enemyAssets[currentLevel.ToString()].speed;
             characterStat.Radius += levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius;
+            characterStat.Tentacle += levelUpData.enemyAssets[currentLevel.ToString()].tentacles;
 
             moveSpeed = defaultMovespeed * characterStat.MoveSpeed / 10;
+
+            StatsBoard.Instance.UpdateData(characterStat);
         }
         UiController.Instance.UpdateExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp, currentLevel);
     }
@@ -189,6 +213,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator CoEat()
     {
         yield return new WaitForSeconds(0.1f);
+        AudioManager.Instance.PlaySoundEat();
         faceAnim.Play("Eat");
     }
 }
