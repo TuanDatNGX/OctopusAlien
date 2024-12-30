@@ -13,6 +13,7 @@ public class UiController : MonoBehaviour
     public TextMeshProUGUI[] expObj;
     public TextMeshProUGUI levelTxt;
     public TextMeshProUGUI killCoutTxt;
+    public TextMeshProUGUI timeCoutTxt;
     public GameObject dragToMove;
     public Slider ExpSlider;
     int expId = 0;
@@ -39,11 +40,12 @@ public class UiController : MonoBehaviour
         });
     }
 
-    public void UpdateExp(float current, float max, int level)
+    public void UpdateExp(float current, float max, int level, int killCount)
     {
         expTween.Kill();
         expTween = ExpSlider.DOValue(current / max, 0.25f);
         levelTxt.text = "Level " + level.ToString();
+        killCoutTxt.text = "Kill " + killCount.ToString();
     }
 
     public void ButtonReset()

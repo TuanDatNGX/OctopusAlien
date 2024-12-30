@@ -174,6 +174,7 @@ public class OctopusTail : MonoBehaviour
             {
                 //Handheld.Vibrate();
                 speedCollect = defaultSpeedCollect;
+                octopus.killCount++;
                 target.AffterDie();
                 octopus.GetExp(target.statsBase.rewardExp);
                 EffectController.Instance.SpawnBloodFx(target.transform.position);

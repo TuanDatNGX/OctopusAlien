@@ -55,6 +55,7 @@ public abstract class CharacterBase : MonoBehaviour
     public float defaultScale;
     public float currentEvol = 0;
     public float defaultMovespeed = 0;
+    public int killCount = 0;
     float defaultCam;
     public StateCharacter stateNow;
 
@@ -224,7 +225,7 @@ public abstract class CharacterBase : MonoBehaviour
         }
         if (!isBot)
         {
-            UiController.Instance.UpdateExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp, currentLevel);
+            UiController.Instance.UpdateExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp, currentLevel, killCount);
         }
     }
 
