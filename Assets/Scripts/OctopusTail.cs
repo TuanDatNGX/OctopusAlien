@@ -25,10 +25,12 @@ public class OctopusTail : MonoBehaviour
     float speedCollect = 5;
     bool canCatch = false;
     Material defaultMat;
+    float defaultSpeedCollect;
 
     private void Awake()
     {
         defaultRotation = transform.localEulerAngles;
+        defaultSpeedCollect = speedCollect;
         ChangeState(TailState.Idle);
     }
 
@@ -167,9 +169,11 @@ public class OctopusTail : MonoBehaviour
         while (true)
         {
             target.transform.position = Vector3.MoveTowards(target.transform.position, octopus.mouth.position, speedCollect * Time.deltaTime);
+            speedCollect += 10 * Time.deltaTime;
             if(Vector3.Distance(target.transform.position, octopus.mouth.position) < .1f)
             {
                 //Handheld.Vibrate();
+                speedCollect = defaultSpeedCollect;
                 target.AffterDie();
                 octopus.GetExp(target.statsBase.rewardExp);
                 EffectController.Instance.SpawnBloodFx(target.transform.position);

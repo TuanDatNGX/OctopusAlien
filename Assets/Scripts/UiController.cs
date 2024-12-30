@@ -12,6 +12,7 @@ public class UiController : MonoBehaviour
     public Transform expTransform;
     public TextMeshProUGUI[] expObj;
     public TextMeshProUGUI levelTxt;
+    public TextMeshProUGUI killCoutTxt;
     public GameObject dragToMove;
     public Slider ExpSlider;
     int expId = 0;
