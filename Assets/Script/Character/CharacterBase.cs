@@ -133,18 +133,9 @@ public abstract class CharacterBase : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.C))
         {
+            if(!isBot) 
             {
-                AudioManager.Instance.PlaySoundLevelUp();
-                for (int i = 0; i < tails.Length; i++)
-                {
-                    if (!tails[i].gameObject.activeSelf)
-                    {
-                        tails[i].skinnedMeshRenderer.enabled = false;
-                        tails[i].gameObject.SetActive(true);
-                        levelUpFx2.Play();
-                        return;
-                    }
-                }
+                GetExp(levelUpData.enemyAssets[currentLevel.ToString()].exp);
             }
         }
     }
