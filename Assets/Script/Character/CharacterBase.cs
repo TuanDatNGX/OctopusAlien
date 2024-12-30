@@ -162,6 +162,7 @@ public abstract class CharacterBase : MonoBehaviour
                 if (!isBot)
                 {
                     Camera.main.DOFieldOfView(Camera.main.fieldOfView + 0.4f * defaultCam * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
+                    Camera.main.transform.DOLocalMoveY(Camera.main.transform.position.y + 1.67f * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
                 }
             }
             if (levelUpData.enemyAssets[currentLevel.ToString()].tentacles > 0)
