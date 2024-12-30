@@ -4254,7 +4254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTest: 1
-  levelTest: 1
+  levelTest: 2
 --- !u!4 &1891354814
 Transform:
   m_ObjectHideFlags: 0
@@ -5111,6 +5111,14 @@ PrefabInstance:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 2029584093}
+    - target: {fileID: 680615272747143237, guid: 59397bbc465dd844ea2bb0f5b62309f6, type: 3}
+      propertyPath: camParam1
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 680615272747143237, guid: 59397bbc465dd844ea2bb0f5b62309f6, type: 3}
+      propertyPath: camParam2
+      value: 1.67
+      objectReference: {fileID: 0}
     - target: {fileID: 680615272747143237, guid: 59397bbc465dd844ea2bb0f5b62309f6, type: 3}
       propertyPath: moveSpeed
       value: 2
