@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 using DG.Tweening;
 using UnityEngine.UI;
-using Unity.PlasticSCM.Editor.WebApi;
 using UnityEngine.SceneManagement;
 
 public class UiController : MonoBehaviour

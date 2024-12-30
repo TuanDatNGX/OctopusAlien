@@ -387,8 +387,8 @@ MonoBehaviour:
     detectionRange: 20
     numDirections: 36
     timeDelayNextTarget: 1
-    timeDelayRunAway: 0
-    timeDelayCatch: 1
+    timeDelayRunAway: 1
+    timeDelayCatch: 0
   rotateMultiplier: 300
   stateNow: 0
   hpNow: 0
@@ -402,6 +402,7 @@ MonoBehaviour:
   growingRoot: {fileID: 1675901147540257364}
   hit: {fileID: 8464557916991356628}
   canRunAway: 0
+  listEnemyId: 0
 --- !u!1 &6517940503911950007
 GameObject:
   m_ObjectHideFlags: 0

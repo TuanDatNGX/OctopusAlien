@@ -54,6 +54,7 @@ public abstract class EnemyBase : MonoBehaviour
     public GameObject growingRoot;
     public Transform hit;
     public bool canRunAway;
+    public int listEnemyId;
     bool canCatch = true;
     Vector2 randomPosition2D;
     GameObject blood;
@@ -78,7 +79,9 @@ public abstract class EnemyBase : MonoBehaviour
 
     public virtual void Die()
     {
+        aniEnemy.Play("Floating");
         colliderEnemy.enabled = false;
+        myArea.listEnemies[listEnemyId].Remove(this);
         LeanPool.Despawn(hpBar);
         hpBar = null;
         aniEnemy.SetFloat("Speed", 0f);
@@ -92,7 +95,7 @@ public abstract class EnemyBase : MonoBehaviour
         blood.SetActive(true);
         aniEnemy.gameObject.SetActive(false);
         growingRoot.SetActive(false);
-        StartCoroutine(CountDownRevive());
+        //StartCoroutine(CountDownRevive());
     }
 
     public bool TakeDamage(OctopusTail _octopusTail)
