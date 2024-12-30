@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 3
   allEnemies:
-  - id: 1
+  - id: 2
     amount: 3
     timeSpawn: 90
     maxSpawn: 0
@@ -77,7 +77,7 @@ Transform:
   m_GameObject: {fileID: 675321580894702456}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3224442, y: 0, z: 8.579809}
+  m_LocalPosition: {x: 3.74, y: 0, z: 5.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -95,15 +95,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4697e9da2518bb0478fe6699bf4d6907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 10
+  range: 4
   allEnemies:
   - id: 2
-    amount: 10
-    timeSpawn: 5
+    amount: 5
+    timeSpawn: 30
     maxSpawn: 0
   - id: 5
-    amount: 3
-    timeSpawn: 10
+    amount: 1
+    timeSpawn: 15
     maxSpawn: 0
   timers: []
 --- !u!1 &1386634255903282904
@@ -132,7 +132,7 @@ Transform:
   m_GameObject: {fileID: 1386634255903282904}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -29.462444, y: 0, z: -11.61019}
+  m_LocalPosition: {x: -29.18, y: 0, z: -12.48}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -150,11 +150,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4697e9da2518bb0478fe6699bf4d6907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 4
+  range: 3
   allEnemies:
   - id: 1
-    amount: 5
-    timeSpawn: 1
+    amount: 10
+    timeSpawn: 15
     maxSpawn: 0
   timers: []
 --- !u!1 &1393750114642726390
@@ -183,7 +183,7 @@ Transform:
   m_GameObject: {fileID: 1393750114642726390}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.912445, y: 0, z: 13.999809}
+  m_LocalPosition: {x: -21.2, y: 0, z: 14.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -201,15 +201,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4697e9da2518bb0478fe6699bf4d6907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 4
+  range: 2
   allEnemies:
-  - id: 4
-    amount: 1
-    timeSpawn: 1
-    maxSpawn: 0
-  - id: 5
-    amount: 2
-    timeSpawn: 20
+  - id: 2
+    amount: 5
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &1606624657049588552
@@ -238,7 +234,7 @@ Transform:
   m_GameObject: {fileID: 1606624657049588552}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.627556, y: 0, z: 10.17981}
+  m_LocalPosition: {x: -4.77, y: 0, z: 2.87}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -256,11 +252,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4697e9da2518bb0478fe6699bf4d6907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 5
+  range: 2
   allEnemies:
   - id: 2
     amount: 5
-    timeSpawn: 20
+    timeSpawn: 30
+    maxSpawn: 0
+  - id: 3
+    amount: 3
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &2082021646415928789
@@ -289,7 +289,7 @@ Transform:
   m_GameObject: {fileID: 2082021646415928789}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.012444, y: 0, z: 8.719809}
+  m_LocalPosition: {x: -4.22, y: 0, z: 11.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -307,19 +307,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4697e9da2518bb0478fe6699bf4d6907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 10
+  range: 5
   allEnemies:
-  - id: 6
-    amount: 2
-    timeSpawn: 20
-    maxSpawn: 0
-  - id: 2
-    amount: 5
-    timeSpawn: 15
-    maxSpawn: 0
   - id: 4
-    amount: 3
-    timeSpawn: 10
+    amount: 5
+    timeSpawn: 30
+    maxSpawn: 0
+  - id: 5
+    amount: 1
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &2100798166380515296
@@ -369,12 +365,12 @@ MonoBehaviour:
   range: 5
   allEnemies:
   - id: 1
-    amount: 10
-    timeSpawn: 1
+    amount: 15
+    timeSpawn: 15
     maxSpawn: 0
-  - id: 5
+  - id: 3
     amount: 1
-    timeSpawn: 20
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &2853172773613273979
@@ -423,8 +419,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13137f16b8f178143adc448f7938aad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelTime: 300
-  topCondition: 3
+  levelTime: 180
+  topCondition: 1
 --- !u!1 &3037900273318701867
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,15 +465,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4697e9da2518bb0478fe6699bf4d6907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 5
+  range: 4
   allEnemies:
-  - id: 2
+  - id: 3
     amount: 5
-    timeSpawn: 10
+    timeSpawn: 30
     maxSpawn: 0
-  - id: 1
+  - id: 2
     amount: 10
-    timeSpawn: 5
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &3501795495515634018
@@ -524,15 +520,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4697e9da2518bb0478fe6699bf4d6907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 6
+  range: 5
   allEnemies:
   - id: 1
-    amount: 10
-    timeSpawn: 10
+    amount: 20
+    timeSpawn: 15
     maxSpawn: 0
   - id: 2
-    amount: 1
-    timeSpawn: 20
+    amount: 3
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &3616503229393926416
@@ -582,12 +578,8 @@ MonoBehaviour:
   range: 4
   allEnemies:
   - id: 1
-    amount: 5
-    timeSpawn: 1
-    maxSpawn: 0
-  - id: 3
-    amount: 1
-    timeSpawn: 5
+    amount: 20
+    timeSpawn: 15
     maxSpawn: 0
   timers: []
 --- !u!1 &4263631351744646560
@@ -616,7 +608,7 @@ Transform:
   m_GameObject: {fileID: 4263631351744646560}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.4875555, y: 0, z: 15.539809}
+  m_LocalPosition: {x: 13.58, y: 0, z: 17.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -634,15 +626,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4697e9da2518bb0478fe6699bf4d6907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 4
+  range: 2
   allEnemies:
-  - id: 1
-    amount: 5
-    timeSpawn: 1
-    maxSpawn: 0
   - id: 3
-    amount: 1
-    timeSpawn: 5
+    amount: 3
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &4621252019705448613
@@ -736,57 +724,6 @@ MonoBehaviour:
     timeSpawn: 90
     maxSpawn: 0
   timers: []
---- !u!1 &4720794381357115694
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 755922467373530569}
-  - component: {fileID: 9069634969778977919}
-  m_Layer: 0
-  m_Name: Area Enemy (57)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &755922467373530569
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4720794381357115694}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -10.732445, y: 0, z: -4.7401905}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 3749394596135614398}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9069634969778977919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4720794381357115694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4697e9da2518bb0478fe6699bf4d6907, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  range: 3
-  allEnemies:
-  - id: 2
-    amount: 2
-    timeSpawn: 20
-    maxSpawn: 0
-  timers: []
 --- !u!1 &4727099014623818932
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,7 +750,7 @@ Transform:
   m_GameObject: {fileID: 4727099014623818932}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.467556, y: 0, z: -0.73019075}
+  m_LocalPosition: {x: 21.5, y: 0, z: -1.91}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -834,12 +771,8 @@ MonoBehaviour:
   range: 4
   allEnemies:
   - id: 1
-    amount: 5
-    timeSpawn: 20
-    maxSpawn: 0
-  - id: 2
-    amount: 1
-    timeSpawn: 20
+    amount: 15
+    timeSpawn: 15
     maxSpawn: 0
   timers: []
 --- !u!1 &4971422125645622868
@@ -889,12 +822,8 @@ MonoBehaviour:
   range: 3
   allEnemies:
   - id: 1
-    amount: 5
-    timeSpawn: 1
-    maxSpawn: 0
-  - id: 2
-    amount: 2
-    timeSpawn: 20
+    amount: 15
+    timeSpawn: 15
     maxSpawn: 0
   timers: []
 --- !u!1 &5125868995517410681
@@ -944,12 +873,8 @@ MonoBehaviour:
   range: 4
   allEnemies:
   - id: 1
-    amount: 5
-    timeSpawn: 1
-    maxSpawn: 0
-  - id: 4
-    amount: 2
-    timeSpawn: 10
+    amount: 15
+    timeSpawn: 15
     maxSpawn: 0
   timers: []
 --- !u!1 &5652964046133659773
@@ -978,7 +903,7 @@ Transform:
   m_GameObject: {fileID: 5652964046133659773}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.342443, y: 0, z: -20.700191}
+  m_LocalPosition: {x: -10.98, y: 0, z: -20.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -998,9 +923,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 3
   allEnemies:
-  - id: 4
-    amount: 1
-    timeSpawn: 1
+  - id: 1
+    amount: 10
+    timeSpawn: 15
     maxSpawn: 0
   timers: []
 --- !u!1 &5995022146194601093
@@ -1047,15 +972,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4697e9da2518bb0478fe6699bf4d6907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 5
+  range: 3
   allEnemies:
-  - id: 1
+  - id: 2
     amount: 5
-    timeSpawn: 1
-    maxSpawn: 0
-  - id: 3
-    amount: 1
-    timeSpawn: 5
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &6044125997621145370
@@ -1084,7 +1005,7 @@ Transform:
   m_GameObject: {fileID: 6044125997621145370}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.1924443, y: 0, z: -7.340191}
+  m_LocalPosition: {x: -5.98, y: 0, z: -3.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1104,13 +1025,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 5
   allEnemies:
-  - id: 2
-    amount: 3
-    timeSpawn: 20
-    maxSpawn: 0
   - id: 3
-    amount: 2
-    timeSpawn: 10
+    amount: 3
+    timeSpawn: 30
+    maxSpawn: 0
+  - id: 2
+    amount: 5
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &6148863330170689496
@@ -1160,12 +1081,8 @@ MonoBehaviour:
   range: 5
   allEnemies:
   - id: 2
-    amount: 2
-    timeSpawn: 10
-    maxSpawn: 0
-  - id: 3
-    amount: 3
-    timeSpawn: 5
+    amount: 5
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &6437620344092143009
@@ -1216,7 +1133,7 @@ MonoBehaviour:
   allEnemies:
   - id: 2
     amount: 1
-    timeSpawn: 20
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &6812200300148665387
@@ -1245,7 +1162,7 @@ Transform:
   m_GameObject: {fileID: 6812200300148665387}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -23.112446, y: 0, z: 23.799809}
+  m_LocalPosition: {x: -22.79, y: 0, z: 23.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1266,12 +1183,8 @@ MonoBehaviour:
   range: 3
   allEnemies:
   - id: 1
-    amount: 5
-    timeSpawn: 1
-    maxSpawn: 0
-  - id: 3
-    amount: 1
-    timeSpawn: 20
+    amount: 15
+    timeSpawn: 15
     maxSpawn: 0
   timers: []
 --- !u!1 &6819098832076097322
@@ -1320,13 +1233,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 5
   allEnemies:
-  - id: 2
-    amount: 3
-    timeSpawn: 20
+  - id: 1
+    amount: 15
+    timeSpawn: 15
     maxSpawn: 0
   - id: 3
-    amount: 2
-    timeSpawn: 5
+    amount: 1
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &6955530151314112905
@@ -1355,7 +1268,7 @@ Transform:
   m_GameObject: {fileID: 6955530151314112905}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4975557, y: 0, z: -4.760191}
+  m_LocalPosition: {x: 3.94, y: 0, z: -4.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1376,8 +1289,8 @@ MonoBehaviour:
   range: 3
   allEnemies:
   - id: 2
-    amount: 2
-    timeSpawn: 1
+    amount: 5
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &7167513281964648559
@@ -1426,9 +1339,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 4
   allEnemies:
-  - id: 3
-    amount: 3
-    timeSpawn: 10
+  - id: 2
+    amount: 5
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &7476251503992107337
@@ -1457,7 +1370,7 @@ Transform:
   m_GameObject: {fileID: 7476251503992107337}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.382444, y: 0, z: -21.870192}
+  m_LocalPosition: {x: -18.24, y: 0, z: -22.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1475,15 +1388,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4697e9da2518bb0478fe6699bf4d6907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 5
+  range: 4
   allEnemies:
   - id: 1
-    amount: 5
-    timeSpawn: 1
-    maxSpawn: 0
-  - id: 4
-    amount: 1
-    timeSpawn: 5
+    amount: 20
+    timeSpawn: 15
     maxSpawn: 0
   timers: []
 --- !u!1 &8201745971280233310
@@ -1532,13 +1441,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 6
   allEnemies:
-  - id: 4
-    amount: 2
-    timeSpawn: 10
+  - id: 1
+    amount: 20
+    timeSpawn: 15
     maxSpawn: 0
   - id: 3
-    amount: 3
-    timeSpawn: 5
+    amount: 2
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &8305136122445657129
@@ -1567,7 +1476,7 @@ Transform:
   m_GameObject: {fileID: 8305136122445657129}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.297556, y: 0, z: 26.08981}
+  m_LocalPosition: {x: 9.04, y: 0, z: 24.78}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1588,8 +1497,8 @@ MonoBehaviour:
   range: 3
   allEnemies:
   - id: 2
-    amount: 2
-    timeSpawn: 20
+    amount: 3
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &8461564639985325361
@@ -1642,7 +1551,6 @@ Transform:
   - {fileID: 154864237876943588}
   - {fileID: 1792348211529712567}
   - {fileID: 1721555160390526939}
-  - {fileID: 755922467373530569}
   - {fileID: 2730398894512571027}
   - {fileID: 3848610377527784893}
   - {fileID: 6772845384125537097}
@@ -1684,7 +1592,7 @@ Transform:
   m_GameObject: {fileID: 8462155554352143503}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.627556, y: 0, z: 10.17981}
+  m_LocalPosition: {x: 9.2, y: 0, z: 12.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1702,11 +1610,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4697e9da2518bb0478fe6699bf4d6907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 5
+  range: 2
   allEnemies:
   - id: 2
     amount: 5
-    timeSpawn: 20
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &8688528440620870421
@@ -1806,9 +1714,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 5
   allEnemies:
-  - id: 6
-    amount: 1
-    timeSpawn: 1
+  - id: 1
+    amount: 30
+    timeSpawn: 15
     maxSpawn: 0
   timers: []
 --- !u!1 &8786871005219596181
@@ -1858,12 +1766,12 @@ MonoBehaviour:
   range: 5
   allEnemies:
   - id: 1
-    amount: 5
-    timeSpawn: 1
+    amount: 15
+    timeSpawn: 15
     maxSpawn: 0
   - id: 3
-    amount: 1
-    timeSpawn: 5
+    amount: 3
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &8844009259152840419
@@ -1892,7 +1800,7 @@ Transform:
   m_GameObject: {fileID: 8844009259152840419}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -26.842445, y: 0, z: -18.690191}
+  m_LocalPosition: {x: -26.79, y: 0, z: -19.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1910,11 +1818,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4697e9da2518bb0478fe6699bf4d6907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 4
+  range: 3
   allEnemies:
   - id: 1
-    amount: 5
-    timeSpawn: 1
+    amount: 10
+    timeSpawn: 15
     maxSpawn: 0
   timers: []
 --- !u!1 &8868525580334653326
@@ -1943,7 +1851,7 @@ Transform:
   m_GameObject: {fileID: 8868525580334653326}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.437556, y: 0, z: -16.16019}
+  m_LocalPosition: {x: 11.78, y: 0, z: -16.32}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1963,9 +1871,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   range: 3
   allEnemies:
-  - id: 2
-    amount: 1
-    timeSpawn: 2
+  - id: 1
+    amount: 10
+    timeSpawn: 15
     maxSpawn: 0
   timers: []
 --- !u!1 &9006926294123873874
@@ -1994,7 +1902,7 @@ Transform:
   m_GameObject: {fileID: 9006926294123873874}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.312444, y: 0, z: -18.21019}
+  m_LocalPosition: {x: -5.8, y: 0, z: -18.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2012,15 +1920,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4697e9da2518bb0478fe6699bf4d6907, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 3
+  range: 2
   allEnemies:
-  - id: 1
-    amount: 5
-    timeSpawn: 1
-    maxSpawn: 0
   - id: 2
-    amount: 1
-    timeSpawn: 5
+    amount: 5
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1001 &18079794585910887
