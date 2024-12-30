@@ -56,6 +56,8 @@ public abstract class CharacterBase : MonoBehaviour
     public float currentEvol = 0;
     public float defaultMovespeed = 0;
     public int killCount = 0;
+    public float camParam1 = 0;
+    public float camParam2 = 0;
     float defaultCam;
     public StateCharacter stateNow;
 
@@ -161,8 +163,8 @@ public abstract class CharacterBase : MonoBehaviour
                 model.transform.DOScale(model.localScale.x + defaultScale * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
                 if (!isBot)
                 {
-                    Camera.main.DOFieldOfView(Camera.main.fieldOfView + 0.4f * defaultCam * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
-                    Camera.main.transform.DOLocalMoveY(Camera.main.transform.position.y + 1.67f * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
+                    Camera.main.DOFieldOfView(Camera.main.fieldOfView + camParam1 * defaultCam * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
+                    Camera.main.transform.DOLocalMoveY(Camera.main.transform.position.y + camParam2 * levelUpData.enemyAssets[currentLevel.ToString()].size, 0.35f);
                 }
             }
             if (levelUpData.enemyAssets[currentLevel.ToString()].tentacles > 0)
