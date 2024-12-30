@@ -446,7 +446,7 @@ MonoBehaviour:
     delayAttack: 0
     moveSpeed: 2
     levelAI: 0
-    rewardExp: 6
+    rewardExp: 10
   statsAIEnemy:
     detectionRange: 20
     numDirections: 36
