@@ -58,6 +58,7 @@ public abstract class EnemyBase : MonoBehaviour
     bool canCatch = true;
     Vector2 randomPosition2D;
     GameObject blood;
+    Coroutine coroutineDelayCatch, coroutineDelayRunAway;
 
 
     public void InitEnemy(AreaEnemy _areaEnemy)
@@ -66,7 +67,7 @@ public abstract class EnemyBase : MonoBehaviour
         colliderEnemy.enabled = true;
         aniEnemy.gameObject.SetActive(true);
         randomPosition2D = UnityEngine.Random.insideUnitCircle * myArea.range;
-        transform.position = new Vector3(myArea.transform.position.x+randomPosition2D.x, 0, myArea.transform.position.z+randomPosition2D.y);
+        transform.position = new Vector3(myArea.transform.position.x + randomPosition2D.x, 0, myArea.transform.position.z + randomPosition2D.y);
         hpNow = statsBase.hp;
         listAttacker.Clear();
         ChangeState(State.Idle);
@@ -90,7 +91,7 @@ public abstract class EnemyBase : MonoBehaviour
     {
         blood = LeanPool.Spawn(GameManager.Instance.bloodAlien);
         blood.SetActive(false);
-        blood.transform.position = new Vector3(transform.position.x,0, transform.position.z);
+        blood.transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         blood.SetActive(true);
         aniEnemy.gameObject.SetActive(false);
         growingRoot.SetActive(false);
@@ -120,7 +121,7 @@ public abstract class EnemyBase : MonoBehaviour
         {
             listAttacker.Remove(_characterBase.gameObject);
         }
-        if(listAttacker.Count <= 0)
+        if (listAttacker.Count <= 0)
         {
             growingRoot.SetActive(false);
         }
@@ -131,9 +132,9 @@ public abstract class EnemyBase : MonoBehaviour
         UpdateState();
     }
 
-    void UpdateHp(float _value, OctopusTail _octopusTail=null)
+    void UpdateHp(float _value, OctopusTail _octopusTail = null)
     {
-        hpNow += (_value*Time.deltaTime);
+        hpNow += (_value * Time.deltaTime);
         hpBar.SetValue(hpNow / statsBase.hp);
         hpBar.transform.position = GameManager.Instance.mainCamera.WorldToScreenPoint(posHpBar.position);
 
@@ -173,7 +174,7 @@ public abstract class EnemyBase : MonoBehaviour
                 MoveToDirection();
                 if (hpNow < statsBase.hp)
                 {
-                    UpdateHp(statsBase.hp*0.5f);
+                    UpdateHp(statsBase.hp * 0.5f);
                 }
                 break;
             case State.RunAway:
@@ -198,9 +199,20 @@ public abstract class EnemyBase : MonoBehaviour
     {
         if (stateNow == State.Idle)
         {
-            if (Vector3.Distance(transform.position, targetMove) < .1f) return;
+            if (Vector3.Distance(transform.position, targetMove) < .1f)
+            {
+                aniEnemy.SetFloat("Speed", 0f);
+                return;
+            }
         }
-        transform.position += directionTarget.normalized * statsBase.moveSpeed * Time.deltaTime;
+        if (stateNow == State.RunAway && canRunAway)
+        {
+            transform.position += directionTarget.normalized * statsBase.moveSpeed * Time.deltaTime;
+        }
+        else
+        {
+            transform.position = Vector3.MoveTowards(transform.position, targetMove, statsBase.moveSpeed * Time.deltaTime);
+        }
         float rotateSpeed = statsBase.moveSpeed * rotateMultiplier;
 
         Quaternion targetRotation = Quaternion.LookRotation(directionTarget);
@@ -211,24 +223,30 @@ public abstract class EnemyBase : MonoBehaviour
     public void ChangeState(State _stateChange)
     {
         if (_stateChange == stateNow) return;
+        Debug.Log(_stateChange);
         stateNow = _stateChange;
 
         switch (_stateChange)
         {
             case State.Idle:
                 ChangeTargetMove();
+                if (coroutineDelayRunAway != null)
+                {
+                    StopCoroutine(coroutineDelayRunAway);
+                }
                 StartCoroutine(CountTimeDelayCatch());
-                aniEnemy.Play("Move");
-                aniEnemy.SetFloat("Speed", 1f);
+                //aniEnemy.SetFloat("Speed", 1f);
                 break;
             case State.RunAway:
+                if (coroutineDelayCatch != null)
+                {
+                    StopCoroutine(coroutineDelayCatch);
+                }
                 StartCoroutine(CountTimeDelayRunAway());
                 if (!hpBar)
                 {
                     hpBar = LeanPool.Spawn(GameManager.Instance.hpBar, UIManager.Instance.parentHP);
                 }
-                aniEnemy.Play("Move");
-                aniEnemy.SetFloat("Speed", 1f);
                 break;
             case State.Attack:
                 break;
@@ -255,6 +273,7 @@ public abstract class EnemyBase : MonoBehaviour
         canRunAway = false;
         yield return new WaitForSeconds(statsAIEnemy.timeDelayRunAway);
         canRunAway = true;
+        aniEnemy.SetFloat("Speed", 1f);
     }
 
     IEnumerator CountTimeDelayCatch()
