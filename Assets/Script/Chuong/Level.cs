@@ -8,11 +8,12 @@ public class Level : MonoBehaviour
     public float levelTime;
     public float topCondition;
     float curTime;
+    public Coroutine timeCou;
 
     private void Start()
     {
         UiController.Instance.SetupArrow(BotTransform);
-        StartCoroutine(TimeCount());
+        timeCou = StartCoroutine(TimeCount());
     }
 
     IEnumerator TimeCount()

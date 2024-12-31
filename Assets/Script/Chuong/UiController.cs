@@ -19,6 +19,7 @@ public class UiController : MonoBehaviour
     public TextMeshProUGUI killCoutTxt;
     public TextMeshProUGUI timeCoutTxt;
     public TextMeshProUGUI stageTxt;
+    public TextMeshProUGUI enemyLeftTxt;
     public GameObject dragToMove;
     public ArrowObj arrowObj;
     public Slider ExpSlider;
@@ -53,6 +54,28 @@ public class UiController : MonoBehaviour
         expTween = ExpSlider.DOValue(current / max, 0.25f);
         levelTxt.text = "Level " + level.ToString();
         killCoutTxt.text = "Kill " + killCount.ToString();
+    }
+
+    private void Update()
+    {
+        int cout = 0;
+        if(LevelController.Instance.Level != null)
+        foreach (Transform t in LevelController.Instance.Level.BotTransform) 
+        {
+            if (t.gameObject.activeSelf) cout++;
+            UpdateEnemiesLeft(cout);
+
+            if(cout<=0)
+            {
+                StopCoroutine(LevelController.Instance.Level.timeCou);
+                winPopup.SetActive(true);
+            }
+        }
+    }
+
+    public void UpdateEnemiesLeft(int count)
+    {
+        enemyLeftTxt.text = "Alive: " + count.ToString();
     }
 
     public void ButtonReset()
