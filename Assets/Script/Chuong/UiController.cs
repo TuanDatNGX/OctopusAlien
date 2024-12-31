@@ -20,6 +20,7 @@ public class UiController : MonoBehaviour
     public TextMeshProUGUI timeCoutTxt;
     public TextMeshProUGUI stageTxt;
     public TextMeshProUGUI enemyLeftTxt;
+    public TextMeshProUGUI expTxt;
     public GameObject dragToMove;
     public ArrowObj arrowObj;
     public Slider ExpSlider;
@@ -54,6 +55,7 @@ public class UiController : MonoBehaviour
         expTween = ExpSlider.DOValue(current / max, 0.25f);
         levelTxt.text = "Level " + level.ToString();
         killCoutTxt.text = "Kill " + killCount.ToString();
+        expTxt.text = current.ToString() + "/" + max.ToString();
     }
 
     private void Update()
