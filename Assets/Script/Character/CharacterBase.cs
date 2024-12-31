@@ -65,7 +65,6 @@ public abstract class CharacterBase : TargetBase
     float defaultCam;
     public StateCharacter stateNow;
 
-
     private void Awake()
     {
         defaultScale = model.transform.localScale.x;
@@ -96,6 +95,7 @@ public abstract class CharacterBase : TargetBase
 
     public override void UpdateHp(float _value, OctopusTail _octopusTail = null)
     {
+        if (hpBar == null) return;
         hpNow += (_value * Time.deltaTime);
         hpBar.SetValue(hpNow / characterStatsBase.hp);
         hpBar.transform.position = GameManager.Instance.mainCamera.WorldToScreenPoint(posHpBar.position);
@@ -110,7 +110,6 @@ public abstract class CharacterBase : TargetBase
     {
         if (stateNow == StateCharacter.Die) return;
         neareastTarget = null;
-        //rangeObj.transform.position = new Vector3(rangeObj.transform.position.x, transform.position.y, rangeObj.transform.position.z);
         foreach (var target in listTargets)
         {
             float minDistance = 1000;
@@ -154,15 +153,6 @@ public abstract class CharacterBase : TargetBase
         }
         Move();
 
-        //Move();
-        //switch (stateNow)
-        //{
-        //    case StateCharacter.Idle:
-        //        break;
-        //    case StateCharacter.Attack:
-        //        break;
-        //}
-
         if (Input.GetKeyDown(KeyCode.C))
         {
             if(!isBot) 
@@ -172,14 +162,17 @@ public abstract class CharacterBase : TargetBase
         }
         if (listAttacker.Count <= 0)
         {
-            hpNow += characterStatsBase.heal * Time.deltaTime;
-            hpBar.SetValue(hpNow / characterStatsBase.hp);
-            hpBar.transform.position = GameManager.Instance.mainCamera.WorldToScreenPoint(posHpBar.position);
-
-            if (hpNow > characterStatsBase.hp)
+            if (hpBar && hpBar!= null)
             {
-                hpNow = characterStatsBase.hp;
-                LeanPool.Despawn(hpBar);
+                hpNow += characterStatsBase.heal * Time.deltaTime;
+                hpBar.SetValue(hpNow / characterStatsBase.hp);
+                hpBar.transform.position = GameManager.Instance.mainCamera.WorldToScreenPoint(posHpBar.position);
+
+                if (hpNow > characterStatsBase.hp)
+                {
+                    hpNow = characterStatsBase.hp;
+                    LeanPool.Despawn(hpBar);
+                }
             }
         }
     }
@@ -265,7 +258,6 @@ public abstract class CharacterBase : TargetBase
         }
     }
 
-
     public void ChangeState(StateCharacter _stateCharacter)
     {
         if (_stateCharacter == stateNow) return;
@@ -295,7 +287,7 @@ public abstract class CharacterBase : TargetBase
         {
             listAttacker.Remove(_characterBase.gameObject);
         }
-        if (listAttacker.Count <= 0 && hpNow > characterStatsBase.hp)
+        if (listAttacker.Count <= 0 && hpNow >= characterStatsBase.hp)
         {
             if (growingRoot != null)
             {
@@ -306,8 +298,6 @@ public abstract class CharacterBase : TargetBase
             }
         }
     }
-
-
 
     public void ActionEat()
     {
