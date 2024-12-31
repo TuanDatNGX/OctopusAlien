@@ -452,14 +452,14 @@ MonoBehaviour:
     hp: 100
     attack: 0
     delayAttack: 0
-    moveSpeed: 3
+    moveSpeed: 2
     levelAI: 0
     rewardExp: 25
   statsAIEnemy:
     detectionRange: 20
     numDirections: 36
     timeDelayNextTarget: 1
-    timeDelayRunAway: 1
+    timeDelayRunAway: 0
     timeDelayCatch: 0
   rotateMultiplier: 300
   stateNow: 0
