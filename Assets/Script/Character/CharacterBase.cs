@@ -6,6 +6,7 @@ using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine.AI;
 using Lean.Pool;
+using static UnityEngine.Rendering.DebugUI;
 
 [Serializable]
 public enum StateCharacter
@@ -169,6 +170,18 @@ public abstract class CharacterBase : TargetBase
                 GetExp(levelUpData.enemyAssets[currentLevel.ToString()].exp);
             }
         }
+        if (listAttacker.Count <= 0)
+        {
+            hpNow += characterStatsBase.heal * Time.deltaTime;
+            hpBar.SetValue(hpNow / characterStatsBase.hp);
+            hpBar.transform.position = GameManager.Instance.mainCamera.WorldToScreenPoint(posHpBar.position);
+
+            if (hpNow > characterStatsBase.hp)
+            {
+                hpNow = characterStatsBase.hp;
+                LeanPool.Despawn(hpBar);
+            }
+        }
     }
 
     IEnumerator DeActiveRangeZone()
@@ -264,12 +277,13 @@ public abstract class CharacterBase : TargetBase
             case StateCharacter.Attack:
                 break;
             case StateCharacter.Die:
+                if (!isBot) UiController.Instance.losePopup.SetActive(true);
                 Die();
                 break;
             case StateCharacter.TakeDamage:
                 if (!hpBar)
                 {
-                    hpBar = LeanPool.Spawn(GameManager.Instance.hpBar, UIManager.Instance.parentHP);
+                    hpBar = LeanPool.Spawn(GameManager.Instance.hpBarPlayer, UIManager.Instance.parentHP);
                 }
                 break;
         }
@@ -281,7 +295,7 @@ public abstract class CharacterBase : TargetBase
         {
             listAttacker.Remove(_characterBase.gameObject);
         }
-        if (listAttacker.Count <= 0)
+        if (listAttacker.Count <= 0 && hpNow > characterStatsBase.hp)
         {
             if (growingRoot != null)
             {
