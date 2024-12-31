@@ -95,6 +95,7 @@ public abstract class CharacterBase : TargetBase
 
     public override void UpdateHp(float _value, OctopusTail _octopusTail = null)
     {
+        if (hpBar == null) return;
         hpNow += (_value * Time.deltaTime);
         hpBar.SetValue(hpNow / characterStatsBase.hp);
         hpBar.transform.position = GameManager.Instance.mainCamera.WorldToScreenPoint(posHpBar.position);
@@ -161,7 +162,7 @@ public abstract class CharacterBase : TargetBase
         }
         if (listAttacker.Count <= 0)
         {
-            if (hpBar)
+            if (hpBar && hpBar!= null)
             {
                 hpNow += characterStatsBase.heal * Time.deltaTime;
                 hpBar.SetValue(hpNow / characterStatsBase.hp);
