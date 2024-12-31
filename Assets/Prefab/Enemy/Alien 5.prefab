@@ -148,45 +148,45 @@ MonoBehaviour:
   - position: {x: 1.0158662, y: 0.4285289, z: 0.492862}
     direction: {x: 1.1344885, y: 0.70350796, z: 0.17912109}
     up: {x: 0, y: 1, z: 0}
-    scale: {x: 0.29917926, y: 0.29917926}
+    scale: {x: 0.29994604, y: 0.29994604}
     roll: 0
   - position: {x: 1.3769572, y: 0.54701877, z: 0.5188663}
     direction: {x: 1.4619105, y: 0.5783042, z: 0.6310959}
     up: {x: 0, y: 1, z: 0}
-    scale: {x: 0.22471143, y: 0.22471143}
+    scale: {x: 0.22547823, y: 0.22547823}
     roll: 0
   - position: {x: 1.0562744, y: 0.52288294, z: 0.7519206}
     direction: {x: 0.905365, y: 0.4941225, z: 0.616582}
     up: {x: 0, y: 1, z: 0}
-    scale: {x: 0.15720674, y: 0.15720674}
+    scale: {x: 0.15797353, y: 0.15797353}
     roll: 0
   - position: {x: 1.0947272, y: 0.5950213, z: 0.36261743}
     direction: {x: 1.168923, y: 0.59774375, z: 0.3728878}
     up: {x: 0, y: 1, z: 0}
-    scale: {x: 0.096689776, y: 0.096689776}
+    scale: {x: 0.09745657, y: 0.09745657}
     roll: 0
   - position: {x: 1.3726654, y: 0.6010011, z: 0.74389964}
     direction: {x: 1.3407974, y: 0.5449944, z: 0.87333804}
     up: {x: 0, y: 1, z: 0}
-    scale: {x: 0.03150022, y: 0.03150022}
+    scale: {x: 0.03226701, y: 0.03226701}
     roll: 0
   - position: {x: 1.2127914, y: 0.5345702, z: 0.8795549}
     direction: {x: 1.1109772, y: 0.5371272, z: 0.8941673}
     up: {x: 0, y: 1, z: 0}
-    scale: {x: -0.000820756, y: -0.000820756}
+    scale: {x: -0.000053966047, y: -0.000053966047}
     roll: 0
   curves:
   - n1:
       position: {x: 1.0158662, y: 0.4285289, z: 0.492862}
       direction: {x: 1.1344885, y: 0.70350796, z: 0.17912109}
       up: {x: 0, y: 1, z: 0}
-      scale: {x: 0.29917926, y: 0.29917926}
+      scale: {x: 0.29994604, y: 0.29994604}
       roll: 0
     n2:
       position: {x: 1.3769572, y: 0.54701877, z: 0.5188663}
       direction: {x: 1.4619105, y: 0.5783042, z: 0.6310959}
       up: {x: 0, y: 1, z: 0}
-      scale: {x: 0.22471143, y: 0.22471143}
+      scale: {x: 0.22547823, y: 0.22547823}
       roll: 0
     Changed:
       m_PersistentCalls:
@@ -195,13 +195,13 @@ MonoBehaviour:
       position: {x: 1.3769572, y: 0.54701877, z: 0.5188663}
       direction: {x: 1.4619105, y: 0.5783042, z: 0.6310959}
       up: {x: 0, y: 1, z: 0}
-      scale: {x: 0.22471143, y: 0.22471143}
+      scale: {x: 0.22547823, y: 0.22547823}
       roll: 0
     n2:
       position: {x: 1.0562744, y: 0.52288294, z: 0.7519206}
       direction: {x: 0.905365, y: 0.4941225, z: 0.616582}
       up: {x: 0, y: 1, z: 0}
-      scale: {x: 0.15720674, y: 0.15720674}
+      scale: {x: 0.15797353, y: 0.15797353}
       roll: 0
     Changed:
       m_PersistentCalls:
@@ -210,13 +210,13 @@ MonoBehaviour:
       position: {x: 1.0562744, y: 0.52288294, z: 0.7519206}
       direction: {x: 0.905365, y: 0.4941225, z: 0.616582}
       up: {x: 0, y: 1, z: 0}
-      scale: {x: 0.15720674, y: 0.15720674}
+      scale: {x: 0.15797353, y: 0.15797353}
       roll: 0
     n2:
       position: {x: 1.0947272, y: 0.5950213, z: 0.36261743}
       direction: {x: 1.168923, y: 0.59774375, z: 0.3728878}
       up: {x: 0, y: 1, z: 0}
-      scale: {x: 0.096689776, y: 0.096689776}
+      scale: {x: 0.09745657, y: 0.09745657}
       roll: 0
     Changed:
       m_PersistentCalls:
@@ -225,13 +225,13 @@ MonoBehaviour:
       position: {x: 1.0947272, y: 0.5950213, z: 0.36261743}
       direction: {x: 1.168923, y: 0.59774375, z: 0.3728878}
       up: {x: 0, y: 1, z: 0}
-      scale: {x: 0.096689776, y: 0.096689776}
+      scale: {x: 0.09745657, y: 0.09745657}
       roll: 0
     n2:
       position: {x: 1.3726654, y: 0.6010011, z: 0.74389964}
       direction: {x: 1.3407974, y: 0.5449944, z: 0.87333804}
       up: {x: 0, y: 1, z: 0}
-      scale: {x: 0.03150022, y: 0.03150022}
+      scale: {x: 0.03226701, y: 0.03226701}
       roll: 0
     Changed:
       m_PersistentCalls:
@@ -240,13 +240,13 @@ MonoBehaviour:
       position: {x: 1.3726654, y: 0.6010011, z: 0.74389964}
       direction: {x: 1.3407974, y: 0.5449944, z: 0.87333804}
       up: {x: 0, y: 1, z: 0}
-      scale: {x: 0.03150022, y: 0.03150022}
+      scale: {x: 0.03226701, y: 0.03226701}
       roll: 0
     n2:
       position: {x: 1.2127914, y: 0.5345702, z: 0.8795549}
       direction: {x: 1.1109772, y: 0.5371272, z: 0.8941673}
       up: {x: 0, y: 1, z: 0}
-      scale: {x: -0.000820756, y: -0.000820756}
+      scale: {x: -0.000053966047, y: -0.000053966047}
       roll: 0
     Changed:
       m_PersistentCalls:
@@ -449,12 +449,12 @@ MonoBehaviour:
   colliderEnemy: {fileID: 9029958046435039999}
   statsBase:
     id: 5
-    hp: 40
+    hp: 50
     attack: 0
     delayAttack: 0
-    moveSpeed: 2.5
+    moveSpeed: 2
     levelAI: 0
-    rewardExp: 20
+    rewardExp: 25
   statsAIEnemy:
     detectionRange: 20
     numDirections: 36
@@ -495,8 +495,8 @@ Transform:
   m_GameObject: {fileID: 5535747444627890787}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.146, y: 0.299, z: -0.457}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalPosition: {x: -0.242, y: 0.616, z: -1.013}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4669772170912020336}
@@ -558,7 +558,7 @@ Transform:
   m_GameObject: {fileID: 8558177798270757179}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.917, z: 0}
+  m_LocalPosition: {x: 0, y: 3.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -610,15 +610,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e86e0c93c19d13b4eb0ab269095c1616, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.6
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e86e0c93c19d13b4eb0ab269095c1616, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.6
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e86e0c93c19d13b4eb0ab269095c1616, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.6
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e86e0c93c19d13b4eb0ab269095c1616, type: 3}
       propertyPath: m_LocalPosition.x
