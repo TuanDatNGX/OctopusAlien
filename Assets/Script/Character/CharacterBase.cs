@@ -5,12 +5,15 @@ using System;
 using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine.AI;
+using Lean.Pool;
 
 [Serializable]
 public enum StateCharacter
 {
     Idle,
-    Attack
+    Attack,
+    Die,
+    TakeDamage
 }
 
 [Serializable]
@@ -27,7 +30,7 @@ public struct CharacterStatsBase
     public float heal;
 }
 
-public abstract class CharacterBase : MonoBehaviour
+public abstract class CharacterBase : TargetBase
 {
     public bool isBot;
     public CharacterStatsBase characterStatsBase;
@@ -36,7 +39,7 @@ public abstract class CharacterBase : MonoBehaviour
     public float moveSpeed;
     public float rotateSpeed;
     public OctopusTail[] tails;
-    public List<EnemyBase> listAlienInRange;
+    public List<TargetBase> listTargets;
     public Transform model;
     public Transform rangeObj;
     public Transform mouth;
@@ -48,7 +51,7 @@ public abstract class CharacterBase : MonoBehaviour
     public Material matFace2;
     public Material matFace3;
     public Material outlineMat;
-    public EnemyBase neareastAlien;
+    public TargetBase neareastTarget;
     public Coroutine rangeActive;
     public float currentExp = 0;
     public int currentLevel = 1;
@@ -64,6 +67,7 @@ public abstract class CharacterBase : MonoBehaviour
         defaultScale = model.transform.localScale.x;
         //defaultMovespeed = characterStatsBase.moveSpeed;
         moveSpeed = characterStatsBase.moveSpeed;
+        hpNow = characterStatsBase.hp;
         if (!isBot)
         {
             defaultCam = Camera.main.fieldOfView;
@@ -74,20 +78,45 @@ public abstract class CharacterBase : MonoBehaviour
     public abstract void Attack();
     public abstract void LevelUp();
 
+    public override bool TakeDamage(OctopusTail _octopusTail)
+    {
+        if (!listAttacker.Contains(_octopusTail.octopus.gameObject))
+        {
+            listAttacker.Add(_octopusTail.octopus.gameObject);
+        }
+        ChangeState(StateCharacter.TakeDamage);
+        growingRoot.gameObject.SetActive(true);
+        UpdateHp(-_octopusTail.octopus.characterStatsBase.attack, _octopusTail);
+        return true;
+    }
+
+    public override void UpdateHp(float _value, OctopusTail _octopusTail = null)
+    {
+        hpNow += (_value * Time.deltaTime);
+        hpBar.SetValue(hpNow / characterStatsBase.hp);
+        hpBar.transform.position = GameManager.Instance.mainCamera.WorldToScreenPoint(posHpBar.position);
+        if (hpNow <= 0)
+        {
+            ChangeState(StateCharacter.Die);
+            _octopusTail.CollectTarget();
+        }
+    }
+
     private void Update()
     {
-        neareastAlien = null;
-        rangeObj.transform.position = new Vector3(rangeObj.transform.position.x, transform.position.y - 0.65f, rangeObj.transform.position.z);
-        foreach (var alien in listAlienInRange)
+        if (stateNow == StateCharacter.Die) return;
+        neareastTarget = null;
+        //rangeObj.transform.position = new Vector3(rangeObj.transform.position.x, transform.position.y, rangeObj.transform.position.z);
+        foreach (var target in listTargets)
         {
             float minDistance = 1000;
-            if (!alien.listAttacker.Contains(gameObject))
+            if (!target.listAttacker.Contains(gameObject))
             {
-                float distance = Vector3.Distance(transform.position, alien.transform.position);
+                float distance = Vector3.Distance(transform.position, target.transform.position);
                 if (distance < minDistance)
                 {
                     minDistance = distance;
-                    neareastAlien = alien;
+                    neareastTarget = target;
                 }
             }
         }
@@ -95,17 +124,17 @@ public abstract class CharacterBase : MonoBehaviour
         {
             if (tail.gameObject.activeSelf && tail.currentState == TailState.Idle)
             {
-                if (neareastAlien != null)
+                if (neareastTarget != null)
                 {
-                    if (!neareastAlien.listAttacker.Contains(gameObject))
+                    if (!neareastTarget.listAttacker.Contains(gameObject))
                     {
-                        tail.CatchAlien(neareastAlien);
+                        tail.CatchTarget(neareastTarget);
                     }
                     break;
                 }
             }
         }
-        if (listAlienInRange.Count > 0)
+        if (listTargets.Count > 0)
         {
             rangeZone.SetActive(true);
             if (rangeActive != null)
@@ -232,14 +261,45 @@ public abstract class CharacterBase : MonoBehaviour
     public void ChangeState(StateCharacter _stateCharacter)
     {
         if (_stateCharacter == stateNow) return;
+        stateNow = _stateCharacter;
         switch (_stateCharacter)
         {
             case StateCharacter.Idle:
                 break;
             case StateCharacter.Attack:
                 break;
+            case StateCharacter.Die:
+                Die();
+                break;
+            case StateCharacter.TakeDamage:
+                if (!hpBar)
+                {
+                    hpBar = LeanPool.Spawn(GameManager.Instance.hpBar, UIManager.Instance.parentHP);
+                }
+                break;
         }
     }
+
+    public override void Escaped(CharacterBase _characterBase)
+    {
+        if (listAttacker.Contains(_characterBase.gameObject))
+        {
+            listAttacker.Remove(_characterBase.gameObject);
+        }
+        if (listAttacker.Count <= 0)
+        {
+            if (growingRoot != null)
+            {
+                growingRoot.SetActive(false);
+                LeanPool.Despawn(hpBar);
+                hpBar = null;
+                ChangeState(StateCharacter.Idle);
+            }
+        }
+    }
+
+
+
     public void ActionEat()
     {
         Eat = StartCoroutine(CoEat());

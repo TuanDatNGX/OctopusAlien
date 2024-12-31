@@ -4,6 +4,21 @@ using UnityEngine;
 
 public class EnemyNormal : EnemyBase
 {
+    public override void AffterDie(CharacterBase _octopus)
+    {
+        if (isOctopus)
+        {
+
+        }
+        else
+        {
+            aniEnemy.gameObject.SetActive(false);
+            growingRoot.SetActive(false);
+            _octopus.GetExp(statsBase.rewardExp);
+            EffectController.Instance.SpawnBloodFx(transform.position);
+        }
+    }
+
     public override void Attack()
     {
     }

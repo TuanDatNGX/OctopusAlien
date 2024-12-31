@@ -372,9 +372,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79077c929b638ee4ca2ff91ae0f074ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isOctopus: 0
+  rank: 0
+  listAttacker: []
+  hit: {fileID: 8464557916991356628}
+  isDie: 0
+  growingRoot: {fileID: 1675901147540257364}
+  hpNow: 0
+  hpBar: {fileID: 0}
+  posHpBar: {fileID: 4067905592269340240}
   aniEnemy: {fileID: 8197353333923883144}
   colliderEnemy: {fileID: 9029958046435039999}
-  posHpBar: {fileID: 4067905592269340240}
   statsBase:
     id: 1
     hp: 20
@@ -391,16 +399,11 @@ MonoBehaviour:
     timeDelayCatch: 0
   rotateMultiplier: 300
   stateNow: 0
-  hpNow: 0
   myArea: {fileID: 0}
   targetMove: {x: 0, y: 0, z: 0}
   randomTarget: {x: 0, y: 0}
   countTimeDelayNextTarget: 0
-  listAttacker: []
   directionTarget: {x: 0, y: 0, z: 0}
-  hpBar: {fileID: 0}
-  growingRoot: {fileID: 1675901147540257364}
-  hit: {fileID: 8464557916991356628}
   canRunAway: 0
   listEnemyId: 0
 --- !u!1 &6517940503911950007
