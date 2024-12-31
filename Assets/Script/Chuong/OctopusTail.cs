@@ -95,6 +95,14 @@ public class OctopusTail : MonoBehaviour
                             ChangeState(TailState.Idle);
                         }
                     }
+                    if(target.GetComponent<EnemyBase>())
+                    {
+                        if (!target.GetComponent<EnemyBase>().aniEnemy.gameObject.activeSelf)
+                        {
+                            target = null;
+                            ChangeState(TailState.Idle);
+                        }
+                    }
                 }
                 break;
             case TailState.Collect:
@@ -125,12 +133,6 @@ public class OctopusTail : MonoBehaviour
                 transform.DOLocalRotate(defaultRotation, 2);
                 break;
             case TailState.Catch:
-                //tailAnimator.UseIK = true;
-                //tailAnimator.TailAnimatorAmount = 0.85f;
-                //currentBlend = 0;
-                //tailAnimator.IKBlend = 0;
-                //tailAnimator.IKContinousSolve = true;
-                //tailAnimator.Slithery = 1f;
                 break;
             case TailState.Collect:
                 tailAnimator.TailAnimatorAmount = 0.15f;

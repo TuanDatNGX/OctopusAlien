@@ -59,7 +59,7 @@ public class AICharacterController : CharacterBase
 
     public override void AffterDie(CharacterBase _octopus = null)
     {
-        _octopus.GetExp(currentExp * 8);
+        _octopus.GetExp(currentExp * 5);
         gameObject.SetActive(false);
     }
 

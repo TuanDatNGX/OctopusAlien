@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Progress;
 
 public class EnemyNormal : EnemyBase
 {
@@ -25,11 +24,11 @@ public class EnemyNormal : EnemyBase
                 {
                     if (tail.target == this)
                     {
-                        this.Escaped(tail.octopus);
                         tail.target = null;
                         tail.ChangeState(TailState.Idle);
                     }
                 }
+                Escaped(character);
             }
         }
     }
