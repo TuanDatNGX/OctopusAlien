@@ -7,19 +7,18 @@ public class PlayerDetection : MonoBehaviour
     public CharacterBase controller;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag("Enemy") && other.gameObject!=controller.model.gameObject)
         {
-            controller.listAlienInRange.Add(other.transform.parent.GetComponent<EnemyBase>());
+            controller.listTargets.Add(other.transform.parent.GetComponent<TargetBase>());
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Enemy"))
-        {
-            //other.transform.parent.GetComponent<Alien>().ChangeState(AlienState.Idle);
-            controller.listAlienInRange.Remove(other.transform.parent.GetComponent<EnemyBase>());
-            other.transform.parent.GetComponent<EnemyBase>().Escaped(controller);
+        if (other.CompareTag("Enemy") && other.gameObject != controller.gameObject)
+        {           
+            controller.listTargets.Remove(other.transform.parent.GetComponent<TargetBase>());
+            other.transform.parent.GetComponent<TargetBase>().Escaped(controller);
         }
     }
 }

@@ -1,3 +1,4 @@
+using Lean.Pool;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,10 +8,11 @@ public class PlayerCharacterController : CharacterBase
     public CharacterController characterController;
     public FloatingJoystick joystick;
     Vector3 inputDirection;
-
+    float defaultY;
     private void Start()
     {
-            StatsBoard.Instance.UpdateData(characterStatsBase);
+        StatsBoard.Instance.UpdateData(characterStatsBase);
+        defaultY = transform.position.y;
     }
     public override void Attack()
     {
@@ -29,11 +31,22 @@ public class PlayerCharacterController : CharacterBase
             UiController.Instance.dragToMove.gameObject.SetActive(false);
             Quaternion targetRotation = Quaternion.LookRotation(inputDirection, Vector3.up);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, Time.deltaTime * rotateSpeed);
-            characterController.Move(inputDirection.normalized * moveSpeed * Time.deltaTime);
+            characterController.Move(inputDirection * moveSpeed * Time.deltaTime);
         }
         else
         {
             characterController.Move(Vector3.zero * Time.deltaTime);
         }
+    }
+
+    public override void AffterDie(CharacterBase _octopus = null)
+    {
+        gameObject.SetActive(false);
+    }
+
+    public override void Die()
+    {
+        LeanPool.Despawn(hpBar);
+        hpBar = null;
     }
 }

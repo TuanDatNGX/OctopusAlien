@@ -34,25 +34,19 @@ public struct StatsAIEnemy
     public float timeDelayCatch;
 }
 
-public abstract class EnemyBase : MonoBehaviour
+public abstract class EnemyBase : TargetBase
 {
     public Animator aniEnemy;
     public Collider colliderEnemy;
-    public Transform posHpBar;
     public StatsBase statsBase;
     public StatsAIEnemy statsAIEnemy;
     public float rotateMultiplier;
     public State stateNow;
-    public float hpNow;
     public AreaEnemy myArea;
     public Vector3 targetMove;
     public Vector2 randomTarget;
     public float countTimeDelayNextTarget;
-    public List<GameObject> listAttacker;
     public Vector3 directionTarget;
-    public HpBarController hpBar;
-    public GameObject growingRoot;
-    public Transform hit;
     public bool canRunAway;
     public int listEnemyId;
     bool canCatch = true;
@@ -77,7 +71,7 @@ public abstract class EnemyBase : MonoBehaviour
     public abstract void RunAway();
     public abstract void Attack();
 
-    public virtual void Die()
+    public override void Die()
     {
         aniEnemy.Play("Floating");
         colliderEnemy.enabled = false;
@@ -87,18 +81,18 @@ public abstract class EnemyBase : MonoBehaviour
         aniEnemy.SetFloat("Speed", 0f);
     }
 
-    public void AffterDie()
-    {
-        blood = LeanPool.Spawn(GameManager.Instance.bloodAlien);
-        blood.SetActive(false);
-        blood.transform.position = new Vector3(transform.position.x, 0, transform.position.z);
-        blood.SetActive(true);
-        aniEnemy.gameObject.SetActive(false);
-        growingRoot.SetActive(false);
-        //StartCoroutine(CountDownRevive());
-    }
+    //public void AffterDie()
+    //{
+    //    blood = LeanPool.Spawn(GameManager.Instance.bloodAlien);
+    //    blood.SetActive(false);
+    //    blood.transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+    //    blood.SetActive(true);
+    //    aniEnemy.gameObject.SetActive(false);
+    //    growingRoot.SetActive(false);
+    //    //StartCoroutine(CountDownRevive());
+    //}
 
-    public bool TakeDamage(OctopusTail _octopusTail)
+    public override bool TakeDamage(OctopusTail _octopusTail)
     {
         if (!listAttacker.Contains(_octopusTail.octopus.gameObject))
         {
@@ -115,24 +109,12 @@ public abstract class EnemyBase : MonoBehaviour
         return false;
     }
 
-    public void Escaped(CharacterBase _characterBase)
-    {
-        if (listAttacker.Contains(_characterBase.gameObject))
-        {
-            listAttacker.Remove(_characterBase.gameObject);
-        }
-        if (listAttacker.Count <= 0)
-        {
-            growingRoot.SetActive(false);
-        }
-    }
-
     private void Update()
     {
         UpdateState();
     }
 
-    void UpdateHp(float _value, OctopusTail _octopusTail = null)
+    public override void UpdateHp(float _value, OctopusTail _octopusTail = null)
     {
         hpNow += (_value * Time.deltaTime);
         hpBar.SetValue(hpNow / statsBase.hp);
@@ -256,6 +238,21 @@ public abstract class EnemyBase : MonoBehaviour
         }
     }
 
+    public override void Escaped(CharacterBase _characterBase)
+    {
+        if (listAttacker.Contains(_characterBase.gameObject))
+        {
+            listAttacker.Remove(_characterBase.gameObject);
+        }
+        if (listAttacker.Count <= 0)
+        {
+            if (growingRoot != null)
+            {
+                growingRoot.SetActive(false);
+            }
+        }
+    }
+
     public void ChangeTargetMove()
     {
         randomTarget = UnityEngine.Random.insideUnitCircle * myArea.range;
@@ -282,4 +279,6 @@ public abstract class EnemyBase : MonoBehaviour
         yield return new WaitForSeconds(statsAIEnemy.timeDelayCatch);
         canCatch = true;
     }
+
+
 }

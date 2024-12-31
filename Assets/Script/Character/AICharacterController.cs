@@ -1,3 +1,4 @@
+using Lean.Pool;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,12 +16,9 @@ public class AICharacterController : CharacterBase
     }
     public override void Move()
     {
-        if (stateNow == StateCharacter.Idle)
+        if (!navMeshAgent.pathPending && navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
         {
-            if (!navMeshAgent.pathPending && navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
-            {
-                SetTarget();
-            }
+            SetTarget();
         }
     }
 
@@ -55,5 +53,17 @@ public class AICharacterController : CharacterBase
     public override void LevelUp()
     {
         navMeshAgent.speed = moveSpeed;
+    }
+
+    public override void AffterDie(CharacterBase _octopus = null)
+    {
+        gameObject.SetActive(false);
+    }
+
+    public override void Die()
+    {
+        navMeshAgent.enabled = false;
+        LeanPool.Despawn(hpBar);
+        hpBar = null;
     }
 }
