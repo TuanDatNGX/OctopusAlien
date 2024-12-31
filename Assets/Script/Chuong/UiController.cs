@@ -5,16 +5,22 @@ using TMPro;
 using DG.Tweening;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using JetBrains.Annotations;
 
 public class UiController : MonoBehaviour
 {
     public static UiController Instance;
+    public GameObject winPopup;
+    public GameObject losePopup;
     public Transform expTransform;
+    public Transform arrowTransform;
     public TextMeshProUGUI[] expObj;
     public TextMeshProUGUI levelTxt;
     public TextMeshProUGUI killCoutTxt;
     public TextMeshProUGUI timeCoutTxt;
+    public TextMeshProUGUI stageTxt;
     public GameObject dragToMove;
+    public ArrowObj arrowObj;
     public Slider ExpSlider;
     int expId = 0;
     Tween expTween;
@@ -22,6 +28,7 @@ public class UiController : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        stageTxt.text = "Stage " + LevelController.Instance.currentLevel.ToString();
     }
 
 
@@ -51,5 +58,15 @@ public class UiController : MonoBehaviour
     public void ButtonReset()
     {
         SceneManager.LoadScene("Gameplay");
+    }
+
+    public void SetupArrow(Transform botTransform)
+    {
+        foreach (Transform child in botTransform)
+        {
+            ArrowObj arrow = Instantiate(arrowObj, arrowTransform);
+            arrow.target = child.GetComponent<AICharacterController>();
+            arrow.gameObject.SetActive(true);
+        }
     }
 }
