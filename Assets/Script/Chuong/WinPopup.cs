@@ -8,7 +8,7 @@ public class WinPopup : MonoBehaviour
     private void OnEnable()
     {
         LevelController.Instance.currentLevel += 1;
-        if(LevelController.Instance.currentLevel > 5) LevelController.Instance.currentLevel = 1;
+        if(LevelController.Instance.currentLevel > 10) LevelController.Instance.currentLevel = 1;
     }
 
     public void BtnContinue()
