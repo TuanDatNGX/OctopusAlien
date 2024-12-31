@@ -3000,7 +3000,7 @@ MonoBehaviour:
   - {fileID: 374803595}
   levelTxt: {fileID: 1872982890}
   killCoutTxt: {fileID: 372844435}
-  timeCoutTxt: {fileID: 0}
+  timeCoutTxt: {fileID: 1859299891}
   dragToMove: {fileID: 1828045601}
   ExpSlider: {fileID: 1327051355}
   ExpTxt: {fileID: 1114649243}
