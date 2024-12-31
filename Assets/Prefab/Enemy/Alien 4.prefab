@@ -452,7 +452,7 @@ MonoBehaviour:
     hp: 100
     attack: 0
     delayAttack: 0
-    moveSpeed: 3
+    moveSpeed: 2
     levelAI: 0
     rewardExp: 25
   statsAIEnemy:
