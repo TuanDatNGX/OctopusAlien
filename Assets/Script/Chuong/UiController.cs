@@ -69,6 +69,7 @@ public class UiController : MonoBehaviour
 
             if(cout<=0)
             {
+                Debug.Log("Chuong");
                 StopCoroutine(LevelController.Instance.Level.timeCou);
                 winPopup.SetActive(true);
             }
