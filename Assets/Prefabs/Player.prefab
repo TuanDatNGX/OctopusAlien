@@ -185,6 +185,9 @@ MonoBehaviour:
   defaultScale: 0
   currentEvol: 0
   defaultMovespeed: 0
+  killCount: 0
+  camParam1: 0
+  camParam2: 0
   stateNow: 0
   characterController: {fileID: 5708556762935851084}
   joystick: {fileID: 0}
