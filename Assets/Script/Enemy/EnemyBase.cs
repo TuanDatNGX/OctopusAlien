@@ -101,7 +101,7 @@ public abstract class EnemyBase : TargetBase
 
         if (canCatch && stateNow != State.Die)
         {
-            //growingRoot.gameObject.SetActive(true);
+            growingRoot.gameObject.SetActive(true);
             ChangeState(State.RunAway);
             UpdateHp(-_octopusTail.octopus.characterStatsBase.attack, _octopusTail);
             return true;
