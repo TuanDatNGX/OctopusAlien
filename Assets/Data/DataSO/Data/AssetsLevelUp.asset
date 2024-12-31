@@ -52,7 +52,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0.05
+      Data: 0.1
     - Name: Atk
       Entry: 4
       Data: 2
@@ -61,10 +61,10 @@ MonoBehaviour:
       Data: 10
     - Name: Heal
       Entry: 4
-      Data: 3
+      Data: 1
     - Name: speed
       Entry: 4
-      Data: 0.2
+      Data: 0.3
     - Name: CatchingRadius
       Entry: 4
       Data: 1
@@ -94,7 +94,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0.15
+      Data: 0.2
     - Name: Atk
       Entry: 4
       Data: 2
@@ -103,10 +103,10 @@ MonoBehaviour:
       Data: 10
     - Name: Heal
       Entry: 4
-      Data: 3
+      Data: 1
     - Name: speed
       Entry: 4
-      Data: 0.3
+      Data: 0.4
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -136,7 +136,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0.05
+      Data: 0.1
     - Name: Atk
       Entry: 4
       Data: 2
@@ -145,10 +145,10 @@ MonoBehaviour:
       Data: 10
     - Name: Heal
       Entry: 4
-      Data: 3
+      Data: 1
     - Name: speed
       Entry: 4
-      Data: 0.2
+      Data: 0.3
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -178,7 +178,7 @@ MonoBehaviour:
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0.05
+      Data: 0.1
     - Name: Atk
       Entry: 4
       Data: 3
@@ -187,10 +187,10 @@ MonoBehaviour:
       Data: 15
     - Name: Heal
       Entry: 4
-      Data: 5
+      Data: 2
     - Name: speed
       Entry: 4
-      Data: 0.2
+      Data: 0.3
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -220,7 +220,7 @@ MonoBehaviour:
       Data: 1
     - Name: size
       Entry: 4
-      Data: 0.15
+      Data: 0.2
     - Name: Atk
       Entry: 4
       Data: 3
@@ -229,10 +229,10 @@ MonoBehaviour:
       Data: 15
     - Name: Heal
       Entry: 4
-      Data: 5
+      Data: 2
     - Name: speed
       Entry: 4
-      Data: 0.3
+      Data: 0.4
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -256,13 +256,13 @@ MonoBehaviour:
       Data: 7|LevelData, Assembly-CSharp
     - Name: exp
       Entry: 4
-      Data: 50
+      Data: 60
     - Name: evol
       Entry: 4
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0.05
+      Data: 0.1
     - Name: Atk
       Entry: 4
       Data: 3
@@ -271,10 +271,10 @@ MonoBehaviour:
       Data: 15
     - Name: Heal
       Entry: 4
-      Data: 5
+      Data: 2
     - Name: speed
       Entry: 4
-      Data: 0.3
+      Data: 0.4
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -298,13 +298,13 @@ MonoBehaviour:
       Data: 8|LevelData, Assembly-CSharp
     - Name: exp
       Entry: 4
-      Data: 75
+      Data: 100
     - Name: evol
       Entry: 4
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0.05
+      Data: 0.1
     - Name: Atk
       Entry: 4
       Data: 4
@@ -313,10 +313,10 @@ MonoBehaviour:
       Data: 20
     - Name: Heal
       Entry: 4
-      Data: 7
+      Data: 2
     - Name: speed
       Entry: 4
-      Data: 0.3
+      Data: 0.4
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -340,25 +340,25 @@ MonoBehaviour:
       Data: 9|LevelData, Assembly-CSharp
     - Name: exp
       Entry: 4
-      Data: 80
+      Data: 115
     - Name: evol
       Entry: 4
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0.15
+      Data: 0.2
     - Name: Atk
       Entry: 4
       Data: 20
     - Name: Hp
       Entry: 4
-      Data: 7
+      Data: 2
     - Name: Heal
       Entry: 4
       Data: 1
     - Name: speed
       Entry: 4
-      Data: 0.4
+      Data: 0.5
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -382,13 +382,13 @@ MonoBehaviour:
       Data: 10|LevelData, Assembly-CSharp
     - Name: exp
       Entry: 4
-      Data: 85
+      Data: 125
     - Name: evol
       Entry: 4
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0.05
+      Data: 0.1
     - Name: Atk
       Entry: 4
       Data: 4
@@ -397,10 +397,10 @@ MonoBehaviour:
       Data: 20
     - Name: Heal
       Entry: 4
-      Data: 7
+      Data: 2
     - Name: speed
       Entry: 4
-      Data: 0.3
+      Data: 0.4
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -424,13 +424,13 @@ MonoBehaviour:
       Data: 11|LevelData, Assembly-CSharp
     - Name: exp
       Entry: 4
-      Data: 150
+      Data: 120
     - Name: evol
       Entry: 4
       Data: 2
     - Name: size
       Entry: 4
-      Data: 0.05
+      Data: 0.1
     - Name: Atk
       Entry: 4
       Data: 5
@@ -439,10 +439,10 @@ MonoBehaviour:
       Data: 25
     - Name: Heal
       Entry: 4
-      Data: 8
+      Data: 3
     - Name: speed
       Entry: 4
-      Data: 0.3
+      Data: 0.4
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -466,13 +466,13 @@ MonoBehaviour:
       Data: 12|LevelData, Assembly-CSharp
     - Name: exp
       Entry: 4
-      Data: 170
+      Data: 190
     - Name: evol
       Entry: 4
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0.05
+      Data: 0.1
     - Name: Atk
       Entry: 4
       Data: 5
@@ -481,10 +481,10 @@ MonoBehaviour:
       Data: 25
     - Name: Heal
       Entry: 4
-      Data: 8
+      Data: 3
     - Name: speed
       Entry: 4
-      Data: 0.3
+      Data: 0.4
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -508,13 +508,13 @@ MonoBehaviour:
       Data: 13|LevelData, Assembly-CSharp
     - Name: exp
       Entry: 4
-      Data: 195
+      Data: 200
     - Name: evol
       Entry: 4
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0.15
+      Data: 0.3
     - Name: Atk
       Entry: 4
       Data: 5
@@ -523,10 +523,10 @@ MonoBehaviour:
       Data: 25
     - Name: Heal
       Entry: 4
-      Data: 8
+      Data: 3
     - Name: speed
       Entry: 4
-      Data: 0.5
+      Data: 0.6
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -550,13 +550,13 @@ MonoBehaviour:
       Data: 14|LevelData, Assembly-CSharp
     - Name: exp
       Entry: 4
-      Data: 235
+      Data: 210
     - Name: evol
       Entry: 4
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0.05
+      Data: 0.1
     - Name: Atk
       Entry: 4
       Data: 5
@@ -565,10 +565,10 @@ MonoBehaviour:
       Data: 25
     - Name: Heal
       Entry: 4
-      Data: 8
+      Data: 3
     - Name: speed
       Entry: 4
-      Data: 0.4
+      Data: 0.5
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -592,13 +592,13 @@ MonoBehaviour:
       Data: 15|LevelData, Assembly-CSharp
     - Name: exp
       Entry: 4
-      Data: 255
+      Data: 220
     - Name: evol
       Entry: 4
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0.05
+      Data: 0.1
     - Name: Atk
       Entry: 4
       Data: 6
@@ -607,10 +607,10 @@ MonoBehaviour:
       Data: 30
     - Name: Heal
       Entry: 4
-      Data: 10
+      Data: 3
     - Name: speed
       Entry: 4
-      Data: 0.4
+      Data: 0.5
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -634,13 +634,13 @@ MonoBehaviour:
       Data: 16|LevelData, Assembly-CSharp
     - Name: exp
       Entry: 4
-      Data: 380
+      Data: 230
     - Name: evol
       Entry: 4
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0.15
+      Data: 0.3
     - Name: Atk
       Entry: 4
       Data: 6
@@ -649,10 +649,10 @@ MonoBehaviour:
       Data: 30
     - Name: Heal
       Entry: 4
-      Data: 10
+      Data: 3
     - Name: speed
       Entry: 4
-      Data: 0.5
+      Data: 0.6
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -676,13 +676,13 @@ MonoBehaviour:
       Data: 17|LevelData, Assembly-CSharp
     - Name: exp
       Entry: 4
-      Data: 395
+      Data: 240
     - Name: evol
       Entry: 4
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0.05
+      Data: 0.1
     - Name: Atk
       Entry: 4
       Data: 6
@@ -691,10 +691,10 @@ MonoBehaviour:
       Data: 30
     - Name: Heal
       Entry: 4
-      Data: 10
+      Data: 3
     - Name: speed
       Entry: 4
-      Data: 0.4
+      Data: 0.5
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -718,13 +718,13 @@ MonoBehaviour:
       Data: 18|LevelData, Assembly-CSharp
     - Name: exp
       Entry: 4
-      Data: 415
+      Data: 250
     - Name: evol
       Entry: 4
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0.05
+      Data: 0.1
     - Name: Atk
       Entry: 4
       Data: 7
@@ -733,10 +733,10 @@ MonoBehaviour:
       Data: 35
     - Name: Heal
       Entry: 4
-      Data: 12
+      Data: 4
     - Name: speed
       Entry: 4
-      Data: 0.4
+      Data: 0.5
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -760,13 +760,13 @@ MonoBehaviour:
       Data: 19|LevelData, Assembly-CSharp
     - Name: exp
       Entry: 4
-      Data: 430
+      Data: 260
     - Name: evol
       Entry: 4
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0.15
+      Data: 0.3
     - Name: Atk
       Entry: 4
       Data: 7
@@ -775,10 +775,10 @@ MonoBehaviour:
       Data: 35
     - Name: Heal
       Entry: 4
-      Data: 12
+      Data: 4
     - Name: speed
       Entry: 4
-      Data: 0.5
+      Data: 0.6
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -802,13 +802,13 @@ MonoBehaviour:
       Data: 20|LevelData, Assembly-CSharp
     - Name: exp
       Entry: 4
-      Data: 470
+      Data: 300
     - Name: evol
       Entry: 4
       Data: 0
     - Name: size
       Entry: 4
-      Data: 0.05
+      Data: 0.1
     - Name: Atk
       Entry: 4
       Data: 7
@@ -817,10 +817,10 @@ MonoBehaviour:
       Data: 35
     - Name: Heal
       Entry: 4
-      Data: 12
+      Data: 4
     - Name: speed
       Entry: 4
-      Data: 0.4
+      Data: 0.5
     - Name: CatchingRadius
       Entry: 4
       Data: 2
@@ -844,7 +844,7 @@ MonoBehaviour:
       Data: 21|LevelData, Assembly-CSharp
     - Name: exp
       Entry: 4
-      Data: 21000
+      Data: 99999
     - Name: evol
       Entry: 4
       Data: 0

@@ -154,7 +154,7 @@ MonoBehaviour:
     moveSpeed: 1.8
     levelAI: 0
     tentacle: 1
-    heal: 20
+    heal: 5
   levelUpData: {fileID: 11400000, guid: d3517f2339e77aa4ea418dc1491c3e4d, type: 2}
   faceAnim: {fileID: 7941528558457254937}
   moveSpeed: 2
@@ -186,8 +186,8 @@ MonoBehaviour:
   currentEvol: 0
   defaultMovespeed: 0
   killCount: 0
-  camParam1: 0
-  camParam2: 0
+  camParam1: 0.4
+  camParam2: 3
   stateNow: 0
   characterController: {fileID: 5708556762935851084}
   joystick: {fileID: 0}
