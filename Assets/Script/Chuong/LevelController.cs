@@ -30,6 +30,6 @@ public class LevelController : MonoBehaviour
 
     void LoadLevel(int _level)
     {
-        Level Level = Instantiate(Resources.Load<GameObject>("Levels/Level" + _level.ToString()).gameObject, transform).GetComponent<Level>();
+        Level = Instantiate(Resources.Load<GameObject>("Levels/Level" + _level.ToString()).gameObject, transform).GetComponent<Level>();
     }
 }
