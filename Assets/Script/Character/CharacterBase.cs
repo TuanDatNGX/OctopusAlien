@@ -287,13 +287,16 @@ public abstract class CharacterBase : TargetBase
         {
             listAttacker.Remove(_characterBase.gameObject);
         }
-        if (listAttacker.Count <= 0 && hpNow >= characterStatsBase.hp)
+        if (listAttacker.Count <= 0)
         {
             if (growingRoot != null)
             {
                 growingRoot.SetActive(false);
-                LeanPool.Despawn(hpBar);
-                hpBar = null;
+                if (hpNow >= characterStatsBase.hp)
+                {
+                    LeanPool.Despawn(hpBar);
+                    hpBar = null;
+                }
                 ChangeState(StateCharacter.Idle);
             }
         }
