@@ -70,8 +70,11 @@ public class UiController : MonoBehaviour
 
         if (cout <= 0)
         {
-            LevelController.Instance.Level.StopCount();
-            winPopup.SetActive(true);
+            if(LevelController.Instance.Level != null)
+            {
+                LevelController.Instance.Level.StopCount();
+                winPopup.SetActive(true);
+            }
         }
     }
 
