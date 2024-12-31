@@ -84,7 +84,10 @@ public class OctopusTail : MonoBehaviour
                         {
                             transform.DORewind(true);
                             tailAnimator.UseIK = true;
-                            tailAnimator.IKTarget = target.hit;
+                            if (target != null)
+                            {
+                                tailAnimator.IKTarget = target.hit;
+                            }
                             tailAnimator.TailAnimatorAmount = 0.85f;
                             currentBlend = 0;
                             tailAnimator.IKBlend = 0;

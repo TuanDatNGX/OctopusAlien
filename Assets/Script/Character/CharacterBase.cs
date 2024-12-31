@@ -7,6 +7,7 @@ using Sirenix.OdinInspector;
 using UnityEngine.AI;
 using Lean.Pool;
 using static UnityEngine.Rendering.DebugUI;
+using TMPro;
 
 [Serializable]
 public enum StateCharacter
@@ -54,6 +55,7 @@ public abstract class CharacterBase : TargetBase
     public Material outlineMat;
     public TargetBase neareastTarget;
     public Coroutine rangeActive;
+    public TextMeshProUGUI lvlText;
     public float currentExp = 0;
     public int currentLevel = 1;
     public float defaultScale;
@@ -193,6 +195,7 @@ public abstract class CharacterBase : TargetBase
         {
             currentExp -= levelUpData.enemyAssets[currentLevel.ToString()].exp;
             currentLevel += 1;
+            if (lvlText != null) lvlText.text = "Lv." + currentLevel.ToString();
             levelUpFx.Play();
             if (levelUpData.enemyAssets[currentLevel.ToString()].size != 0)
             {
