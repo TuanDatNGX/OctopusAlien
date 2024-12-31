@@ -415,6 +415,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13137f16b8f178143adc448f7938aad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BotTransform: {fileID: 0}
   levelTime: 180
   topCondition: 1
 --- !u!1 &3037900273318701867

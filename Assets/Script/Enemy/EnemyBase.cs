@@ -205,7 +205,6 @@ public abstract class EnemyBase : TargetBase
     public void ChangeState(State _stateChange)
     {
         if (_stateChange == stateNow) return;
-        Debug.Log(_stateChange);
         stateNow = _stateChange;
 
         switch (_stateChange)

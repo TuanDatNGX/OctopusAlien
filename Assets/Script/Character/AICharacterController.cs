@@ -8,6 +8,8 @@ public class AICharacterController : CharacterBase
 {
     public NavMeshAgent navMeshAgent;
     public float randomMoveRadius;
+    public string botName;
+
     private void Start()
     {
         navMeshAgent.speed = moveSpeed;

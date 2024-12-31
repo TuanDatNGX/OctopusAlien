@@ -226,6 +226,7 @@ MonoBehaviour:
   stateNow: 0
   navMeshAgent: {fileID: 332253726575439266}
   randomMoveRadius: 20
+  botName: 
 --- !u!195 &332253726575439266
 NavMeshAgent:
   m_ObjectHideFlags: 0
