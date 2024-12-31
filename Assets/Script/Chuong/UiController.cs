@@ -53,7 +53,7 @@ public class UiController : MonoBehaviour
     {
         expTween.Kill();
         expTween = ExpSlider.DOValue(current / max, 0.25f);
-        levelTxt.text = "Level " + level.ToString();
+        levelTxt.text = "Lv." + level.ToString();
         killCoutTxt.text = "Kill " + killCount.ToString();
         expTxt.text = current.ToString() + "/" + max.ToString();
     }
@@ -66,13 +66,14 @@ public class UiController : MonoBehaviour
         {
             if (t.gameObject.activeSelf) cout++;
             UpdateEnemiesLeft(cout);
+        }
+        UpdateEnemiesLeft(cout);
 
-            if(cout<=0)
-            {
-                Debug.Log("Chuong");
-                StopCoroutine(LevelController.Instance.Level.timeCou);
-                winPopup.SetActive(true);
-            }
+        if (cout <= 0)
+        {
+            Debug.Log("Chuong");
+            LevelController.Instance.Level.StopCount();
+            winPopup.SetActive(true);
         }
     }
 

@@ -16,6 +16,11 @@ public class Level : MonoBehaviour
         timeCou = StartCoroutine(TimeCount());
     }
 
+    public void StopCount()
+    {
+        StopCoroutine(TimeCount());
+    }
+
     IEnumerator TimeCount()
     {
         curTime = levelTime;

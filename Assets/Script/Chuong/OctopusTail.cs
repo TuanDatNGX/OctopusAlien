@@ -140,10 +140,7 @@ public class OctopusTail : MonoBehaviour
 
     public void CatchTarget(TargetBase _target)
     {
-        //if (!canCatch) return;
         target = _target;
-        //alien.target = this;
-        //alien.ChangeState(AlienState.Catched);
         ChangeState(TailState.Catch);
     }
 
