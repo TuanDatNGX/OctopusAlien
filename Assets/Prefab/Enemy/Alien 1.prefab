@@ -385,7 +385,7 @@ MonoBehaviour:
   colliderEnemy: {fileID: 9029958046435039999}
   statsBase:
     id: 1
-    hp: 20
+    hp: 15
     attack: 0
     delayAttack: 0
     moveSpeed: 0.5
