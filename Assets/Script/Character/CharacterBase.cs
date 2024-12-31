@@ -247,6 +247,8 @@ public abstract class CharacterBase : TargetBase
             }
             characterStatsBase.attack += levelUpData.enemyAssets[currentLevel.ToString()].Atk;
             characterStatsBase.hp += levelUpData.enemyAssets[currentLevel.ToString()].Hp;
+            hpNow = characterStatsBase.hp;
+
             characterStatsBase.heal += levelUpData.enemyAssets[currentLevel.ToString()].Heal;
             characterStatsBase.moveSpeed += levelUpData.enemyAssets[currentLevel.ToString()].speed;
             characterStatsBase.rangeAttack += levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius;
