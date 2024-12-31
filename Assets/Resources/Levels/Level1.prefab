@@ -1294,7 +1294,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.heal
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.attack
@@ -1376,7 +1376,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.heal
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.attack
@@ -1458,7 +1458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.heal
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.attack
@@ -1540,7 +1540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.heal
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.attack
@@ -1622,7 +1622,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.heal
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.attack
