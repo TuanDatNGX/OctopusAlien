@@ -65,13 +65,11 @@ public class UiController : MonoBehaviour
         foreach (Transform t in LevelController.Instance.Level.BotTransform) 
         {
             if (t.gameObject.activeSelf) cout++;
-            UpdateEnemiesLeft(cout);
         }
         UpdateEnemiesLeft(cout);
 
         if (cout <= 0)
         {
-            Debug.Log("Chuong");
             LevelController.Instance.Level.StopCount();
             winPopup.SetActive(true);
         }

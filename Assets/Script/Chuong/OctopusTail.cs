@@ -175,9 +175,7 @@ public class OctopusTail : MonoBehaviour
                 speedCollect = defaultSpeedCollect;
                 octopus.killCount++;
                 target.AffterDie(octopus);
-                //octopus.GetExp(target.statsBase.rewardExp);
                 EffectController.Instance.SpawnBloodFx(target.transform.position);
-                //Handheld.Vibrate();
                 AudioManager.Instance.PlaySoundEat();
                 target = null;
                 ChangeState(TailState.Idle);

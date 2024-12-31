@@ -205,6 +205,7 @@ public abstract class CharacterBase : TargetBase
             }
             if (levelUpData.enemyAssets[currentLevel.ToString()].tentacles > 0)
             {
+                characterStatsBase.tentacle += 1;
                 for (int i = 0; i < tails.Length; i++)
                 {
                     if (!tails[i].gameObject.activeSelf)

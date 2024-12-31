@@ -16,6 +16,20 @@ public class EnemyNormal : EnemyBase
             growingRoot.SetActive(false);
             _octopus.GetExp(statsBase.rewardExp);
             EffectController.Instance.SpawnBloodFx(transform.position);
+
+            foreach(GameObject item in listAttacker)
+            {
+                CharacterBase character = item.GetComponent<CharacterBase>();
+                foreach(OctopusTail tail in character.tails)
+                {
+                    if(tail.target == this)
+                    {
+                        this.Escaped(tail.octopus);
+                        tail.target = null;
+                        tail.ChangeState(TailState.Idle);
+                    }
+                }
+            }
         }
     }
 
