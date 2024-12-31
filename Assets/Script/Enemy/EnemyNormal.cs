@@ -17,19 +17,19 @@ public class EnemyNormal : EnemyBase
             _octopus.GetExp(statsBase.rewardExp);
             EffectController.Instance.SpawnBloodFx(transform.position);
 
-            for(int i = 0; i < listAttacker.Count; i++)
-            {
-                CharacterBase character = listAttacker[i].GetComponent<CharacterBase>();
-                foreach (OctopusTail tail in character.tails)
-                {
-                    if (tail.target == this)
-                    {
-                        tail.target = null;
-                        tail.ChangeState(TailState.Idle);
-                    }
-                }
-                Escaped(character);
-            }
+            //for(int i = 0; i < listAttacker.Count; i++)
+            //{
+            //    CharacterBase character = listAttacker[i].GetComponent<CharacterBase>();
+            //    foreach (OctopusTail tail in character.tails)
+            //    {
+            //        if (tail.target == this)
+            //        {
+            //            tail.target = null;
+            //            tail.ChangeState(TailState.Idle);
+            //        }
+            //    }
+            //    Escaped(character);
+            //}
         }
     }
 

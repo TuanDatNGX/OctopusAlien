@@ -61,10 +61,6 @@ public class OctopusTail : MonoBehaviour
 
     private void Update()
     {
-        //if (currentState == TailState.Catch)
-        //{
-        //    transform.LookAt(new Vector3(target.transform.position.x, transform.position.y, target.transform.position.z));
-        //}
         switch (currentState)
         {
             case TailState.Idle:
@@ -73,6 +69,15 @@ public class OctopusTail : MonoBehaviour
                 CheckTargetOutRange();
                 if (target != null)
                 {
+                    if (target.GetComponent<EnemyBase>())
+                    {
+                        if (!target.GetComponent<EnemyBase>().aniEnemy.gameObject.activeSelf)
+                        {
+                            target = null;
+                            ChangeState(TailState.Idle);
+                            return;
+                        }
+                    }
                     if (target.TakeDamage(this))
                     {
                         if (!tailAnimator.IKTarget)
@@ -92,14 +97,6 @@ public class OctopusTail : MonoBehaviour
                         if (octopus.stateNow == StateCharacter.Die)
                         {
                             target.Escaped(octopus);
-                            ChangeState(TailState.Idle);
-                        }
-                    }
-                    if(target.GetComponent<EnemyBase>())
-                    {
-                        if (!target.GetComponent<EnemyBase>().aniEnemy.gameObject.activeSelf)
-                        {
-                            target = null;
                             ChangeState(TailState.Idle);
                         }
                     }
@@ -173,6 +170,7 @@ public class OctopusTail : MonoBehaviour
         {
             if(target != null)
             target.transform.position = Vector3.MoveTowards(target.transform.position, octopus.mouth.position, speedCollect * Time.deltaTime);
+            speedCollect += 10 * Time.deltaTime;
             if(Vector3.Distance(target.transform.position, octopus.mouth.position) < .1f)
             {
                 speedCollect = defaultSpeedCollect;
