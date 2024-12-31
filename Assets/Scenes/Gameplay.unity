@@ -3841,6 +3841,7 @@ MonoBehaviour:
   levelTxt: {fileID: 1872982890}
   killCoutTxt: {fileID: 1277990962}
   timeCoutTxt: {fileID: 1632331590}
+  stageTxt: {fileID: 1181163395}
   dragToMove: {fileID: 1828045601}
   arrowObj: {fileID: 112532415956072539, guid: 565d2b6a8f22dd0429042aa123106cc1, type: 3}
   ExpSlider: {fileID: 1327051355}

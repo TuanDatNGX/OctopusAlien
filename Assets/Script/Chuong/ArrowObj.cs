@@ -28,7 +28,6 @@ public class ArrowObj : MonoBehaviour
                 infoTxt.text = target.botName + " Lvl " + target.currentLevel.ToString();
 
                 Vector3 screenPos = Camera.main.WorldToScreenPoint(target.transform.position) - new Vector3(Screen.width / 2, Screen.height / 2, 0);
-                Debug.Log(screenPos);
                 if(Mathf.Abs(screenPos.x) / Mathf.Abs(screenPos.y) > w/ h)
                 {
                     transform.localPosition = new Vector3(w / 2 * (screenPos.x > 0?1:-1), w / 2 * Mathf.Abs(screenPos.y) / Mathf.Abs(screenPos.x) * (screenPos.y > 0 ? 1 : -1));
