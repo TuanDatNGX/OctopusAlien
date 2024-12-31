@@ -169,13 +169,14 @@ public class OctopusTail : MonoBehaviour
         octopus.ActionEat();
         while (true)
         {
+            if(target != null)
             target.transform.position = Vector3.MoveTowards(target.transform.position, octopus.mouth.position, speedCollect * Time.deltaTime);
             if(Vector3.Distance(target.transform.position, octopus.mouth.position) < .1f)
             {
                 speedCollect = defaultSpeedCollect;
                 octopus.killCount++;
-                target.AffterDie(octopus);
                 EffectController.Instance.SpawnBloodFx(target.transform.position);
+                target.AffterDie(octopus);
                 AudioManager.Instance.PlaySoundEat();
                 target = null;
                 ChangeState(TailState.Idle);

@@ -116,6 +116,7 @@ public abstract class EnemyBase : TargetBase
 
     public override void UpdateHp(float _value, OctopusTail _octopusTail = null)
     {
+        if (hpBar == null) return;
         hpNow += (_value * Time.deltaTime);
         hpBar.SetValue(hpNow / statsBase.hp);
         hpBar.transform.position = GameManager.Instance.mainCamera.WorldToScreenPoint(posHpBar.position);

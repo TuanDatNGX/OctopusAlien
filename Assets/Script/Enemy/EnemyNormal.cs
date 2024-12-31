@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.Progress;
 
 public class EnemyNormal : EnemyBase
 {
@@ -17,12 +18,12 @@ public class EnemyNormal : EnemyBase
             _octopus.GetExp(statsBase.rewardExp);
             EffectController.Instance.SpawnBloodFx(transform.position);
 
-            foreach(GameObject item in listAttacker)
+            for(int i = 0; i < listAttacker.Count; i++)
             {
-                CharacterBase character = item.GetComponent<CharacterBase>();
-                foreach(OctopusTail tail in character.tails)
+                CharacterBase character = listAttacker[i].GetComponent<CharacterBase>();
+                foreach (OctopusTail tail in character.tails)
                 {
-                    if(tail.target == this)
+                    if (tail.target == this)
                     {
                         this.Escaped(tail.octopus);
                         tail.target = null;
