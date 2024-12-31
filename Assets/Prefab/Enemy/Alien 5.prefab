@@ -449,12 +449,12 @@ MonoBehaviour:
   colliderEnemy: {fileID: 9029958046435039999}
   statsBase:
     id: 5
-    hp: 50
+    hp: 75
     attack: 0
     delayAttack: 0
     moveSpeed: 2
     levelAI: 0
-    rewardExp: 25
+    rewardExp: 38
   statsAIEnemy:
     detectionRange: 20
     numDirections: 36
