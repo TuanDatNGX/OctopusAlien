@@ -188,6 +188,7 @@ public abstract class CharacterBase : TargetBase
     {
         if (currentLevel >= 20) return;
         currentExp += _exp;
+        if (!isBot) UiController.Instance.ShowExp(transform.position, _exp);
         while (currentExp >= levelUpData.enemyAssets[currentLevel.ToString()].exp)
         {
             currentExp -= levelUpData.enemyAssets[currentLevel.ToString()].exp;

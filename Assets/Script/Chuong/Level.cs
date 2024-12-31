@@ -34,7 +34,7 @@ public class Level : MonoBehaviour
                         cout++;
                     }
                 }
-                if(cout <= 2)
+                if(cout <= 0)
                 {
                     UiController.Instance.winPopup.SetActive(true);
                 }
