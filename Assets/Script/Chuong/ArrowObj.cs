@@ -13,8 +13,8 @@ public class ArrowObj : MonoBehaviour
 
     private void Start()
     {
-        w = Screen.width - 100;
-        h = Screen.height - 100;
+        w = Screen.width - 10;
+        h = Screen.height - 10;
     }
 
     private void Update()
