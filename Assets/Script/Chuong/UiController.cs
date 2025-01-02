@@ -120,4 +120,10 @@ public class UiController : MonoBehaviour
     {
         questTxt.text = level.questName + " " + level.currentProcess.ToString() + "/" + level.questTargetValue.ToString();
     }
+
+    public void StartStage()
+    {
+        UiController.Instance.dragToMove.gameObject.SetActive(false);
+        LevelController.Instance.Level.StartLevel();
+    }
 }
