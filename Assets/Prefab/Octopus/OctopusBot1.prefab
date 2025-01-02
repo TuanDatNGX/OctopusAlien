@@ -183,14 +183,14 @@ MonoBehaviour:
   isBot: 1
   characterStatsBase:
     id: 
-    hp: 50
+    hp: 100
     attack: 10
     delayAttack: 0
     rangeAttack: 1
     moveSpeed: 1.8
     levelAI: 0
     tentacle: 1
-    heal: 1
+    heal: 2
   levelUpData: {fileID: 11400000, guid: d3517f2339e77aa4ea418dc1491c3e4d, type: 2}
   faceAnim: {fileID: 8851451847696245837}
   moveSpeed: 0
@@ -227,26 +227,26 @@ MonoBehaviour:
   camParam2: 0
   stateNow: 0
   expWhenEat:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 13
+  - 15
+  - 19
+  - 21
+  - 56
+  - 75
+  - 125
+  - 144
+  - 156
+  - 175
+  - 238
+  - 250
+  - 263
+  - 275
+  - 288
+  - 300
+  - 313
+  - 325
+  - 375
+  - 400
   navMeshAgent: {fileID: 332253726575439266}
   randomMoveRadius: 20
   botName: 
