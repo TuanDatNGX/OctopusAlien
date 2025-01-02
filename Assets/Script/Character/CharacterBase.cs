@@ -190,7 +190,10 @@ public abstract class CharacterBase : TargetBase
     {
         if (currentLevel >= 20) return;
         currentExp += _exp;
-        if (!isBot) UiController.Instance.ShowExp(transform.position, _exp);
+        if (!isBot)
+        {
+            UiController.Instance.ShowExp(transform.position, _exp);
+        }
         while (currentExp >= levelUpData.enemyAssets[currentLevel.ToString()].exp)
         {
             currentExp -= levelUpData.enemyAssets[currentLevel.ToString()].exp;
@@ -269,6 +272,26 @@ public abstract class CharacterBase : TargetBase
         }
     }
 
+    public void GetHp(float hp)
+    {
+        hpNow += hp;
+        if(hpNow >= characterStatsBase.hp)
+        {
+            hpNow = characterStatsBase.hp;
+        }
+        if (hpBar && hpBar != null)
+        {
+            hpBar.SetValue(hpNow / characterStatsBase.hp);
+            hpBar.transform.position = GameManager.Instance.mainCamera.WorldToScreenPoint(posHpBar.position);
+
+            if (hpNow > characterStatsBase.hp)
+            {
+                hpNow = characterStatsBase.hp;
+                LeanPool.Despawn(hpBar);
+            }
+        }
+    }
+
     public void ChangeState(StateCharacter _stateCharacter)
     {
         if (_stateCharacter == stateNow) return;
@@ -307,6 +330,7 @@ public abstract class CharacterBase : TargetBase
                 {
                     LeanPool.Despawn(hpBar);
                     hpBar = null;
+
                 }
                 ChangeState(StateCharacter.Idle);
             }

@@ -15,6 +15,7 @@ public class UiController : MonoBehaviour
     public Transform expTransform;
     public Transform arrowTransform;
     public TextMeshProUGUI[] expObj;
+    public TextMeshProUGUI[] hpObj;
     public TextMeshProUGUI levelTxt;
     public TextMeshProUGUI killCoutTxt;
     public TextMeshProUGUI timeCoutTxt;
@@ -47,6 +48,19 @@ public class UiController : MonoBehaviour
         exp.gameObject.SetActive(true);
         exp.transform.DOLocalMoveY(exp.transform.localPosition.y + 50f, 0.55f).OnComplete(() => {
             exp.gameObject.SetActive(false);
+        });
+    }
+
+    public void ShowHp(Vector3 pos, float expNum)
+    {
+        GameObject hp = hpObj[expId].gameObject;
+        hpObj[expId].text = "+" + expNum.ToString() + " Hp";
+        expId++;
+        if (expId >= expObj.Length) expId = 0;
+        hp.transform.localPosition = new Vector3(0, -110, 0);
+        hp.gameObject.SetActive(true);
+        hp.transform.DOLocalMoveY(hp.transform.localPosition.y + 50f, 0.55f).OnComplete(() => {
+            hp.gameObject.SetActive(false);
         });
     }
 

@@ -15,6 +15,9 @@ public class EnemyNormal : EnemyBase
             aniEnemy.gameObject.SetActive(false);
             growingRoot.SetActive(false);
             _octopus.GetExp(statsBase.rewardExp);
+            _octopus.GetHp(HpHeal);
+            UiController.Instance.ShowHp(transform.position, HpHeal);
+
             EffectController.Instance.SpawnBloodFx(transform.position);
 
             //for(int i = 0; i < listAttacker.Count; i++)

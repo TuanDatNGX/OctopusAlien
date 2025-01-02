@@ -406,6 +406,7 @@ MonoBehaviour:
   directionTarget: {x: 0, y: 0, z: 0}
   canRunAway: 0
   listEnemyId: 0
+  HpHeal: 0
 --- !u!1 &6517940503911950007
 GameObject:
   m_ObjectHideFlags: 0

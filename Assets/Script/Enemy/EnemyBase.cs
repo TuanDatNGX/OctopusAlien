@@ -50,6 +50,7 @@ public abstract class EnemyBase : TargetBase
     public bool canRunAway;
     public int listEnemyId;
     bool canCatch = true;
+    public int HpHeal;
     Vector2 randomPosition2D;
     GameObject blood;
     Coroutine coroutineDelayCatch, coroutineDelayRunAway;
