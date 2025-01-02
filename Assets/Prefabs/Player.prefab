@@ -271,7 +271,7 @@ MonoBehaviour:
     moveSpeed: 1.8
     levelAI: 0
     tentacle: 1
-    heal: 5
+    heal: 0
   levelUpData: {fileID: 11400000, guid: d3517f2339e77aa4ea418dc1491c3e4d, type: 2}
   faceAnim: {fileID: 7941528558457254937}
   moveSpeed: 2

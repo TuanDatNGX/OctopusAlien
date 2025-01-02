@@ -61,7 +61,7 @@ MonoBehaviour:
       Data: 10
     - Name: Heal
       Entry: 4
-      Data: 1
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 0.3
@@ -103,7 +103,7 @@ MonoBehaviour:
       Data: 10
     - Name: Heal
       Entry: 4
-      Data: 1
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 0.4
@@ -145,7 +145,7 @@ MonoBehaviour:
       Data: 10
     - Name: Heal
       Entry: 4
-      Data: 1
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 0.3
@@ -187,7 +187,7 @@ MonoBehaviour:
       Data: 15
     - Name: Heal
       Entry: 4
-      Data: 2
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 0.3
@@ -229,7 +229,7 @@ MonoBehaviour:
       Data: 15
     - Name: Heal
       Entry: 4
-      Data: 2
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 0.4
@@ -271,7 +271,7 @@ MonoBehaviour:
       Data: 15
     - Name: Heal
       Entry: 4
-      Data: 2
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 0.4
@@ -313,7 +313,7 @@ MonoBehaviour:
       Data: 20
     - Name: Heal
       Entry: 4
-      Data: 2
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 0.4
@@ -355,7 +355,7 @@ MonoBehaviour:
       Data: 2
     - Name: Heal
       Entry: 4
-      Data: 1
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 0.5
@@ -397,7 +397,7 @@ MonoBehaviour:
       Data: 20
     - Name: Heal
       Entry: 4
-      Data: 2
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 0.4
@@ -439,7 +439,7 @@ MonoBehaviour:
       Data: 25
     - Name: Heal
       Entry: 4
-      Data: 3
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 0.4
@@ -481,7 +481,7 @@ MonoBehaviour:
       Data: 25
     - Name: Heal
       Entry: 4
-      Data: 3
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 0.4
@@ -523,7 +523,7 @@ MonoBehaviour:
       Data: 25
     - Name: Heal
       Entry: 4
-      Data: 3
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 0.6
@@ -565,7 +565,7 @@ MonoBehaviour:
       Data: 25
     - Name: Heal
       Entry: 4
-      Data: 3
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 0.5
@@ -607,7 +607,7 @@ MonoBehaviour:
       Data: 30
     - Name: Heal
       Entry: 4
-      Data: 3
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 0.5
@@ -649,7 +649,7 @@ MonoBehaviour:
       Data: 30
     - Name: Heal
       Entry: 4
-      Data: 3
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 0.6
@@ -691,7 +691,7 @@ MonoBehaviour:
       Data: 30
     - Name: Heal
       Entry: 4
-      Data: 3
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 0.5
@@ -733,7 +733,7 @@ MonoBehaviour:
       Data: 35
     - Name: Heal
       Entry: 4
-      Data: 4
+      Data: 0
     - Name: speed
       Entry: 4
       Data: 0.5

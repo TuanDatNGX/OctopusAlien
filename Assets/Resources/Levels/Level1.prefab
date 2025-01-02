@@ -258,11 +258,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13137f16b8f178143adc448f7938aad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questType: 1
-  questTargetValue: 5
-  questName: EAT ALL ALIEN OCTOPUS
+  questType: 2
+  questTargetValue: 50
+  questName: EAT ALIENS
   BotTransform: {fileID: 677880724612044111}
-  levelTime: 240
+  levelTime: 180
 --- !u!1 &3037900273318701867
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,7 +1296,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.heal
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.attack
@@ -1378,7 +1378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.heal
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.attack
@@ -1460,7 +1460,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.heal
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.attack
@@ -1542,7 +1542,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.heal
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.attack
@@ -1624,7 +1624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.heal
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.attack

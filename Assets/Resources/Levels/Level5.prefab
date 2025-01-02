@@ -315,7 +315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questType: 0
   questTargetValue: 5
-  questName: EAT ALL ALIEN OCTOPUS 0/5
+  questName: EAT ALL OCTOPUS
   BotTransform: {fileID: 677880724612044111}
   levelTime: 240
 --- !u!1 &3037900273318701867
