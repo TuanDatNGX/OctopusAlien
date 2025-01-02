@@ -70,7 +70,7 @@ public class AICharacterController : CharacterBase
             LevelController.Instance.Level.Process(1);
         }
         navMeshAgent.enabled = false;
-        LeanPool.Despawn(hpBar);
+        //LeanPool.Despawn(hpBar);
         hpBar = null;
     }
 }
