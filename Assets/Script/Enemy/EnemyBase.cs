@@ -73,6 +73,7 @@ public abstract class EnemyBase : TargetBase
 
     public override void Die()
     {
+        
         aniEnemy.Play("Floating");
         colliderEnemy.enabled = false;
         myArea.listEnemies[listEnemyId].Remove(this);
@@ -80,17 +81,6 @@ public abstract class EnemyBase : TargetBase
         hpBar = null;
         aniEnemy.SetFloat("Speed", 0f);
     }
-
-    //public void AffterDie()
-    //{
-    //    blood = LeanPool.Spawn(GameManager.Instance.bloodAlien);
-    //    blood.SetActive(false);
-    //    blood.transform.position = new Vector3(transform.position.x, 0, transform.position.z);
-    //    blood.SetActive(true);
-    //    aniEnemy.gameObject.SetActive(false);
-    //    growingRoot.SetActive(false);
-    //    //StartCoroutine(CountDownRevive());
-    //}
 
     public override bool TakeDamage(OctopusTail _octopusTail)
     {
@@ -279,6 +269,4 @@ public abstract class EnemyBase : TargetBase
         yield return new WaitForSeconds(statsAIEnemy.timeDelayCatch);
         canCatch = true;
     }
-
-
 }

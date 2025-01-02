@@ -65,6 +65,10 @@ public class AICharacterController : CharacterBase
 
     public override void Die()
     {
+        if (LevelController.Instance.Level.questType == QuestType.Survise)
+        {
+            LevelController.Instance.Level.Process(1);
+        }
         navMeshAgent.enabled = false;
         LeanPool.Despawn(hpBar);
         hpBar = null;

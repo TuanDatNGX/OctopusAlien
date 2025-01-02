@@ -262,6 +262,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13137f16b8f178143adc448f7938aad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questType: 0
+  questTargetValue: 5
+  questName: EAT ALL ALIEN OCTOPUS 0/5
   BotTransform: {fileID: 677880724612044111}
   levelTime: 240
   topCondition: 1

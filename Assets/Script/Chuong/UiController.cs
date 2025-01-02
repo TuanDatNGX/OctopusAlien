@@ -21,6 +21,7 @@ public class UiController : MonoBehaviour
     public TextMeshProUGUI stageTxt;
     public TextMeshProUGUI enemyLeftTxt;
     public TextMeshProUGUI expTxt;
+    public TextMeshProUGUI questTxt;
     public GameObject dragToMove;
     public ArrowObj arrowObj;
     public Slider ExpSlider;
@@ -58,25 +59,28 @@ public class UiController : MonoBehaviour
         expTxt.text = current.ToString() + "/" + max.ToString();
     }
 
-    private void Update()
-    {
-        int cout = 0;
-        if(LevelController.Instance.Level != null)
-        foreach (Transform t in LevelController.Instance.Level.BotTransform) 
-        {
-            if (t.gameObject.activeSelf) cout++;
-        }
-        UpdateEnemiesLeft(cout);
+    //private void Update()
+    //{
+    //    int cout = 0;
+    //    if (LevelController.Instance.Level.questType == QuestType.Survise)
+    //    {
+    //        if (LevelController.Instance.Level != null)
+    //            foreach (Transform t in LevelController.Instance.Level.BotTransform)
+    //            {
+    //                if (t.gameObject.activeSelf) cout++;
+    //            }
+    //        UpdateEnemiesLeft(cout);
 
-        if (cout <= 0)
-        {
-            if(LevelController.Instance.Level != null)
-            {
-                LevelController.Instance.Level.StopCount();
-                winPopup.SetActive(true);
-            }
-        }
-    }
+    //        if (cout <= 0)
+    //        {
+    //            if (LevelController.Instance.Level != null)
+    //            {
+    //                LevelController.Instance.Level.StopCount();
+    //                winPopup.SetActive(true);
+    //            }
+    //        }
+    //    }
+    //}
 
     public void UpdateEnemiesLeft(int count)
     {
@@ -96,5 +100,10 @@ public class UiController : MonoBehaviour
             arrow.target = child.GetComponent<AICharacterController>();
             arrow.gameObject.SetActive(true);
         }
+    }
+
+    public void UpdateQuestProcess(Level level)
+    {
+        questTxt.text = level.questName + " " + level.currentProcess.ToString() + "/" + level.questTargetValue.ToString();
     }
 }

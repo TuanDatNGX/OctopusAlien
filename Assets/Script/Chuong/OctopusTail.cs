@@ -179,6 +179,14 @@ public class OctopusTail : MonoBehaviour
                 speedCollect = defaultSpeedCollect;
                 octopus.killCount++;
                 EffectController.Instance.SpawnBloodFx(target.transform.position);
+                if(!octopus.isBot && !target.isOctopus)
+                {
+                    if (LevelController.Instance.Level.questType == QuestType.KillAlien)
+                    {
+                        LevelController.Instance.Level.Process(1);
+                    }
+                }
+
                 target.AffterDie(octopus);
                 AudioManager.Instance.PlaySoundEat();
                 target = null;

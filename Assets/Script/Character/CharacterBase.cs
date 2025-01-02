@@ -195,6 +195,10 @@ public abstract class CharacterBase : TargetBase
         {
             currentExp -= levelUpData.enemyAssets[currentLevel.ToString()].exp;
             currentLevel += 1;
+            if(!isBot && LevelController.Instance.Level.questType == QuestType.GetLevel)
+            {
+                LevelController.Instance.Level.Process(1);
+            }
             if (lvlText != null) lvlText.text = "Lv." + currentLevel.ToString();
             levelUpFx.Play();
             if (levelUpData.enemyAssets[currentLevel.ToString()].size != 0)

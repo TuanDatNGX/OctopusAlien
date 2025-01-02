@@ -45,7 +45,7 @@ public class GrowingRoot : MonoBehaviour
 
     private void Update()
     {
-        EditorUpdate();
+        //EditorUpdate();
     }
 
     void EditorUpdate()

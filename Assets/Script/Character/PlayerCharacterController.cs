@@ -11,7 +11,7 @@ public class PlayerCharacterController : CharacterBase
     float defaultY;
     private void Start()
     {
-        StatsBoard.Instance.UpdateData(characterStatsBase);
+        //StatsBoard.Instance.UpdateData(characterStatsBase);
         defaultY = transform.position.y;
     }
     public override void Attack()
@@ -20,7 +20,7 @@ public class PlayerCharacterController : CharacterBase
 
     public override void LevelUp()
     {
-        StatsBoard.Instance.UpdateData(characterStatsBase);
+        //StatsBoard.Instance.UpdateData(characterStatsBase);
     }
 
     public override void Move()
