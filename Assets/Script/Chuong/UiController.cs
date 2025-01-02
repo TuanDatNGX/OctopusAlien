@@ -37,6 +37,7 @@ public class UiController : MonoBehaviour
         stageTxt.text = "Stage " + LevelController.Instance.currentLevel.ToString();
         dragToMove.SetActive(true);
         questObj.transform.localPosition = new Vector3(questObj.transform.localPosition.x, -1038f, 0);
+        ExpSlider.transform.parent.gameObject.SetActive(false);
     }
 
 
@@ -133,6 +134,9 @@ public class UiController : MonoBehaviour
         LevelController.Instance.Level.StartLevel();
         questObj.GetComponent<Animator>().enabled = false;
         questObj.transform.DOScale(1, 1);
-        questObj.transform.DOLocalMoveY(-269f, 1);
+        questObj.transform.DOLocalMoveY(-269f, 1).OnComplete(() =>
+        {
+            ExpSlider.transform.parent.gameObject.SetActive(true);
+        });
     }
 }
