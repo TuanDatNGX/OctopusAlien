@@ -66,6 +66,7 @@ public abstract class CharacterBase : TargetBase
     public float camParam2 = 0;
     float defaultCam;
     public StateCharacter stateNow;
+    public float[] expWhenEat;
 
     private void Awake()
     {
@@ -259,18 +260,12 @@ public abstract class CharacterBase : TargetBase
             }
             characterStatsBase.attack += levelUpData.enemyAssets[currentLevel.ToString()].Atk;
             characterStatsBase.hp += levelUpData.enemyAssets[currentLevel.ToString()].Hp;
-            hpNow = characterStatsBase.hp;
-
             characterStatsBase.heal += levelUpData.enemyAssets[currentLevel.ToString()].Heal;
             characterStatsBase.moveSpeed += levelUpData.enemyAssets[currentLevel.ToString()].speed;
             characterStatsBase.rangeAttack += levelUpData.enemyAssets[currentLevel.ToString()].CatchingRadius;
             moveSpeed = characterStatsBase.moveSpeed;
             Handheld.Vibrate();
             LevelUp();
-        }
-        if (!isBot)
-        {
-            //UiController.Instance.UpdateExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp, currentLevel, killCount);
         }
         hpBar.SetValueExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp);
         hpBar.SetLvl(currentLevel);
