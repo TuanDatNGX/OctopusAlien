@@ -26,6 +26,7 @@ public class UiController : MonoBehaviour
     public GameObject dragToMove;
     public ArrowObj arrowObj;
     public Slider ExpSlider;
+    public GameObject[] questIcon;
     int expId = 0;
     Tween expTween;
 

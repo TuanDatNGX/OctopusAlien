@@ -34,13 +34,17 @@ public class Level : MonoBehaviour
             currentProcess = 1;
         }
         UiController.Instance.UpdateQuestProcess(this);
+        for (int i = 0; i < 3; i++)
+        {
+            UiController.Instance.questIcon[i].SetActive(i == (int)questType);
+        }
     }
 
     public void Process(int value)
     {
         currentProcess += value;
         UiController.Instance.UpdateQuestProcess(this);
-        if(currentProcess >= questTargetValue)
+        if (currentProcess >= questTargetValue)
         {
             UiController.Instance.winPopup.SetActive(true);
         }
