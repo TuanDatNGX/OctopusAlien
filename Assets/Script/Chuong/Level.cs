@@ -17,7 +17,6 @@ public class Level : MonoBehaviour
     public int currentProcess { get; set; } = 0;
     public Transform BotTransform;
     public float levelTime;
-    public float topCondition;
     float curTime;
     public Coroutine timeCou;
 
