@@ -226,6 +226,27 @@ MonoBehaviour:
   camParam1: 0
   camParam2: 0
   stateNow: 0
+  expWhenEat:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   navMeshAgent: {fileID: 332253726575439266}
   randomMoveRadius: 20
   botName: 
