@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using Unity.VisualScripting;
 
 public enum TailState
 {
@@ -42,6 +43,12 @@ public class OctopusTail : MonoBehaviour
         skinnedMeshRenderer.material = octopus.outlineMat;
         tailAnimator.LengthMultiplier = 0;
         StartCoroutine(ActiveMesh());
+    }
+
+    private void OnDisable()
+    {
+        StopCoroutine(ActiveMesh());
+        skinnedMeshRenderer.material = defaultMat;
     }
 
     IEnumerator ActiveMesh()

@@ -23,8 +23,9 @@ public class Level : MonoBehaviour
     private void Start()
     {
         UiController.Instance.SetupArrow(BotTransform);
-        timeCou = StartCoroutine(TimeCount());
-        if(questType == QuestType.GetLevel)
+        BotTransform.gameObject.SetActive(false);
+        UiController.Instance.timeCoutTxt.text = levelTime.ToString();
+        if (questType == QuestType.GetLevel)
         {
             currentProcess = 1;
         }
@@ -44,6 +45,12 @@ public class Level : MonoBehaviour
     public void StopCount()
     {
         StopCoroutine(TimeCount());
+    }
+
+    public void StartLevel()
+    {
+        BotTransform.gameObject.SetActive(true);
+        timeCou = StartCoroutine(TimeCount());
     }
 
     IEnumerator TimeCount()

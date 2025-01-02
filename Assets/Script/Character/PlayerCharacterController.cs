@@ -28,7 +28,10 @@ public class PlayerCharacterController : CharacterBase
         inputDirection = new Vector3(joystick.Direction.x, 0, joystick.Direction.y);
         if (inputDirection.magnitude > 0.1f)
         {
-            UiController.Instance.dragToMove.gameObject.SetActive(false);
+            if(UiController.Instance.dragToMove.activeSelf)
+            {
+                UiController.Instance.StartStage();
+            }
             Quaternion targetRotation = Quaternion.LookRotation(inputDirection, Vector3.up);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, Time.deltaTime * rotateSpeed);
             characterController.Move(inputDirection * moveSpeed * Time.deltaTime);

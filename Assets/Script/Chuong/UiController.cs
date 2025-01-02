@@ -33,6 +33,7 @@ public class UiController : MonoBehaviour
     {
         Instance = this;
         stageTxt.text = "Stage " + LevelController.Instance.currentLevel.ToString();
+        dragToMove.SetActive(true);
     }
 
 
@@ -119,5 +120,11 @@ public class UiController : MonoBehaviour
     public void UpdateQuestProcess(Level level)
     {
         questTxt.text = level.questName + " " + level.currentProcess.ToString() + "/" + level.questTargetValue.ToString();
+    }
+
+    public void StartStage()
+    {
+        UiController.Instance.dragToMove.gameObject.SetActive(false);
+        LevelController.Instance.Level.StartLevel();
     }
 }
