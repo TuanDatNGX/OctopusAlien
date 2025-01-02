@@ -16,7 +16,10 @@ public class EnemyNormal : EnemyBase
             growingRoot.SetActive(false);
             _octopus.GetExp(statsBase.rewardExp);
             _octopus.GetHp(HpHeal);
-            UiController.Instance.ShowHp(transform.position, HpHeal);
+            if (!_octopus.isBot)
+            {
+                UiController.Instance.ShowHp(transform.position, HpHeal);
+            }
 
             EffectController.Instance.SpawnBloodFx(transform.position);
 
