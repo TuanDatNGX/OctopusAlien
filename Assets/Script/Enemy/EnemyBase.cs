@@ -109,7 +109,7 @@ public abstract class EnemyBase : TargetBase
     {
         if (hpBar == null) return;
         hpNow += (_value * Time.deltaTime);
-        hpBar.SetValue(hpNow / statsBase.hp);
+        hpBar.SetValue(hpNow, statsBase.hp);
         hpBar.transform.position = GameManager.Instance.mainCamera.WorldToScreenPoint(posHpBar.position);
 
         switch (stateNow)

@@ -99,7 +99,7 @@ public abstract class CharacterBase : TargetBase
     {
         if (hpBar == null) return;
         hpNow += (_value * Time.deltaTime);
-        hpBar.SetValue(hpNow / characterStatsBase.hp);
+        hpBar.SetValue(hpNow, characterStatsBase.hp);
         hpBar.transform.position = GameManager.Instance.mainCamera.WorldToScreenPoint(posHpBar.position);
         if (hpNow <= 0)
         {
@@ -167,7 +167,7 @@ public abstract class CharacterBase : TargetBase
             if (hpBar && hpBar!= null)
             {
                 hpNow += characterStatsBase.heal * Time.deltaTime;
-                hpBar.SetValue(hpNow / characterStatsBase.hp);
+                hpBar.SetValue(hpNow, characterStatsBase.hp);
                 hpBar.transform.position = GameManager.Instance.mainCamera.WorldToScreenPoint(posHpBar.position);
 
                 if (hpNow > characterStatsBase.hp)
@@ -281,7 +281,7 @@ public abstract class CharacterBase : TargetBase
         }
         if (hpBar && hpBar != null)
         {
-            hpBar.SetValue(hpNow / characterStatsBase.hp);
+            hpBar.SetValue(hpNow, characterStatsBase.hp);
             hpBar.transform.position = GameManager.Instance.mainCamera.WorldToScreenPoint(posHpBar.position);
 
             if (hpNow > characterStatsBase.hp)
