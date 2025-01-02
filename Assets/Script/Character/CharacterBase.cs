@@ -205,6 +205,7 @@ public abstract class CharacterBase : TargetBase
             {
                 LevelController.Instance.Level.Process(1);
             }
+            if(hpBar != null)
             hpBar.SetLvl(currentLevel);
             levelUpFx.Play();
             if (levelUpData.enemyAssets[currentLevel.ToString()].size != 0)
@@ -272,6 +273,7 @@ public abstract class CharacterBase : TargetBase
             UiController.Instance.UpdateExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp, currentLevel, killCount);
         }
         //hpBar.SetValueExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp);
+        if(hpBar != null)
         hpBar.SetLvl(currentLevel);
     }
 
