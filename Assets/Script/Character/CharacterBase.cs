@@ -70,13 +70,15 @@ public abstract class CharacterBase : TargetBase
     private void Awake()
     {
         defaultScale = model.transform.localScale.x;
-        //defaultMovespeed = characterStatsBase.moveSpeed;
         moveSpeed = characterStatsBase.moveSpeed;
         hpNow = characterStatsBase.hp;
         if (!isBot)
         {
             defaultCam = Camera.main.fieldOfView;
         }
+        hpBar = LeanPool.Spawn(GameManager.Instance.hpBarPlayer, UIManager.Instance.parentHP);
+        hpBar.SetValue(hpNow, characterStatsBase.hp);
+        hpBar.SetValueExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp);
     }
 
     public abstract void Move();
@@ -173,7 +175,7 @@ public abstract class CharacterBase : TargetBase
                 if (hpNow > characterStatsBase.hp)
                 {
                     hpNow = characterStatsBase.hp;
-                    LeanPool.Despawn(hpBar);
+                    //LeanPool.Despawn(hpBar);
                 }
             }
         }
@@ -202,7 +204,7 @@ public abstract class CharacterBase : TargetBase
             {
                 LevelController.Instance.Level.Process(1);
             }
-            if (lvlText != null) lvlText.text = "Lv." + currentLevel.ToString();
+            hpBar.SetLvl(currentLevel);
             levelUpFx.Play();
             if (levelUpData.enemyAssets[currentLevel.ToString()].size != 0)
             {
@@ -268,8 +270,10 @@ public abstract class CharacterBase : TargetBase
         }
         if (!isBot)
         {
-            UiController.Instance.UpdateExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp, currentLevel, killCount);
+            //UiController.Instance.UpdateExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp, currentLevel, killCount);
         }
+        hpBar.SetValueExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp);
+        hpBar.SetLvl(currentLevel);
     }
 
     public void GetHp(float hp)
@@ -287,7 +291,7 @@ public abstract class CharacterBase : TargetBase
             if (hpNow > characterStatsBase.hp)
             {
                 hpNow = characterStatsBase.hp;
-                LeanPool.Despawn(hpBar);
+                //LeanPool.Despawn(hpBar);
             }
         }
     }
@@ -309,7 +313,7 @@ public abstract class CharacterBase : TargetBase
             case StateCharacter.TakeDamage:
                 if (!hpBar)
                 {
-                    hpBar = LeanPool.Spawn(GameManager.Instance.hpBarPlayer, UIManager.Instance.parentHP);
+                    //hpBar = LeanPool.Spawn(GameManager.Instance.hpBarPlayer, UIManager.Instance.parentHP);
                 }
                 break;
         }
@@ -328,7 +332,7 @@ public abstract class CharacterBase : TargetBase
                 growingRoot.SetActive(false);
                 if (hpNow >= characterStatsBase.hp)
                 {
-                    LeanPool.Despawn(hpBar);
+                    //LeanPool.Despawn(hpBar);
                     hpBar = null;
 
                 }

@@ -20,10 +20,14 @@ public class Level : MonoBehaviour
     float curTime;
     public Coroutine timeCou;
 
+    private void Awake()
+    {
+        BotTransform.gameObject.SetActive(false);
+    }
+
     private void Start()
     {
         UiController.Instance.SetupArrow(BotTransform);
-        BotTransform.gameObject.SetActive(false);
         UiController.Instance.timeCoutTxt.text = levelTime.ToString();
         if (questType == QuestType.GetLevel)
         {
