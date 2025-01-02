@@ -51,7 +51,7 @@ MonoBehaviour:
     timeSpawn: 90
     maxSpawn: 0
   - id: 1
-    amount: 15
+    amount: 10
     timeSpawn: 50
     maxSpawn: 0
   timers: []
@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questType: 2
-  questTargetValue: 70
+  questTargetValue: 80
   questName: EAT ALIENS
   BotTransform: {fileID: 677880724612044111}
   levelTime: 180
@@ -424,7 +424,7 @@ MonoBehaviour:
   range: 5
   allEnemies:
   - id: 1
-    amount: 20
+    amount: 15
     timeSpawn: 15
     maxSpawn: 0
   - id: 2
@@ -617,7 +617,7 @@ MonoBehaviour:
   range: 4
   allEnemies:
   - id: 1
-    amount: 15
+    amount: 10
     timeSpawn: 30
     maxSpawn: 0
   timers: []

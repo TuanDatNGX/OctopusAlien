@@ -259,7 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questType: 2
-  questTargetValue: 90
+  questTargetValue: 100
   questName: EAT ALIENS
   BotTransform: {fileID: 677880724612044111}
   levelTime: 180
