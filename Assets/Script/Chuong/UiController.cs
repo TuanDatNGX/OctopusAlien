@@ -14,6 +14,7 @@ public class UiController : MonoBehaviour
     public GameObject losePopup;
     public Transform expTransform;
     public Transform arrowTransform;
+    public Transform questObj;
     public TextMeshProUGUI[] expObj;
     public TextMeshProUGUI[] hpObj;
     public TextMeshProUGUI levelTxt;
@@ -35,6 +36,8 @@ public class UiController : MonoBehaviour
         Instance = this;
         stageTxt.text = "Stage " + LevelController.Instance.currentLevel.ToString();
         dragToMove.SetActive(true);
+        questObj.transform.localPosition = new Vector3(questObj.transform.localPosition.x, -1038f, 0);
+        ExpSlider.transform.parent.gameObject.SetActive(false);
     }
 
 
@@ -129,5 +132,11 @@ public class UiController : MonoBehaviour
     {
         UiController.Instance.dragToMove.gameObject.SetActive(false);
         LevelController.Instance.Level.StartLevel();
+        questObj.GetComponent<Animator>().enabled = false;
+        questObj.transform.DOScale(1, 1);
+        questObj.transform.DOLocalMoveY(-269f, 1).OnComplete(() =>
+        {
+            ExpSlider.transform.parent.gameObject.SetActive(true);
+        });
     }
 }
