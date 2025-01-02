@@ -47,7 +47,7 @@ MonoBehaviour:
   range: 3
   allEnemies:
   - id: 2
-    amount: 3
+    amount: 10
     timeSpawn: 90
     maxSpawn: 0
   timers: []

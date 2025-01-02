@@ -47,7 +47,7 @@ MonoBehaviour:
   range: 3
   allEnemies:
   - id: 1
-    amount: 3
+    amount: 5
     timeSpawn: 90
     maxSpawn: 0
   timers: []
@@ -609,8 +609,12 @@ MonoBehaviour:
   range: 4
   allEnemies:
   - id: 2
-    amount: 5
-    timeSpawn: 30
+    amount: 3
+    timeSpawn: 50
+    maxSpawn: 0
+  - id: 1
+    amount: 15
+    timeSpawn: 50
     maxSpawn: 0
   timers: []
 --- !u!1 &4971422125645622868
@@ -1196,7 +1200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.62
+      value: 2.92
       objectReference: {fileID: 0}
     - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1204,7 +1208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.79
+      value: 11.69
       objectReference: {fileID: 0}
     - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: m_LocalRotation.w

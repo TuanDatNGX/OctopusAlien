@@ -47,7 +47,7 @@ MonoBehaviour:
   range: 3
   allEnemies:
   - id: 1
-    amount: 3
+    amount: 5
     timeSpawn: 90
     maxSpawn: 0
   timers: []
@@ -98,12 +98,12 @@ MonoBehaviour:
   range: 4
   allEnemies:
   - id: 3
-    amount: 10
-    timeSpawn: 30
+    amount: 5
+    timeSpawn: 15
     maxSpawn: 0
   - id: 2
-    amount: 10
-    timeSpawn: 30
+    amount: 5
+    timeSpawn: 15
     maxSpawn: 0
   timers: []
 --- !u!1 &1606624657049588552
@@ -310,7 +310,7 @@ MonoBehaviour:
   range: 4
   allEnemies:
   - id: 1
-    amount: 10
+    amount: 15
     timeSpawn: 15
     maxSpawn: 0
   - id: 2
@@ -609,12 +609,12 @@ MonoBehaviour:
   range: 4
   allEnemies:
   - id: 1
-    amount: 5
-    timeSpawn: 20
+    amount: 10
+    timeSpawn: 30
     maxSpawn: 0
   - id: 2
     amount: 1
-    timeSpawn: 20
+    timeSpawn: 30
     maxSpawn: 0
   timers: []
 --- !u!1 &4971422125645622868
@@ -818,7 +818,11 @@ MonoBehaviour:
   allEnemies:
   - id: 2
     amount: 1
-    timeSpawn: 30
+    timeSpawn: 50
+    maxSpawn: 0
+  - id: 1
+    amount: 10
+    timeSpawn: 50
     maxSpawn: 0
   timers: []
 --- !u!1 &6955530151314112905
@@ -1131,6 +1135,10 @@ MonoBehaviour:
     amount: 5
     timeSpawn: 30
     maxSpawn: 0
+  - id: 1
+    amount: 10
+    timeSpawn: 15
+    maxSpawn: 0
   timers: []
 --- !u!1 &8688528440620870421
 GameObject:
@@ -1252,7 +1260,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.3
+      value: -0.49
       objectReference: {fileID: 0}
     - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1260,7 +1268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.34
+      value: 16.03
       objectReference: {fileID: 0}
     - target: {fileID: 2682327836104244645, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: m_LocalRotation.w
