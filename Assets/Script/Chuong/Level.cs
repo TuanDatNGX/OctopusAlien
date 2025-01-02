@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -69,24 +70,28 @@ public class Level : MonoBehaviour
             UiController.Instance.timeCoutTxt.text = curTime.ToString();
             yield return new WaitForSeconds(1);
             curTime -= 1 / Time.timeScale;
+            if(curTime < 30)
+            {
+                UiController.Instance.timeCoutTxt.color = Color.red;
+                UiController.Instance.timeCoutTxt.transform.DOScale(1.2f, 0.1f).OnComplete(() =>
+                {
+                    UiController.Instance.timeCoutTxt.transform.DOScale(1f, 0.1f);
+                });
+            }
+            else if (curTime < 120)
+            {
+                UiController.Instance.timeCoutTxt.color = new Color(1, 180f/255f, 0);
+            }
+            else
+            {
+                UiController.Instance.timeCoutTxt.color = Color.green;
+                UiController.Instance.timeCoutTxt.transform.DOScale(1.2f, 0.1f).OnComplete(() =>
+                {
+                    UiController.Instance.timeCoutTxt.transform.DOScale(1f, 0.1f);
+                });
+            }
             if (curTime < 0)
             {
-                //int cout = 0;
-                //foreach (Transform t in BotTransform)
-                //{
-                //    if (transform.gameObject.activeSelf)
-                //    {
-                //        cout++;
-                //    }
-                //}
-                //if(cout <= 0)
-                //{
-                //    UiController.Instance.winPopup.SetActive(true);
-                //}
-                //else
-                //{
-                //    UiController.Instance.losePopup.SetActive(true);
-                //}
                 UiController.Instance.losePopup.SetActive(true);
             }
         }
