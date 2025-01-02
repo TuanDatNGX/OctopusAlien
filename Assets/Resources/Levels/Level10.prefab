@@ -315,7 +315,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questType: 0
   questTargetValue: 5
-  questName: EAT ALL OCTOPUS
+  questName: EAT OCTOPUS
   BotTransform: {fileID: 677880724612044111}
   levelTime: 240
 --- !u!1 &3037900273318701867
@@ -1318,7 +1318,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
       propertyPath: characterStatsBase.attack
-      value: 35
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5779721188361842300, guid: ee75e11203081ef47814924821dfc88a, type: 3}
+      propertyPath: characterStatsBase.tentacle
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

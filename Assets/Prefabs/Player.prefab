@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5574566421853241046
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27,17 +27,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 75377394607905598}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.91813, z: 0.3962794, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4889319587859623783}
   m_Father: {fileID: 3800655747662338938}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -46.692, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 1.77}
+  m_AnchoredPosition: {x: 0, y: 2.16}
   m_SizeDelta: {x: 1125, y: 2436}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &5219634716056983302
@@ -264,14 +264,14 @@ MonoBehaviour:
   isBot: 0
   characterStatsBase:
     id: 
-    hp: 50
+    hp: 100
     attack: 10
     delayAttack: 0
     rangeAttack: 1
     moveSpeed: 1.8
     levelAI: 0
     tentacle: 1
-    heal: 0
+    heal: 2
   levelUpData: {fileID: 11400000, guid: d3517f2339e77aa4ea418dc1491c3e4d, type: 2}
   faceAnim: {fileID: 7941528558457254937}
   moveSpeed: 2
@@ -304,10 +304,30 @@ MonoBehaviour:
   currentEvol: 0
   defaultMovespeed: 0
   killCount: 0
-  camParam1: 0.4
+  camParam1: 0.2
   camParam2: 3
   stateNow: 0
-  expWhenEat: []
+  expWhenEat:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   characterController: {fileID: 5708556762935851084}
   joystick: {fileID: 0}
 --- !u!1 &495557196934562351
@@ -1054,13 +1074,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6291529696104191089}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5574566421853241046}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1188,7 +1208,7 @@ Transform:
   m_GameObject: {fileID: 6784824089687097545}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: -1.475}
+  m_LocalPosition: {x: 0, y: -0, z: -1.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
