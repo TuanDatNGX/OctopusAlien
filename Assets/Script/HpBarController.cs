@@ -10,9 +10,9 @@ public class HpBarController : MonoBehaviour
     [SerializeField] TextMeshProUGUI txtProcess;
     [SerializeField] float speedReload;
 
-    public void SetValue(float _value)
+    public void SetValue(float currentValue, float maxValue)
     {
-        progressBarPro.SetValue(_value,1);
-        txtProcess.text = (int)(_value * 100) + ConstantKeyword.keyPhanTram;
+        progressBarPro.SetValue(currentValue, maxValue);
+        txtProcess.text = ((int)currentValue).ToString() + "/" + maxValue.ToString();
     }
 }
