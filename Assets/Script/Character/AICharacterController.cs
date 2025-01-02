@@ -18,7 +18,7 @@ public class AICharacterController : CharacterBase
     }
     public override void Move()
     {
-        if (!navMeshAgent.pathPending && navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
+        if (!navMeshAgent.pathPending && navMeshAgent.isOnNavMesh && navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
         {
             SetTarget();
         }
