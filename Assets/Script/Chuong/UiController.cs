@@ -33,6 +33,7 @@ public class UiController : MonoBehaviour
     {
         Instance = this;
         stageTxt.text = "Stage " + LevelController.Instance.currentLevel.ToString();
+        dragToMove.SetActive(true);
     }
 
 
