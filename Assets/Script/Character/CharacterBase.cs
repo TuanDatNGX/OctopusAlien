@@ -267,7 +267,11 @@ public abstract class CharacterBase : TargetBase
             Handheld.Vibrate();
             LevelUp();
         }
-        hpBar.SetValueExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp);
+        if(!isBot)
+        {
+            UiController.Instance.UpdateExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp, currentLevel, killCount);
+        }
+        //hpBar.SetValueExp(currentExp, levelUpData.enemyAssets[currentLevel.ToString()].exp);
         hpBar.SetLvl(currentLevel);
     }
 

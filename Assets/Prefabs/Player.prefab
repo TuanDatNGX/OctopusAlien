@@ -307,6 +307,7 @@ MonoBehaviour:
   camParam1: 0.4
   camParam2: 3
   stateNow: 0
+  expWhenEat: []
   characterController: {fileID: 5708556762935851084}
   joystick: {fileID: 0}
 --- !u!1 &495557196934562351

@@ -119,9 +119,9 @@ public class UiController : MonoBehaviour
 
     public void UpdateQuestProcess(Level level)
     {
-        questTxt.text = level.questName;
-        expTxt.text = level.currentProcess.ToString() + "/" + level.questTargetValue.ToString();
-        ExpSlider.DOValue((float)level.currentProcess / (float)level.questTargetValue, 0.25f);
+        questTxt.text = level.questName + " " + level.currentProcess.ToString() + "/" + level.questTargetValue.ToString();
+        //expTxt.text = level.currentProcess.ToString() + "/" + level.questTargetValue.ToString();
+        //ExpSlider.DOValue((float)level.currentProcess / (float)level.questTargetValue, 0.25f);
     }
 
     public void StartStage()
